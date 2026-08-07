@@ -1,26 +1,184 @@
 @import "tailwindcss";
 
 :root {
+  /* Base — clair, premium, identité EMPGT (blanc / bleu marine / vert clair) */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #13223d;
+
+  --surface: #f5f7fa;
+  --surface-2: #ebeff3;
+  --border: #e1e6ee;
+
+  --muted: #f1f4f7;
+  --muted-foreground: #5a6678;
+
+  /* Bleu marine — couleur primaire (boutons, liens, nav) — identité logo */
+  --primary: #2a3579;
+  --primary-foreground: #ffffff;
+  --primary-soft: #2a357912;
+
+  /* Vert clair — accent (titres clés, highlights, CTA) — identité logo */
+  --accent: #68b245;
+  --accent-foreground: #ffffff;
+  --accent-soft: #68b2451f;
+
+  --radius: 0.75rem;
+
+  /* Perspective 3D globale */
+  --scene-perspective: 1200px;
+  --scene-rotate: 0deg;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+
+  --radius-lg: var(--radius);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --container-7xl: 88rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* ---- Scène 3D & persistance ---- */
+.scene-3d {
+  perspective: var(--scene-perspective);
+  transform-style: preserve-3d;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Grille de perspective */
+.perspective-grid {
+  background-image: linear-gradient(to right, rgba(42, 53, 121, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 53, 121, 0.12) 1px, transparent 1px);
+  background-size: 56px 56px;
+  transform: perspective(700px) rotateX(62deg) scale(1.35);
+  transform-origin: center top;
+  mask-image: linear-gradient(to bottom, transparent, black 35%, black 75%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 35%, black 75%, transparent);
+}
+
+/* Halos lumineux (profondeur) */
+.glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  pointer-events: none;
+}
+
+/* Textures de fond subtiles */
+.dot-grid {
+  background-image: radial-gradient(rgba(42, 53, 121, 0.14) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Carte 3D flottante */
+.float-3d {
+  animation: float-3d 7s ease-in-out infinite;
+}
+
+@keyframes float-3d {
+  0%,
+  100% {
+    transform: translateY(0) rotateX(6deg) rotateY(-4deg);
+  }
+  50% {
+    transform: translateY(-16px) rotateX(2deg) rotateY(2deg);
+  }
+}
+
+/* Rotation lente (cube / badge) */
+.spin-slow {
+  animation: spin-slow 28s linear infinite;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Trait dégradé animé */
+.shimmer-line {
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3.2s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Animation marquee pour logos / news */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+/* Réduire le mouvement si l'utilisateur le demande */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
