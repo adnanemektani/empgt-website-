@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Play, ExternalLink, Clock } from "lucide-react";
 import { LinkedInIcon, YouTubeIcon } from "@/components/ui/BrandIcons";
@@ -11,7 +12,8 @@ const NEWS = [
     title: "25 ans de terrain pour une IA responsable au service du Maroc",
     source: "YouTube",
     icon: YouTubeIcon,
-    href: "https://www.youtube.com/",
+    href: "https://youtu.be/K067GArWkjY",
+    thumb: "https://img.youtube.com/vi/K067GArWkjY/maxresdefault.jpg",
     accent: "bg-red-500/10 text-red-600",
   },
   {
@@ -69,15 +71,27 @@ export default function News() {
               >
                 {/* En-tête média */}
                 <div className="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary to-accent">
-                  <div className="pointer-events-none absolute inset-0 opacity-30">
-                    <div className="perspective-grid absolute inset-x-[-30%] top-[-20%] bottom-0 opacity-40" />
-                  </div>
-                  {item.type === "video" ? (
-                    <span className="relative flex h-20 w-20 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                      <Play className="h-8 w-8 fill-white text-white" />
-                    </span>
+                  {item.type === "video" && item.thumb ? (
+                    <Image
+                      src={item.thumb}
+                      alt=""
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
                   ) : (
-                    <Icon className="relative h-16 w-16 text-white/80 transition-transform duration-300 group-hover:scale-110" />
+                    <>
+                      <div className="pointer-events-none absolute inset-0 opacity-30">
+                        <div className="perspective-grid absolute inset-x-[-30%] top-[-20%] bottom-0 opacity-40" />
+                      </div>
+                      <Icon className="relative h-16 w-16 text-white/80 transition-transform duration-300 group-hover:scale-110" />
+                    </>
+                  )}
+
+                  {item.type === "video" && (
+                    <span className="relative flex h-16 w-16 items-center justify-center rounded-full bg-black/40 ring-1 ring-white/40 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                      <Play className="h-7 w-7 fill-white text-white" />
+                    </span>
                   )}
                 </div>
 
