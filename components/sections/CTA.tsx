@@ -2,16 +2,16 @@
 
 import { motion } from "framer-motion";
 import { Calendar, Handshake, ArrowRight, BadgeCheck, Globe, Users } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { SITE } from "@/lib/site";
 
-const STATS = [
-  { value: "25", label: "ans d'expérience terrain" },
-  { value: "40", label: "collaborateurs managés" },
-  { value: "5", label: "implantations internationales" },
-  { value: "150M€", label: "opérations pilotées" },
-];
+const FEATURE_ICONS = [BadgeCheck, Globe, Users];
 
 export default function CTA() {
+  const t = useTranslations("Cta");
+  const stats = t.raw("stats") as { value: string; label: string }[];
+  const features = t.raw("features") as string[];
+
   return (
     <section className="relative overflow-hidden py-24 lg:py-32">
       <div className="pointer-events-none absolute inset-0">
@@ -28,7 +28,7 @@ export default function CTA() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="grid grid-cols-2 gap-6 lg:grid-cols-4"
         >
-          {STATS.map((s) => (
+          {stats.map((s) => (
             <div
               key={s.label}
               className="rounded-2xl border border-border bg-surface p-6 text-center shadow-sm"
@@ -60,16 +60,13 @@ export default function CTA() {
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white backdrop-blur-sm">
                   <Handshake className="h-3.5 w-3.5 text-accent" />
-                  Passez à l&apos;action
+                  {t("badge")}
                 </span>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Parlons de votre projet
+                  {t("title")}
                 </h2>
                 <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75">
-                  Que vous soyez maître d&apos;ouvrage, entreprise générale ou
-                  acteur industriel, notre équipe vous accompagne du terrain à la
-                  livraison. Prenez rendez-vous en visio ou devenez partenaire
-                  affilié.
+                  {t("subtitle")}
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -80,7 +77,7 @@ export default function CTA() {
                     className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-primary shadow-lg transition-all duration-300 hover:scale-[1.04]"
                   >
                     <Calendar className="h-4 w-4" />
-                    Prendre rendez-vous en visio
+                    {t("ctaCalendly")}
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
                   <a
@@ -90,27 +87,26 @@ export default function CTA() {
                     className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/15"
                   >
                     <Handshake className="h-4 w-4" />
-                    Programme Partenaires affiliés
+                    {t("ctaAffiliate")}
                   </a>
                 </div>
               </div>
 
               <div className="space-y-3">
-                {[
-                  { icon: BadgeCheck, text: "Devis & contrats clairs, sans engagement" },
-                  { icon: Globe, text: "France, Afrique francophone & international" },
-                  { icon: Users, text: "Accompagnement par des ingénieurs experts" },
-                ].map((f) => (
-                  <div
-                    key={f.text}
-                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm"
-                  >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10">
-                      <f.icon className="h-4.5 w-4.5 text-accent" />
-                    </span>
-                    <p className="text-sm font-medium text-white/85">{f.text}</p>
-                  </div>
-                ))}
+                {features.map((text, i) => {
+                  const Icon = FEATURE_ICONS[i];
+                  return (
+                    <div
+                      key={text}
+                      className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm"
+                    >
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10">
+                        <Icon className="h-4.5 w-4.5 text-accent" />
+                      </span>
+                      <p className="text-sm font-medium text-white/85">{text}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

@@ -50,7 +50,10 @@
 
   --radius-lg: var(--radius);
 
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-noto-arabic), var(--font-noto-sc),
+    var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", "Noto Sans Arabic", "Tajawal", "Almarai",
+    "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
   --font-mono: var(--font-geist-mono);
 
   --container-7xl: 88rem;

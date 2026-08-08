@@ -2,37 +2,37 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Calendar, Sparkles, Users, Wrench, Truck } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { SITE } from "@/lib/site";
 
 const SLIDES = [
   {
     src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=3840&auto=format&fit=crop",
-    alt: "Chantier de construction BTP",
   },
   {
     src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=3840&auto=format&fit=crop",
-    alt: "Plan et ingénierie de construction",
   },
   {
     src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=3840&auto=format&fit=crop",
-    alt: "Logistique et fret international",
   },
 ];
 
 const SLIDE_DURATION = 5000;
 
-const CARDS = [
-  { title: "Profils BTP", icon: Users, color: "from-accent/90 to-accent" },
-  { title: "Matériel", icon: Wrench, color: "from-primary/90 to-primary" },
-  { title: "Logistique", icon: Truck, color: "from-accent/90 to-accent" },
+const CARD_ICONS = [Users, Wrench, Truck];
+const CARD_COLORS = [
+  "from-accent/90 to-accent",
+  "from-primary/90 to-primary",
+  "from-accent/90 to-accent",
 ];
 
 const easing = [0.22, 1, 0.36, 1] as const;
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   const ref = useRef<HTMLElement>(null);
   const [index, setIndex] = useState(0);
   const { scrollYProgress } = useScroll({
@@ -73,7 +73,7 @@ export default function Hero() {
           >
             <Image
               src={slide.src}
-              alt={slide.alt}
+              alt={t.raw("slideAlts")[i]}
               fill
               priority={i === 0}
               quality={100}
@@ -107,7 +107,7 @@ export default function Hero() {
               className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white backdrop-blur-sm"
             >
               <Sparkles className="h-3.5 w-3.5 text-accent" />
-              25 ans d&apos;expertise terrain
+              {t("badge")}
             </motion.div>
 
             <motion.h1
@@ -116,9 +116,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
-              Conseil BTP,{" "}
+              {t("titlePart1")}{" "}
               <span className="relative whitespace-nowrap">
-                sourcing
+                {t("titleHighlight")}
                 <svg
                   viewBox="0 0 220 12"
                   fill="none"
@@ -133,7 +133,7 @@ export default function Hero() {
                   />
                 </svg>
               </span>{" "}
-              et logistique internationale
+              {t("titlePart2")}
             </motion.h1>
 
             <motion.p
@@ -142,8 +142,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.35 }}
               className="mt-6 max-w-xl text-base text-white/85 sm:text-lg"
             >
-              {SITE.description} Un écosystème de plateformes dédiées pour vos
-              profils, votre matériel et vos flux logistiques.
+              {t("description")}
             </motion.p>
 
             <motion.div
@@ -156,7 +155,7 @@ export default function Hero() {
                 href="/contact"
                 className="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-black/30 transition-all duration-300 hover:scale-[1.04] hover:shadow-accent/40"
               >
-                Déposer une demande
+                {t("ctaPrimary")}
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
 
@@ -167,7 +166,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/15"
               >
                 <Calendar className="h-4 w-4" />
-                Prendre rendez-vous
+                {t("ctaSecondary")}
               </a>
             </motion.div>
 
@@ -221,8 +220,8 @@ export default function Hero() {
             </motion.div>
 
             {/* Cartes flottantes */}
-            {CARDS.map((card, i) => {
-              const Icon = card.icon;
+            {t.raw("cards").map((title: string, i: number) => {
+              const Icon = CARD_ICONS[i];
               const positions = [
                 "left-0 top-6 -rotate-6",
                 "right-0 top-24 rotate-6",
@@ -230,23 +229,23 @@ export default function Hero() {
               ];
               return (
                 <motion.div
-                  key={card.title}
+                  key={title}
                   initial={{ opacity: 0, y: 40, scale: 0.8 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.8, delay: 0.8 + i * 0.15, ease: easing }}
                   className={`absolute ${positions[i]} preserve-3d`}
                 >
                   <div
-                    className={`float-3d flex items-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br ${card.color} px-5 py-4 shadow-xl shadow-black/30 backdrop-blur-md`}
+                    className={`float-3d flex items-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br ${CARD_COLORS[i]} px-5 py-4 shadow-xl shadow-black/30 backdrop-blur-md`}
                     style={{ animationDelay: `${i * 1.4}s` }}
                   >
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20">
                       <Icon className="h-5 w-5 text-white" />
                     </span>
                     <div>
-                      <p className="text-xs text-white/80">{card.title}</p>
+                      <p className="text-xs text-white/80">{title}</p>
                       <p className="text-sm font-semibold text-white">
-                        Plateforme dédiée
+                        {t("cardSubtitle")}
                       </p>
                     </div>
                   </div>

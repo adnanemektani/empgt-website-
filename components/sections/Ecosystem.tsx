@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, Users, Wrench, Truck, Lock } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { PLATFORMS } from "@/lib/site";
 
 const ICONS = {
@@ -11,13 +12,8 @@ const ICONS = {
   truck: Truck,
 } as const;
 
-function PlatformCard({
-  platform,
-  index,
-}: {
-  platform: (typeof PLATFORMS)[number];
-  index: number;
-}) {
+function PlatformCard({ index }: { index: number }) {
+  const t = useTranslations("Eco");
   const ref = useRef<HTMLDivElement>(null);
   const rotateX = useSpring(useMotionValue(0), { stiffness: 150, damping: 20 });
   const rotateY = useSpring(useMotionValue(0), { stiffness: 150, damping: 20 });
@@ -26,6 +22,15 @@ function PlatformCard({
   const glareSpringX = useSpring(glareX, { stiffness: 150, damping: 20 });
   const glareSpringY = useSpring(glareY, { stiffness: 150, damping: 20 });
 
+  const platform = PLATFORMS[index];
+  const data = t.raw("platforms")[index] as {
+    title: string;
+    description: string;
+    bullets: string[];
+    cta: string;
+    badge: string;
+    label: string;
+  };
   const Icon = ICONS[platform.icon as keyof typeof ICONS];
 
   function onMove(e: React.MouseEvent<HTMLDivElement>) {
@@ -90,16 +95,16 @@ function PlatformCard({
             </div>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/25 bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
               <Lock className="h-3 w-3" />
-              {platform.badge}
+              {data.badge}
             </span>
           </div>
 
           <div style={{ transform: "translateZ(30px)" }}>
             <h3 className="mt-6 text-xl font-bold tracking-tight text-foreground">
-              {platform.title}
+              {data.title}
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {platform.description}
+              {data.description}
             </p>
           </div>
 
@@ -107,7 +112,7 @@ function PlatformCard({
             className="mt-6 space-y-2.5"
             style={{ transform: "translateZ(20px)" }}
           >
-            {platform.bullets.map((b) => (
+            {data.bullets.map((b) => (
               <li key={b} className="flex items-start gap-2.5 text-sm text-foreground/80">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                 {b}
@@ -122,7 +127,7 @@ function PlatformCard({
               rel="noopener noreferrer"
               className="group/btn inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:scale-[1.02] hover:bg-accent hover:shadow-lg hover:shadow-accent/30"
             >
-              {platform.cta}
+              {data.cta}
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
             </a>
           </div>
@@ -133,6 +138,7 @@ function PlatformCard({
 }
 
 export default function Ecosystem() {
+  const t = useTranslations("Eco");
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -156,23 +162,20 @@ export default function Ecosystem() {
           className="mx-auto max-w-2xl text-center"
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-accent">
-            Notre écosystème
+            {t("badge")}
           </span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Une plateforme dédiée,{" "}
-            <span className="text-primary">pour chaque besoin</span>
+            {t("titlePart1")}{" "}
+            <span className="text-primary">{t("titleHighlight")}</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            Au-delà du conseil, E-MPGT développe un écosystème de plateformes
-            spécialisées : profils experts, matériel BTP et logistique
-            internationale. Chaque pôle dispose de sa propre plateforme,
-            accessible d&apos;un clic.
+            {t("description")}
           </p>
         </motion.div>
 
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {PLATFORMS.map((platform, i) => (
-            <PlatformCard key={platform.id} platform={platform} index={i} />
+            <PlatformCard key={platform.id} index={i} />
           ))}
         </div>
 
@@ -183,8 +186,7 @@ export default function Ecosystem() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-10 text-center text-sm text-muted-foreground"
         >
-          Les plateformes sont en cours de construction — elles seront mises en
-          ligne progressivement.
+          {t("note")}
         </motion.p>
       </div>
     </section>

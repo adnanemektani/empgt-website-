@@ -1,0 +1,450 @@
+{
+  "Metadata": {
+    "homeTitle": "E-MPGT | Construction consulting, sourcing and international logistics",
+    "homeDescription": "E-MPGT supports your construction & logistics projects with 25 years of field expertise. Discover our ecosystem of dedicated platforms.",
+    "aboutTitle": "About | E-MPGT — The Group",
+    "aboutDescription": "Discover E-MPGT: 25 years of construction expertise, a story, values, strengths and international ambition.",
+    "contactTitle": "Contact | E-MPGT",
+    "contactDescription": "Contact E-MPGT for your construction projects, equipment sourcing or international logistics needs.",
+    "cguTitle": "General Terms of Service | E-MPGT",
+    "cguDescription": "E-MPGT General Terms of Service.",
+    "cguPartnersTitle": "Partner Programme Terms & Conditions | E-MPGT",
+    "cguPartnersDescription": "E-MPGT Business Referral Programme General Terms & Conditions."
+  },
+  "Locale": {
+    "switchAria": "Change language",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية",
+    "zh": "中文"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "ecosystem": "Ecosystem",
+    "metiers": "Our services",
+    "partners": "Partners",
+    "news": "News",
+    "contact": "Contact",
+    "cta": "Video call",
+    "openMenu": "Open menu",
+    "logoAlt": "E-MPGT — Home"
+  },
+  "Hero": {
+    "badge": "25 years of field expertise",
+    "titlePart1": "Construction consulting,",
+    "titleHighlight": "sourcing",
+    "titlePart2": "and international logistics",
+    "description": "A dedicated software ecosystem for your talent, your equipment and your logistics flows.",
+    "ctaPrimary": "Submit a request",
+    "ctaSecondary": "Book a call",
+    "cardSubtitle": "Dedicated platform",
+    "cards": ["Construction profiles", "Equipment", "Logistics"],
+    "slideAlts": [
+      "Construction site",
+      "Construction planning and engineering",
+      "International logistics and freight"
+    ]
+  },
+  "Eco": {
+    "badge": "Our ecosystem",
+    "titlePart1": "A dedicated platform,",
+    "titleHighlight": "for every need",
+    "description": "Beyond consulting, E-MPGT is building an ecosystem of specialised platforms: expert profiles, construction equipment and international logistics. Each vertical has its own platform, accessible in one click.",
+    "note": "The platforms are under construction — they will gradually go live.",
+    "platforms": [
+      {
+        "label": "Freelance Platform",
+        "title": "Profiles & Construction Experts",
+        "badge": "Coming soon",
+        "description": "Access a network of engineers, site managers and construction experts selected and vetted by our teams.",
+        "bullets": [
+          "Works engineers & project directors",
+          "Works supervisors, MOE / MOEX / OPC",
+          "Profiles validated by an experienced peer",
+          "Available quickly, in France & internationally"
+        ],
+        "cta": "Browse profiles"
+      },
+      {
+        "label": "Equipment Platform",
+        "title": "Construction Equipment Marketplace",
+        "badge": "Coming soon",
+        "description": "Used equipment sourcing, European auction deals and access to the best market opportunities.",
+        "bullets": [
+          "Sourcing from professional suppliers",
+          "Supported European auction bidding",
+          "Inspection, secure payments & customs clearance",
+          "Turnkey international logistics"
+        ],
+        "cta": "Explore equipment"
+      },
+      {
+        "label": "Logistics Platform",
+        "title": "Logistics & International Freight",
+        "badge": "Coming soon",
+        "description": "Express and standard solutions, customs formalities, bonded warehouses and sea, air and road freight.",
+        "bullets": [
+          "International express & standard with tracking",
+          "Customs formalities & bonded warehouses",
+          "Sea, air, road freight — door to door",
+          "Flexible warehousing and full traceability"
+        ],
+        "cta": "Discover logistics"
+      }
+    ]
+  },
+  "Services": {
+    "badge": "Construction & Engineering",
+    "title": "Our services",
+    "subtitle": "E-MPGT provides construction consulting across strategy, project management, digitalisation, logistics and international development. We support companies to structure, optimise and innovate at every stage of their projects.",
+    "cta": "Discover our missions",
+    "items": [
+      {
+        "title": "Strategic consulting",
+        "text": "Feasibility analysis, budget projections and decision support for project owners and firms."
+      },
+      {
+        "title": "Project management",
+        "text": "Planning, monitoring & reporting, stakeholder coordination, control of milestones, costs, risks and quality."
+      },
+      {
+        "title": "Transformation & innovation",
+        "text": "Process optimisation, agile methods, robotisation and automation to gain performance."
+      },
+      {
+        "title": "International development",
+        "text": "Cross-border projects, coordination of European and local engineers, regulatory and logistical adaptation."
+      },
+      {
+        "title": "Integrated logistics",
+        "text": "Supply chain optimisation: sourcing, storage, delivery and import-export management."
+      },
+      {
+        "title": "Reuse chain",
+        "text": "Integration of the reuse of European equipment and materials within an CSR and circular economy approach."
+      }
+    ]
+  },
+  "Partners": {
+    "badge": "They trust us",
+    "title": "Our partners",
+    "subtitle": "Tech startups, creative studios, expert engineers… Our partners are at the heart of our ecosystem. Together, we design, plan and deliver ambitious, sustainable projects.",
+    "items": [
+      {
+        "tag": "Zoran Forest",
+        "name": "INSTITUT IA",
+        "text": "AI is becoming a day-to-day lever for the construction industry. An innovative approach that reconciles the field with artificial intelligence facing complex challenges."
+      },
+      {
+        "tag": "Élodie Moraud",
+        "name": "L'Agence Web du Mascaret",
+        "text": "A bespoke tool, built by a construction economist, to serve the real needs of the field."
+      },
+      {
+        "tag": "Amandine Leblanc",
+        "name": "13 Mai Studio",
+        "text": "Turning a technical or architectural idea into a concrete, usable visual in the blink of an eye."
+      },
+      {
+        "tag": "Secondment",
+        "name": "Freelance Engineers",
+        "text": "Employed and freelance engineers for your worksites: reinforced expertise, powerful tools, operational as soon as they arrive."
+      }
+    ]
+  },
+  "News": {
+    "badge": "News",
+    "title": "E-MPGT on the move",
+    "subtitle": "Follow our latest announcements, partnerships and innovations in the construction and engineering sector.",
+    "recent": "Recent",
+    "readMore": "Read the post",
+    "items": [
+      {
+        "title": "25 years of field expertise for responsible AI serving Morocco",
+        "source": "YouTube"
+      },
+      {
+        "title": "E-MPGT proudly announces its partnership with INSTITUT IA!",
+        "source": "LinkedIn"
+      }
+    ]
+  },
+  "Cta": {
+    "badge": "Act now",
+    "title": "Let's talk about your project",
+    "subtitle": "Whether you are a project owner, general contractor or industry player, our team supports you from the field to delivery. Book a video call or become an affiliate partner.",
+    "ctaCalendly": "Book a video call",
+    "ctaAffiliate": "Affiliate Partner Programme",
+    "features": [
+      "Clear quotes & contracts, no commitment",
+      "France, French-speaking Africa & international",
+      "Support from expert engineers"
+    ],
+    "stats": [
+      { "value": "25", "label": "years of field experience" },
+      { "value": "40", "label": "collaborators managed" },
+      { "value": "5", "label": "international locations" },
+      { "value": "€150M", "label": "project value led" }
+    ]
+  },
+  "Footer": {
+    "group": "MPGT Group · Portugal · France · Morocco · Senegal · Côte d'Ivoire",
+    "tagline": "Construction consulting & engineering, sourcing and international logistics.",
+    "subtitle": "25 years of field expertise at the service of your projects, from the field to delivery.",
+    "home": "Home",
+    "about": "About",
+    "ecosystem": "Ecosystem",
+    "news": "News",
+    "contact": "Contact",
+    "navTitle": "Navigation",
+    "platformsTitle": "Platforms",
+    "legalTitle": "General Terms of Service",
+    "partnersTitle": "Partner Programme",
+    "ctaCalendly": "Book a video call",
+    "ctaAffiliate": "Affiliate partners",
+    "rights": "E-MPGT UNIPESSOAL LDA — All rights reserved."
+  },
+  "AboutHero": {
+    "badge": "The MPGT Group",
+    "title": "At the crossroads of technical expertise, strategic vision and smart innovation",
+    "text": "Our group relies on strong human values and the exacting standards of major construction projects to build bespoke solutions. Through rigour, listening and co-construction, we turn every mission into a lever for collective performance.",
+    "cta": "Our story"
+  },
+  "About": {
+    "historyBadge": "Our story",
+    "historyTitle": "The key steps that shaped our company",
+    "histoire": [
+      {
+        "year": "Before 2018",
+        "title": "Foundations of an expertise",
+        "text": "17 years of field experience with major French construction firms, with a deep understanding of site realities and industry players."
+      },
+      {
+        "year": "2018",
+        "title": "Born of MPGT",
+        "text": "Creation of MPGT, a company specialised in engineering consulting for the building sector. Goal: put experience at the service of ambitious projects."
+      },
+      {
+        "year": "2018 – 2023",
+        "title": "Growth in France",
+        "text": "A resolutely operational approach, close to the ground of the field. A differentiating consulting model that fits the reality of sites."
+      },
+      {
+        "year": "2024",
+        "title": "Creation of E-MPGT",
+        "text": "Faced with the perfect French market and the rise of international opportunities, MPGT creates E-MPGT to build a high-value-added offer and export European know-how, especially to Africa."
+      },
+      {
+        "year": "2025",
+        "title": "International momentum",
+        "text": "European engineering expertise and integration of cutting-edge technologies to power the transformation of territories."
+      }
+    ],
+    "valuesBadge": "Our values",
+    "valuesTitle": "The foundation of our identity",
+    "values": [
+      {
+        "title": "Commitment",
+        "text": "Method, rigour and determination. Meeting deadlines, controlling budgets and guaranteeing reliable working conditions."
+      },
+      {
+        "title": "Trust",
+        "text": "The foundation of all our relationships, built on transparency, dependability and consistency in results."
+      },
+      {
+        "title": "Knowledge sharing",
+        "text": "Training, coaching and growing teams strengthens the quality of projects over the long term."
+      },
+      {
+        "title": "Excellence",
+        "text": "Precision, reliability and control. Every detail matters: this level of attention guarantees lasting quality."
+      },
+      {
+        "title": "Respect",
+        "text": "A non-negotiable principle expressed in our decisions, our exchanges and our actions toward people and commitments."
+      }
+    ],
+    "valuesSummaryCount": "5",
+    "valuesSummaryText": "core values guiding our actions and relationships, on the field and internally.",
+    "forcesBadge": "Our strengths",
+    "forcesTitle": "Traditional know-how and innovative solutions",
+    "forces": [
+      "A dual culture, field and project owner, that feeds our agility and analytical accuracy.",
+      "Committed, agile, solution-driven engineers who can act quickly and pragmatically.",
+      "A human-sized structure, constant standards: proximity, clarity, rigour.",
+      "An advisory and field approach: operational mastery and strategic vision at the heart of the real issues."
+    ],
+    "ambitionsBadge": "Our ambitions",
+    "ambitionsTitle": "A vision beyond borders",
+    "ambitionsSub": "The future of construction is built locally, by unlocking the energy, know-how and talent of territories. We believe in the power of long-term partnership and in the capacity of African players to deliver major projects.",
+    "ambitions": [
+      "Nurture and promote local talent for projects visible on the international stage.",
+      "Build concrete bridges between African and European expertise, in a balanced partnership spirit.",
+      "Strengthen local capabilities through skills transfer and increased empowerment.",
+      "Become a reference partner for African construction players."
+    ],
+    "countriesBadge": "Our international presence",
+    "countriesTitle": "Present at the heart of projects",
+    "countriesSub": "We follow our clients where projects take shape, mobilising teams able to act quickly, efficiently and fully autonomously.",
+    "countries": [
+      { "country": "Portugal", "city": "Funchal, Madeira", "note": "Group HQ" },
+      { "country": "France", "city": "Paris", "note": "Office" },
+      { "country": "Morocco", "city": "Casablanca", "note": "Office" },
+      { "country": "Senegal", "city": "Dakar", "note": "Office" },
+      { "country": "Côte d'Ivoire", "city": "Abidjan", "note": "Office" }
+    ]
+  },
+  "Contact": {
+    "badge": "Contact us",
+    "title": "Let's talk about your project",
+    "subtitle": "Describe your needs: our team responds within 24 business hours with a first qualified intro call.",
+    "info": [
+      { "title": "By email", "text": "Reply within 24 business hours" },
+      { "title": "Video call", "text": "30 minutes with an expert" },
+      { "title": "Group HQ", "text": "Portugal · France · Morocco · Senegal · Côte d'Ivoire" }
+    ],
+    "valueBookNow": "Book a meeting",
+    "valueFunchal": "Funchal, Madeira",
+    "platformsTitle": "Our platforms",
+    "platformsText": "The Profiles, Equipment and Logistics platforms will be coming soon soon via our ecosystem.",
+    "platformsCta": "See the ecosystem",
+    "subjects": {
+      "btp": "Construction & Engineering consulting",
+      "materiel": "Equipment sourcing",
+      "logistique": "Logistics & freight",
+      "partenariat": "Partnership / Affiliation",
+      "autre": "Other request"
+    },
+    "labelName": "Full name",
+    "placeholderName": "Your name",
+    "labelEmail": "Email",
+    "placeholderEmail": "you@example.com",
+    "labelCompany": "Company",
+    "optCompany": "(optional)",
+    "placeholderCompany": "Your company name",
+    "labelSubject": "Subject",
+    "labelMessage": "Your message",
+    "placeholderMessage": "Describe your project, your needs, your deadlines…",
+    "errorName": "Your name is required",
+    "errorEmail": "Invalid email address",
+    "errorMessage": "Your message must contain at least 10 characters",
+    "sending": "Sending…",
+    "send": "Send request",
+    "successTitle": "Request sent!",
+    "successText": "Thank you for your message. Our team will get back to you within 24 business hours.",
+    "privacy": "Your data stays confidential and is never shared with third parties."
+  },
+  "Cgu": {
+    "badge": "Legal notice",
+    "title": "General Terms of Service",
+    "updated": "Last updated: 31/01/2026",
+    "intro": "These General Terms of Service (the 'Terms') govern access to and use of the services offered by E-MPGT. By accessing the site or using our services, you unreservedly accept these Terms.",
+    "sections": [
+      {
+        "title": "1. Company identity",
+        "body": "The services are provided by E-MPGT UNIPESSOAL LDA — 73 Avenida Arriaga 9004-533 Funchal — NIF: 518098427 — Portugal."
+      },
+      {
+        "title": "2. Purpose of the services",
+        "body": "E-MPGT provides professional services in the following areas: construction & engineering consulting, provision of experts and consultants, sourcing of equipment and suppliers, international logistics and operational coordination. The services are defined contractually on a case-by-case basis via quote, contract or purchase order."
+      },
+      {
+        "title": "3. Site access",
+        "body": "Access to the site is free. Certain sections (form, partner area, etc.) may require professional information to be provided. The user undertakes to provide accurate and up-to-date information."
+      },
+      {
+        "title": "4. Contractual commitments",
+        "body": "Every service is subject to an accepted quote, a signed contract or a validated purchase order. No service is committed to without formal written validation."
+      },
+      {
+        "title": "5. Liability",
+        "body": "E-MPGT is bound by an obligation of means. Its liability cannot be engaged in the event of delay attributable to the client, force majeure, incomplete or erroneous information provided by the client, or decisions taken independently by the client. In any case, E-MPGT's financial liability is limited to the amount of the service concerned."
+      },
+      {
+        "title": "6. Intellectual property",
+        "body": "All content of the site (texts, logos, visuals, documents) is the exclusive property of E-MPGT. Any reproduction, distribution or use without prior written authorisation is prohibited."
+      },
+      {
+        "title": "7. Confidentiality",
+        "body": "E-MPGT undertakes to treat all information transmitted in the context of a mission with confidentiality. Non-disclosure agreements (NDAs) may be signed at the request of the parties."
+      },
+      {
+        "title": "8. Personal data",
+        "body": "Data collected via the site is used solely to respond to requests, process services and ensure business follow-up. It is not passed on to third parties without consent, except where legally required."
+      },
+      {
+        "title": "9. Changes to the terms",
+        "body": "E-MPGT reserves the right to modify these terms at any time. The new terms enter into force upon publication on the site."
+      },
+      {
+        "title": "10. Applicable law",
+        "body": "These terms are governed by the law applicable to the contracting company. Any dispute will be subject to the exclusive jurisdiction of the courts of the registered office of the company issuing the contract."
+      },
+      {
+        "title": "11. Contact",
+        "body": "For any question, please contact us via the contact form."
+      }
+    ]
+  },
+  "CguPartners": {
+    "badge": "Partner Programme",
+    "title": "General Terms of the Partner Programme",
+    "subtitle": "Business Referral Programme — Last updated: 31/01/2026",
+    "intro": "These terms govern participation in the Partner Programme offered by E-MPGT NIF: 518098427 Portugal (the 'Company'). Any registration to the programme implies full and complete acceptance of these terms.",
+    "sections": [
+      {
+        "title": "1. Purpose of the programme",
+        "body": "The Partner Programme allows independent business referrers introduce potential clients to the Company in the following areas: construction & engineering consulting, expert secondment, equipment sourcing, international logistics. The Partner receives a commission under the conditions set out below."
+      },
+      {
+        "title": "2. Mandatory professional status",
+        "body": "The Partner must be a company, individual business or legally registered entrepreneur, hold a valid tax number, and be compliant with the tax and social obligations of their country. Private individuals are not eligible. The Partner acts as an independent professional. The programme does not constitute an employment contract nor a subordination relationship. The Partner has no authority to represent or bind the Company."
+      },
+      {
+        "title": "3. Declaration and validation of opportunities",
+        "body": "A business opportunity is considered valid if it is declared via the official programme platform, was not already being negotiated with the Company, and is validated in writing by the Company. The Company reserves the right to accept or refuse any opportunity."
+      },
+      {
+        "title": "4. Commission attribution conditions",
+        "body": "The commission is due only on amounts excluding tax, actually invoiced and fully collected by the Company. No commission is due for a simple contact, for an unsigned quote, or for unpaid invoices. The commission is definitively acquired only after effective collection."
+      },
+      {
+        "title": "5. Commission duration",
+        "body": "Unless a specific written agreement, the commission applies to the initial mission arising from the validated referral. Renewals, extensions or new contracts may be the subject of a separate agreement. No perpetual commission rights are granted."
+      },
+      {
+        "title": "6. Payment terms",
+        "body": "Validated commissions are paid monthly, after internal validation, subject to receipt of a compliant invoice issued by the Partner. Payment is made via Payoneer or international bank transfer. The Company will not make any payment without a compliant invoice. The Partner remains solely responsible for their tax obligations."
+      },
+      {
+        "title": "7. Mandatory billing",
+        "body": "The Partner must issue an invoice compliant with the regulations of their country. The invoice must include the full identity of the Partner, their tax number, the reference of the commissions, the net amount and applicable taxes. The Company may request any evidence of registration."
+      },
+      {
+        "title": "8. Partner obligations",
+        "body": "The Partner undertakes to act in good faith, to respect the brand and reputation of the Company, to make no contractual promises, and not to bind the Company without written authorisation."
+      },
+      {
+        "title": "9. Non-circumvention",
+        "body": "The Partner is prohibited from contracting directly with a referred client, diverting a business opportunity, or interfering in the execution of missions. This prohibition applies for the duration of the relationship and for 24 months after its end."
+      },
+      {
+        "title": "10. No guarantee",
+        "body": "The Company does not guarantee any minimum volume of activity, minimum commission amount, or territorial exclusivity. The programme is a business opportunity without obligation of result."
+      },
+      {
+        "title": "11. Termination",
+        "body": "The Company may suspend or terminate access to the programme at any time in case of breach of these terms, prejudicial behaviour or fraud. Commissions earned on collected amounts remain due."
+      },
+      {
+        "title": "12. Changes to the programme",
+        "body": "The Company may modify the commission rate, the programme rules and the payment terms. Changes become effective after publication."
+      },
+      {
+        "title": "13. Applicable law",
+        "body": "This programme is governed by Portuguese law. Any dispute will be subject to the competent courts of Portugal."
+      }
+    ]
+  }
+}

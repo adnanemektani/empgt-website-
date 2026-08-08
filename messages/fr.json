@@ -1,0 +1,450 @@
+{
+  "Metadata": {
+    "homeTitle": "E-MPGT | Conseil BTP, sourcing et logistique internationale",
+    "homeDescription": "E-MPGT accompagne vos projets BTP & logistique avec 25 ans d'expertise terrain. Découvrez notre écosystème de plateformes dédiées.",
+    "aboutTitle": "À propos | E-MPGT — Le Groupe",
+    "aboutDescription": "Découvrez E-MPGT : 25 ans d'expertise BTP, une histoire, des valeurs, des forces et une ambition internationale.",
+    "contactTitle": "Contact | E-MPGT",
+    "contactDescription": "Contactez E-MPGT pour vos projets BTP, votre sourcing matériel ou vos besoins en logistique internationale.",
+    "cguTitle": "Conditions générales de service | E-MPGT",
+    "cguDescription": "Conditions générales de service d'E-MPGT.",
+    "cguPartnersTitle": "Conditions générales du Programme Partenaires | E-MPGT",
+    "cguPartnersDescription": "Conditions générales du Programme d'Apporteurs d'Affaires E-MPGT."
+  },
+  "Locale": {
+    "switchAria": "Changer de langue",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية",
+    "zh": "中文"
+  },
+  "Nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "ecosystem": "Écosystème",
+    "metiers": "Nos métiers",
+    "partners": "Partenaires",
+    "news": "Actualités",
+    "contact": "Contact",
+    "cta": "Rendez-vous visio",
+    "openMenu": "Ouvrir le menu",
+    "logoAlt": "E-MPGT — Accueil"
+  },
+  "Hero": {
+    "badge": "25 ans d'expertise terrain",
+    "titlePart1": "Conseil BTP,",
+    "titleHighlight": "sourcing",
+    "titlePart2": "et logistique internationale",
+    "description": "Un écosystème de plateformes dédiées pour vos profils, votre matériel et vos flux logistiques.",
+    "ctaPrimary": "Déposer une demande",
+    "ctaSecondary": "Prendre rendez-vous",
+    "cardSubtitle": "Plateforme dédiée",
+    "cards": ["Profils BTP", "Matériel", "Logistique"],
+    "slideAlts": [
+      "Chantier de construction BTP",
+      "Plan et ingénierie de construction",
+      "Logistique et fret international"
+    ]
+  },
+  "Eco": {
+    "badge": "Notre écosystème",
+    "titlePart1": "Une plateforme dédiée,",
+    "titleHighlight": "pour chaque besoin",
+    "description": "Au-delà du conseil, E-MPGT développe un écosystème de plateformes spécialisées : profils experts, matériel BTP et logistique internationale. Chaque pôle dispose de sa propre plateforme, accessible d'un clic.",
+    "note": "Les plateformes sont en cours de construction — elles seront mises en ligne progressivement.",
+    "platforms": [
+      {
+        "label": "Plateforme Freelance",
+        "title": "Profils & Experts BTP",
+        "badge": "Prochainement",
+        "description": "Accédez à un réseau d'ingénieurs, conducteurs de travaux et experts BTP sélectionnés et validés par nos soins.",
+        "bullets": [
+          "Ingénieurs travaux & directeurs de projets",
+          "Conducteurs de travaux, MOE / MOEX / OPC",
+          "Profils validés par un expert expérimenté",
+          "Disponibles rapidement, en France & à l'international"
+        ],
+        "cta": "Accéder aux profils"
+      },
+      {
+        "label": "Plateforme Matériel",
+        "title": "Marketplace Matériel BTP",
+        "badge": "Prochainement",
+        "description": "Sourcing de matériel d'occasion, ventes aux enchères européennes et accès aux meilleures opportunités du marché.",
+        "bullets": [
+          "Sourcing auprès de fournisseurs professionnels",
+          "Ventes aux enchères européennes accompagnées",
+          "Inspection, paiements sécurisés & dédouanement",
+          "Logistique internationale clé en main"
+        ],
+        "cta": "Explorer le matériel"
+      },
+      {
+        "label": "Plateforme Logistique",
+        "title": "Logistique & Fret International",
+        "badge": "Prochainement",
+        "description": "Solutions express, standards, formalités douanières, entrepôts sous douane et fret maritime, aérien et terrestre.",
+        "bullets": [
+          "Express & standard internationaux avec suivi",
+          "Formalités douanières & entrepôts sous douane",
+          "Fret mer, air, terre — de porte à porte",
+          "Stockage flexible et traçabilité complète"
+        ],
+        "cta": "Découvrir la logistique"
+      }
+    ]
+  },
+  "Services": {
+    "badge": "BTP & Ingénierie",
+    "title": "Nos métiers",
+    "subtitle": "E-MPGT intervient en conseil BTP sur la stratégie, le pilotage de projets, la digitalisation, la logistique et le développement international. Nous accompagnons les entreprises pour structurer, optimiser et innover à chaque étape de leurs projets.",
+    "cta": "Découvrir nos missions",
+    "items": [
+      {
+        "title": "Conseil stratégique",
+        "text": "Analyse de faisabilité, projections budgétaires et appui à la prise de décision des maîtres d'ouvrage et des entreprises."
+      },
+      {
+        "title": "Pilotage de projets",
+        "text": "Planification, suivi & reporting, coordination des intervenants, contrôle des jalons, coûts, risques et qualité."
+      },
+      {
+        "title": "Transformation & innovation",
+        "text": "Optimisation des processus, méthodes agiles, robotisation et automatisation des process pour gagner en performance."
+      },
+      {
+        "title": "Développement international",
+        "text": "Projets transfrontaliers, coordination d'ingénieurs européens et locaux, adaptation réglementaire et logistique."
+      },
+      {
+        "title": "Logistique intégrée",
+        "text": "Optimisation de la chaîne d'approvisionnement : sourcing, stockage, livraison et gestion import-export."
+      },
+      {
+        "title": "Filière de réemploi",
+        "text": "Intégration du réemploi de matériel et matériaux européens, dans une démarche RSE et d'économie circulaire."
+      }
+    ]
+  },
+  "Partners": {
+    "badge": "Ils nous font confiance",
+    "title": "Nos partenaires",
+    "subtitle": "Startups technologiques, studios créatifs, ingénieurs experts… Nos partenaires sont au cœur de notre écosystème. Ensemble, nous concevons, planifions et livrons des projets ambitieux et durables.",
+    "items": [
+      {
+        "tag": "Zoran Forest",
+        "name": "INSTITUT IA",
+        "text": "L'IA devient un levier de métier au service des chantiers. Une approche innovante qui réconcilie terrain et intelligence artificielle face à des défis complexes."
+      },
+      {
+        "tag": "Élodie Moraud",
+        "name": "L'Agence Web du Mascaret",
+        "text": "Un outil sur-mesure, bâti par une spécialiste de la construction, pour servir les vrais besoins du terrain."
+      },
+      {
+        "tag": "Amandine Leblanc",
+        "name": "13 Mai Studio",
+        "text": "Transformer une idée technique ou architecturale en image concrète, exploitable en un claquement de doigts."
+      },
+      {
+        "tag": "Mise à disposition",
+        "name": "Ingénieurs Freelance",
+        "text": "Ingénieurs salariés et freelances pour vos chantiers : expertise renforcée, outils performants, opérationnels dès leur arrivée."
+      }
+    ]
+  },
+  "News": {
+    "badge": "Nos actualités",
+    "title": "E-MPGT en mouvement",
+    "subtitle": "Suivez nos dernières annonces, partenariats et innovations dans le secteur du BTP et de l'ingénierie.",
+    "recent": "Récent",
+    "readMore": "Lire la publication",
+    "items": [
+      {
+        "title": "25 ans de terrain pour une IA responsable au service du Maroc",
+        "source": "YouTube"
+      },
+      {
+        "title": "E-MPGT annonce fièrement son partenariat avec INSTITUT IA !",
+        "source": "LinkedIn"
+      }
+    ]
+  },
+  "Cta": {
+    "badge": "Passe à l'action",
+    "title": "Parlons de votre projet",
+    "subtitle": "Que vous soyez maître d'ouvrage, entreprise générale ou acteur industriel, notre équipe vous accompagne du terrain à la livraison. Prenez rendez-vous en visio ou devenez partenaire affilié.",
+    "ctaCalendly": "Prendre rendez-vous en visio",
+    "ctaAffiliate": "Programme Partenaires affiliés",
+    "features": [
+      "Devis & contrats clairs, sans engagement",
+      "France, Afrique francophone & international",
+      "Accompagnement par des ingénieurs experts"
+    ],
+    "stats": [
+      { "value": "25", "label": "ans d'expérience terrain" },
+      { "value": "40", "label": "collaborateurs managés" },
+      { "value": "5", "label": "implantations internationales" },
+      { "value": "150M€", "label": "opérations pilotées" }
+    ]
+  },
+  "Footer": {
+    "group": "Groupe MPGT · Portugal · France · Maroc · Sénégal · Côte d'Ivoire",
+    "tagline": "Conseil et ingénierie BTP, sourcing et logistique internationale.",
+    "subtitle": "25 ans d'expertise terrain au service de vos projets, du terrain à la livraison.",
+    "home": "Accueil",
+    "about": "À propos",
+    "ecosystem": "Écosystème",
+    "news": "Actualités",
+    "contact": "Contact",
+    "navTitle": "Navigation",
+    "platformsTitle": "Plateformes",
+    "legalTitle": "Conditions générales de service",
+    "partnersTitle": "Programme Partenaires",
+    "ctaCalendly": "Prendre rendez-vous en visio",
+    "ctaAffiliate": "Partenaires affiliés",
+    "rights": "Tous droits réservés"
+  },
+  "AboutHero": {
+    "badge": "Le Groupe MPGT",
+    "title": "À la convergence de l'expertise technique, de la vision stratégique et de l'intelligence humaine",
+    "text": "Notre groupe s'appuie sur des valeurs humaines solides et l'exigence des grands projets du BTP pour construire des réponses sur-mesure. Grâce à la rigueur, l'écoute et la co-construction, nous transformons chaque mission en un levier de performance collective.",
+    "cta": "Notre histoire"
+  },
+  "About": {
+    "historyBadge": "L'histoire",
+    "historyTitle": "Les grandes étapes qui ont façonné notre entreprise",
+    "histoire": [
+      {
+        "year": "Avant 2018",
+        "title": "Fondations d'une expertise",
+        "text": "17 années d'expérience terrain au sein des majors du BTP français, avec une compréhension fine des réalités de chantier et des acteurs de la construction."
+      },
+      {
+        "year": "2018",
+        "title": "Naissance de MPGT",
+        "text": "Création de MPGT, société spécialisée dans le conseil en ingénierie pour le bâtiment. Objectif : mettre l'expérience au service de projets ambitieux."
+      },
+      {
+        "year": "2018 – 2023",
+        "title": "Croissance en France",
+        "text": "Une approche résolument opérationnelle, au plus près du terrain. Un modèle de conseil différenciant, adapté aux réalités des chantiers."
+      },
+      {
+        "year": "2024",
+        "title": "Création d'E-MPGT",
+        "text": "Face au ralentissement du marché français et à l'émergence d'opportunités internationales, MPGT crée E-MPGT pour structurer une offre à forte valeur ajoutée et exporter le savoir-faire européen, notamment en Afrique."
+      },
+      {
+        "year": "2025",
+        "title": "Une dynamique internationale",
+        "text": "Expertise européenne en ingénierie travaux et intégration de technologies de pointe pour accompagner la transformation des territoires."
+      }
+    ],
+    "valuesBadge": "Nos valeurs",
+    "valuesTitle": "Le socle de notre identité",
+    "values": [
+      {
+        "title": "Engagement",
+        "text": "Méthode, rigueur et détermination. Tenir les délais, maîtriser les budgets et garantir des conditions de travail fiables."
+      },
+      {
+        "title": "Confiance",
+        "text": "Le fondement de toutes nos relations, construite par la transparence, la fiabilité et la constance dans les résultats."
+      },
+      {
+        "title": "Transmission",
+        "text": "Former, accompagner et faire grandir les équipes renforce la qualité des projets sur le long terme."
+      },
+      {
+        "title": "Exigence",
+        "text": "Précision, régularité et maîtrise. Chaque détail compte : c'est ce niveau d'attention qui garantit la qualité durable."
+      },
+      {
+        "title": "Respect",
+        "text": "Un principe non négociable, exprimé dans nos décisions, nos échanges et nos actions vis-à-vis des personnes et des engagements."
+      }
+    ],
+    "valuesSummaryCount": "5",
+    "valuesSummaryText": "valeurs fondamentales qui guident nos actions et nos relations, sur le terrain comme en interne.",
+    "forcesBadge": "Nos forces",
+    "forcesTitle": "Savoir-faire traditionnel et solutions innovantes",
+    "forces": [
+      "Une double culture, terrain et maîtrise d'ouvrage, qui alimente notre agilité et notre justesse d'analyse.",
+      "Des ingénieurs engagés, agiles et orientés solution, capables d'analyser rapidement et d'agir avec pragmatisme.",
+      "Une structure à taille humaine, une exigence constante : proximité, clarté, rigueur.",
+      "Une approche conseil et terrain : maîtrise opérationnelle et vision stratégique au plus près des enjeux réels."
+    ],
+    "ambitionsBadge": "Nos ambitions",
+    "ambitionsTitle": "Une vision au-delà des frontières",
+    "ambitionsSub": "L'avenir du BTP se construit localement, en valorisant les énergies, les savoir-faire et les talents des territoires. Nous croyons à la puissance du partenariat durable et à la capacité des acteurs africains à porter des projets d'envergure.",
+    "ambitions": [
+      "Faire émerger et valoriser les talents locaux sur des projets visibles à l'international.",
+      "Créer des passerelles concrètes entre expertises africaines et européennes, dans un esprit de partenariat équilibré.",
+      "Renforcer les capacités locales par le transfert de compétences et la prise de responsabilité.",
+      "Devenir un partenaire de référence pour les acteurs du BTP africain."
+    ],
+    "countriesBadge": "Nos présences internationales",
+    "countriesTitle": "Présents au cœur des projets",
+    "countriesSub": "Nous suivons nos clients là où les projets prennent forme, en mobilisant des équipes capables d'intervenir rapidement, efficacement et en toute autonomie.",
+    "countries": [
+      { "country": "Portugal", "city": "Funchal, Madère", "note": "Siège du groupe" },
+      { "country": "France", "city": "Paris", "note": "Agence" },
+      { "country": "Maroc", "city": "Casablanca", "note": "Agence" },
+      { "country": "Sénégal", "city": "Dakar", "note": "Agence" },
+      { "country": "Côte d'Ivoire", "city": "Abidjan", "note": "Agence" }
+    ]
+  },
+  "Contact": {
+    "badge": "Nous contacter",
+    "title": "Parlons de votre projet",
+    "subtitle": "Décrivez votre besoin : notre équipe vous répond sous 24h ouvrées avec un premier échange qualifié.",
+    "info": [
+      { "title": "Par e-mail", "text": "Réponse sous 24h ouvrées" },
+      { "title": "Rendez-vous visio", "text": "30 minutes avec un expert" },
+      { "title": "Siège du groupe", "text": "Portugal · France · Maroc · Sénégal · Côte d'Ivoire" }
+    ],
+    "valueBookNow": "Prendre rendez-vous",
+    "valueFunchal": "Funchal, Madère",
+    "platformsTitle": "Nos plateformes",
+    "platformsText": "Les plateformes Profils, Matériel et Logistique seront bientôt disponibles via notre écosystème.",
+    "platformsCta": "Voir l'écosystème",
+    "subjects": {
+      "btp": "Conseil BTP & Ingénierie",
+      "materiel": "Sourcing matériel",
+      "logistique": "Logistique & fret",
+      "partenariat": "Partenariat / Affiliation",
+      "autre": "Autre demande"
+    },
+    "labelName": "Nom complet",
+    "placeholderName": "Votre nom",
+    "labelEmail": "E-mail",
+    "placeholderEmail": "vous@exemple.com",
+    "labelCompany": "Société",
+    "optCompany": "(optionnel)",
+    "placeholderCompany": "Nom de votre société",
+    "labelSubject": "Sujet",
+    "labelMessage": "Votre message",
+    "placeholderMessage": "Décrivez votre projet, vos besoins, vos délais…",
+    "errorName": "Votre nom est requis",
+    "errorEmail": "Adresse e-mail invalide",
+    "errorMessage": "Votre message doit contenir au moins 10 caractères",
+    "sending": "Envoi en cours…",
+    "send": "Envoyer la demande",
+    "successTitle": "Demande envoyée !",
+    "successText": "Merci pour votre message. Notre équipe vous recontactera sous 24h ouvrées.",
+    "privacy": "Vos données restaient confidentielles et ne sont jamais cédées à des tiers."
+  },
+  "Cgu": {
+    "badge": "Mentions légales",
+    "title": "Conditions générales de service",
+    "updated": "Dernière mise à jour : 31/01/2026",
+    "intro": "Les présentes Conditions Générales de Service (ci-après les « Conditions ») régissent l'accès et l'utilisation des services proposés par E-MPGT. En accédant au site ou en utilisant nos services, vous acceptez sans réserve les présentes Conditions.",
+    "sections": [
+      {
+        "title": "1. Identité de la société",
+        "body": "Les services sont fournis par E-MPGT UNIPESSOAL LDA — 73 Avenida Arriaga 9004-533 Funchal — NIF : 518098427 — Portugal."
+      },
+      {
+        "title": "2. Objet des services",
+        "body": "E-MPGT fournit des prestations professionnelles dans les domaines suivants : conseil en BTP et ingénierie, mise à disposition d'experts et consultants, sourcing matériel et fournisseurs, logistique internationale et coordination opérationnelle. Les prestations sont définies contractuellement au cas par cas via devis, contrat ou bon de commande."
+      },
+      {
+        "title": "3. Accès au site",
+        "body": "L'accès au site est libre. Certaines sections (formulaire, espace partenaire, etc.) peuvent nécessiter la communication d'informations professionnelles. L'utilisateur s'engage à fournir des informations exactes et à jour."
+      },
+      {
+        "title": "4. Engagements contractuels",
+        "body": "Toute prestation fait l'objet d'un devis accepté, d'un contrat signé ou d'un bon de commande validé. Aucune prestation n'est engagée sans validation formelle écrite."
+      },
+      {
+        "title": "5. Responsabilité",
+        "body": "E-MPGT est tenue à une obligation de moyens. Sa responsabilité ne saurait être engagée en cas de retard imputable au client, de force majeure, d'informations incomplètes ou erronées fournies par le client, ou de décisions prises indépendamment par le client. En tout état de cause, la responsabilité financière d'E-MPGT est limitée au montant de la prestation concernée."
+      },
+      {
+        "title": "6. Propriété intellectuelle",
+        "body": "Tous les contenus du site (textes, logos, visuels, documents) sont la propriété exclusive d'E-MPGT. Toute reproduction, distribution ou utilisation sans autorisation écrite préalable est interdite."
+      },
+      {
+        "title": "7. Confidentialité",
+        "body": "E-MPGT s'engage à traiter toute information transmise dans le cadre d'une mission avec confidentialité. Des accords de confidentialité (NDA) peuvent être conclus à la demande des parties."
+      },
+      {
+        "title": "8. Données personnelles",
+        "body": "Les données collectées via le site sont utilisées uniquement pour répondre aux demandes, traiter les prestations et assurer le suivi commercial. Elles ne sont pas cédées à des tiers sans consentement, sauf obligation légale."
+      },
+      {
+        "title": "9. Modification des conditions",
+        "body": "E-MPGT se réserve le droit de modifier les présentes conditions à tout moment. Les nouvelles conditions entrent en vigueur dès leur publication sur le site."
+      },
+      {
+        "title": "10. Droit applicable",
+        "body": "Les présentes conditions sont régies par le droit applicable à la société contractante. Tout litige sera soumis à la compétence exclusive des tribunaux du siège social de la société émettrice du contrat."
+      },
+      {
+        "title": "11. Contact",
+        "body": "Pour toute question, contactez-nous via le formulaire de contact."
+      }
+    ]
+  },
+  "CguPartners": {
+    "badge": "Programme Partenaires",
+    "title": "Conditions générales du Programme Partenaires",
+    "subtitle": "Programme d'Apporteurs d'Affaires — Dernière mise à jour : 31/01/2026",
+    "intro": "Les présentes conditions régissent la participation au Programme Partenaires proposé par E-MPGT NIF : 518098427 Portugal (ci-après « la Société »). Toute inscription au programme implique l'acceptation pleine et entière des présentes conditions.",
+    "sections": [
+      {
+        "title": "1. Objet du programme",
+        "body": "Le Programme Partenaires permet à des apporteurs d'affaires indépendants de recommander des clients potentiels à la Société dans les domaines suivants : conseil BTP et génie civil, mise à disponibilité d'experts, sourcing matériel, logistique internationale. Le Partenaire perçoit une commission dans les conditions définies ci-après."
+      },
+      {
+        "title": "2. Statut professionnel obligatoire",
+        "body": "Le Partenaire doit être une société, entreprise individuelle ou entrepreneur légalement immatriculé, disposer d'un numéro d'identification fiscale valide, et être en conformité avec les obligations fiscales et sociales de son pays. Les particuliers ne sont pas éligibles. Le Partenaire agit en qualité de professionnel indépendant. Le programme ne constitue en aucun cas un contrat de travail ni une relation de subordination. Le Partenaire ne dispose d'aucun pouvoir de représentation ni d'engagement au nom de la Société."
+      },
+      {
+        "title": "3. Déclaration et validation des opportunités",
+        "body": "Une opportunité commerciale est considérée comme valide si elle est déclarée via la plateforme officielle du programme, n'était pas déjà en cours de négociation avec la Société, et est validée par écrit par la Société. La Société se réserve le droit d'accepter ou refuser toute opportunité."
+      },
+      {
+        "title": "4. Conditions d'attribution des commissions",
+        "body": "La commission est due uniquement sur les montants hors taxes, effectivement facturés et intégralement encaissés par la Société. Aucune commission n'est due sur simple prise de contact, sur devis non signé ou sur contrat non encaissé. La commission est définitivement acquise uniquement après encaissement effectif."
+      },
+      {
+        "title": "5. Durée des commissions",
+        "body": "Sauf accord spécifique écrit, la commission s'applique à la mission initiale issue de l'apport validé. Les renouvellements, extensions ou nouveaux contrats peuvent faire l'objet d'un accord distinct. Aucun droit automatique à commission perpétuelle n'est accordé."
+      },
+      {
+        "title": "6. Modalités de paiement",
+        "body": "Les commissions validées sont payées mensuellement, après validation interne, sous réserve de réception d'une facture conforme émise par le Partenaire. Le paiement est effectué par Payoneer ou virement bancaire international. La Société ne procédera à aucun paiement sans réception d'une facture valide. Le Partenaire demeure seul responsable de ses obligations fiscales."
+      },
+      {
+        "title": "7. Facturation obligatoire",
+        "body": "Le Partenaire doit émettre une facture conforme à la réglementation applicable dans son pays. La facture devra comporter l'identité de la Partenaire, son numéro fiscal, la référence des commissions, le montant hors taxes et les taxes applicables. La Société se réserve le droit de demander tout justificatif d'immatriculation."
+      },
+      {
+        "title": "8. Obligations du Partenaire",
+        "body": "Le Partenaire s'engage à agir de bonne foi, à respecter la marque et la réputation de la Société, à ne faire aucune promesse contractuelle, et à ne pas engager la Société sans autorisation écrite."
+      },
+      {
+        "title": "9. Non-contournement",
+        "body": "Le Partenaire s'interdit de contracter directement avec un client apporté, de détourner une opportunité commerciale, ou d'interférer dans l'exécution des missions. Cette interdiction s'applique pendant la durée de la relation et pendant 24 mois après la fin de celle-ci."
+      },
+      {
+        "title": "10. Absence de garantie",
+        "body": "La Société ne garantit aucun volume minimal d'activité, aucun montant minimal de commission, ni aucune exclusivité territoriale. Le programme constitue une opportunité commerciale sans obligation de résultat."
+      },
+      {
+        "title": "11. Résiliation",
+        "body": "La Société peut suspendre ou résilier l'accès au programme à tout moment en cas de manquement aux présentes conditions, de comportement préjudiciable ou de fraude. Les commissions acquises sur des montants encaissés restent dues."
+      },
+      {
+        "title": "12. Modification du programme",
+        "body": "La Société peut modifier le taux de commission, les règles du programme et les modalités de paiement. Les modifications deviennent opposables après publication."
+      },
+      {
+        "title": "13. Droit applicable",
+        "body": "Le présent programme est régi par le droit portugais. Tout litige sera soumis aux juridictions compétentes du Portugal."
+      }
+    ]
+  }
+}

@@ -1,20 +1,29 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Calendar, ExternalLink } from "lucide-react";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { LinkedInIcon } from "@/components/ui/BrandIcons";
 import { SITE, PLATFORMS } from "@/lib/site";
 
-const NAV = [
-  { label: "Accueil", href: "/" },
-  { label: "À propos", href: "/a-propos" },
-  { label: "Écosystème", href: "/#ecosysteme" },
-  { label: "Actualités", href: "/#actualites" },
-  { label: "Contact", href: "/contact" },
+const NAV_KEYS = [
+  { key: "home", href: "/" },
+  { key: "about", href: "/a-propos" },
+  { key: "ecosystem", href: "/#ecosysteme" },
+  { key: "news", href: "/#actualites" },
+  { key: "contact", href: "/contact" },
 ];
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("Footer");
+  const nav = NAV_KEYS.map((item) => ({ ...item, label: t(item.key) }));
+  const eco = await getTranslations("Eco");
+
+  const platforms = (eco.raw("platforms") as { title: string }[]).map(
+    (p, i) => ({ ...p, ...PLATFORMS[i] })
+  );
+
   return (
-      <footer className="relative overflow-hidden bg-primary text-white">
+    <footer className="relative overflow-hidden bg-primary text-white">
       <div className="pointer-events-none absolute -left-32 -top-32 h-72 w-72 rounded-full bg-accent/20 blur-[100px]" />
       <div className="pointer-events-none absolute -bottom-40 -right-24 h-80 w-80 rounded-full bg-primary-foreground/10 blur-[110px]" />
 
@@ -34,12 +43,11 @@ export default function Footer() {
               </span>
               <div>
                 <p className="text-lg font-bold tracking-tight">E-MPGT</p>
-                <p className="text-xs text-white/60">Groupe MPGT — Portugal · France · Maroc · Côte d'Ivoire</p>
+                <p className="text-xs text-white/60">{t("group")}</p>
               </div>
             </Link>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-white/70">
-              {SITE.tagline}. 25 ans d&apos;expertise terrain au service de vos
-              projets, du terrain à la livraison.
+              {t("tagline")} {t("subtitle")}
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -56,7 +64,7 @@ export default function Footer() {
                 href={SITE.calendly}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Prendre rendez-vous en visio"
+                aria-label={t("ctaCalendly")}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 transition-all duration-300 hover:scale-110 hover:bg-white/20"
               >
                 <Calendar className="h-4.5 w-4.5" />
@@ -65,7 +73,7 @@ export default function Footer() {
                 href={SITE.affiliate}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Partenaires affiliés"
+                aria-label={t("ctaAffiliate")}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 transition-all duration-300 hover:scale-110 hover:bg-white/20"
               >
                 <ExternalLink className="h-4.5 w-4.5" />
@@ -75,10 +83,10 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-white/50">
-              Navigation
+              {t("navTitle")}
             </p>
             <ul className="mt-5 space-y-3 text-sm">
-              {NAV.map((item) => (
+              {nav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -93,10 +101,10 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-white/50">
-              Plateformes
+              {t("platformsTitle")}
             </p>
             <ul className="mt-5 space-y-3 text-sm">
-              {PLATFORMS.map((p) => (
+              {platforms.map((p) => (
                 <li key={p.id}>
                   <a
                     href={p.href}
@@ -114,13 +122,18 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/50 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} E-MPGT UNIPESSOAL LDA — Tous droits réservés.</p>
+          <p>
+            © {new Date().getFullYear()} E-MPGT UNIPESSOAL LDA — {t("rights")}
+          </p>
           <div className="flex flex-wrap gap-5">
             <Link href="/cgu" className="transition-colors hover:text-white">
-              Conditions générales de service
+              {t("legalTitle")}
             </Link>
-            <Link href="/cgu-partenaires" className="transition-colors hover:text-white">
-              Programme Partenaires
+            <Link
+              href="/cgu-partenaires"
+              className="transition-colors hover:text-white"
+            >
+              {t("partnersTitle")}
             </Link>
           </div>
         </div>
