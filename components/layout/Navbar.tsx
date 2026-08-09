@@ -1,38 +1,64 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "@/i18n/navigation";
 import { Link } from "@/i18n/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Calendar } from "lucide-react";
+import { Menu, X, Calendar, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SITE } from "@/lib/site";
 import LocaleSwitcher from "./LocaleSwitcher";
 
-const NAV_KEYS = [
-  { key: "about", href: "/a-propos" },
-  { key: "ecosystem", href: "/#ecosysteme" },
-  { key: "metiers", href: "/#metiers" },
-  { key: "partners", href: "/#partenaires" },
-  { key: "news", href: "/#actualites" },
-  { key: "contact", href: "/contact" },
+type ChildNav = { labelKey: string; href: string; separator?: boolean };
+type NavItem = {
+  labelKey: string;
+  href: string;
+  children?: ChildNav[];
+};
+
+const NAV_ITEMS: NavItem[] = [
+  {
+    labelKey: "home",
+    href: "/",
+    children: [
+      { labelKey: "expertises", href: "/expertises" },
+      { labelKey: "technologies", href: "/technologies" },
+      { labelKey: "profils", href: "/profils" },
+      { labelKey: "irve", href: "/irve" },
+      { labelKey: "about", href: "/a-propos", separator: true },
+    ],
+  },
+  { labelKey: "ecosystem", href: "/#ecosysteme" },
+  { labelKey: "partners", href: "/#partenaires" },
+  { labelKey: "news", href: "/#actualites" },
+  { labelKey: "contact", href: "/contact" },
 ];
 
-function isActive(pathname: string, href: string) {
+const HOME_CHILDREN = NAV_ITEMS[0].children!;
+const HOME_SUB_PATHS = HOME_CHILDREN.map((c) => c.href);
+
+function isLeafActive(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
   if (href.includes("#")) return pathname === href.split("#")[0];
   return pathname.startsWith(href);
 }
+
+const TOP_LINKS = NAV_ITEMS.filter((item) => !item.children);
 
 export default function Navbar() {
   const t = useTranslations("Nav");
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [homeMenuOpen, setHomeMenuOpen] = useState(false);
+  const [mobileHomeOpen, setMobileHomeOpen] = useState(false);
+  const homeRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "auto" });
+    if (!window.location.hash) {
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
   }, [pathname]);
 
   useEffect(() => {
@@ -44,16 +70,37 @@ export default function Navbar() {
 
   useEffect(() => {
     const onResize = () => {
-      if (window.innerWidth >= 1024) setMobileOpen(false);
+      if (window.innerWidth >= 1280) {
+        setMobileOpen(false);
+        setMobileHomeOpen(false);
+      }
     };
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  const navLinks = NAV_KEYS.map((item) => ({
-    ...item,
-    label: t(item.key),
-  }));
+  useEffect(() => {
+    const onPointerDown = (e: MouseEvent | TouchEvent) => {
+      if (homeRef.current && !homeRef.current.contains(e.target as Node)) {
+        setHomeMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("touchstart", onPointerDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("touchstart", onPointerDown);
+    };
+  }, []);
+
+  const homeActive = pathname === "/" || HOME_SUB_PATHS.some((p) => pathname.startsWith(p));
+
+  const topLinkClasses = (active: boolean) =>
+    `rounded-full px-3.5 py-2 text-sm font-medium transition-colors duration-200 xl:px-4 ${
+      active
+        ? "bg-primary/8 text-primary"
+        : "text-foreground/75 hover:bg-surface hover:text-foreground"
+    }`;
 
   return (
     <header
@@ -79,24 +126,71 @@ export default function Navbar() {
           />
         </Link>
 
-        <ul className="hidden items-center gap-0.5 lg:flex">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className={`rounded-full px-3.5 py-2 text-sm font-medium transition-colors duration-200 xl:px-4 ${
-                  isActive(pathname, link.href)
-                    ? "bg-primary/8 text-primary"
-                    : "text-foreground/75 hover:bg-surface hover:text-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+        <ul className="hidden items-center gap-0.5 xl:flex">
+          {NAV_ITEMS.map((item) =>
+            item.children ? (
+              <li key={item.href} ref={homeRef} className="relative">
+                <button
+                  type="button"
+                  onClick={() => setHomeMenuOpen((o) => !o)}
+                  aria-label={t("submenu")}
+                  aria-haspopup="menu"
+                  aria-expanded={homeMenuOpen}
+                  className={`inline-flex items-center gap-1 ${topLinkClasses(homeActive)}`}
+                >
+                  {t(item.labelKey)}
+                  <ChevronDown
+                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${
+                      homeMenuOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                <AnimatePresence>
+                  {homeMenuOpen && (
+                    <motion.ul
+                      role="menu"
+                      initial={{ opacity: 0, y: -6, scale: 0.98 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -6, scale: 0.98 }}
+                      transition={{ duration: 0.16 }}
+                      className="absolute left-0 top-full mt-2 w-64 overflow-hidden rounded-2xl border border-border bg-white p-1.5 shadow-xl shadow-black/5"
+                    >
+                      {item.children.map((child) => (
+                        <li key={child.href}>
+                          {child.separator && (
+                            <div
+                              role="separator"
+                              className="mx-3 my-1.5 h-px bg-border"
+                            />
+                          )}
+                          <Link
+                            href={child.href}
+                            onClick={() => setHomeMenuOpen(false)}
+                            className={`block rounded-xl px-4 py-2.5 text-sm font-medium transition-colors duration-150 ${
+                              isLeafActive(pathname, child.href)
+                                ? "bg-primary-soft text-primary"
+                                : "text-foreground/80 hover:bg-surface hover:text-foreground"
+                            }`}
+                          >
+                            {t(child.labelKey)}
+                          </Link>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
+              </li>
+            ) : (
+              <li key={item.href}>
+                <Link href={item.href} className={topLinkClasses(isLeafActive(pathname, item.href))}>
+                  {t(item.labelKey)}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <LocaleSwitcher />
           <a
             href={SITE.calendly}
@@ -109,7 +203,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 xl:hidden">
           <LocaleSwitcher />
           <button
             onClick={() => setMobileOpen((o) => !o)}
@@ -129,10 +223,63 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.28, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-border bg-white lg:hidden"
+            className="overflow-hidden border-t border-border bg-white xl:hidden"
           >
             <ul className="flex flex-col gap-1 p-4">
-              {navLinks.map((link, i) => (
+              <li>
+                <button
+                  type="button"
+                  onClick={() => setMobileHomeOpen((o) => !o)}
+                  aria-label={t("submenu")}
+                  aria-expanded={mobileHomeOpen}
+                  className={`flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-medium ${
+                    homeActive
+                      ? "bg-primary/8 text-primary"
+                      : "text-foreground/85 hover:bg-surface hover:text-foreground"
+                  }`}
+                >
+                  {t("home")}
+                  <ChevronDown
+                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${
+                      mobileHomeOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                <AnimatePresence>
+                  {mobileHomeOpen && (
+                    <motion.ul
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.22, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="mt-1 space-y-1 border-l-2 border-primary/10 pl-4">
+                        {HOME_CHILDREN.map((child) => (
+                          <li key={child.href}>
+                            {child.separator && (
+                              <div role="separator" className="my-2 h-px bg-border" />
+                            )}
+                            <Link
+                              href={child.href}
+                              onClick={() => setMobileOpen(false)}
+                              className={`block rounded-xl px-4 py-2.5 text-sm font-medium ${
+                                isLeafActive(pathname, child.href)
+                                  ? "bg-primary-soft text-primary"
+                                  : "text-foreground/80 hover:bg-surface hover:text-foreground"
+                              }`}
+                            >
+                              {t(child.labelKey)}
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
+                    </motion.ul>
+                  )}
+                </AnimatePresence>
+              </li>
+
+              {TOP_LINKS.map((link, i) => (
                 <motion.li
                   key={link.href}
                   initial={{ x: -16, opacity: 0 }}
@@ -143,19 +290,20 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                     className={`block rounded-xl px-4 py-3 text-base font-medium ${
-                      isActive(pathname, link.href)
+                      isLeafActive(pathname, link.href)
                         ? "bg-primary/8 text-primary"
                         : "text-foreground/85 hover:bg-surface hover:text-foreground"
                     }`}
                   >
-                    {link.label}
+                    {t(link.labelKey)}
                   </Link>
                 </motion.li>
               ))}
+
               <motion.li
                 initial={{ x: -16, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: navLinks.length * 0.04, duration: 0.25 }}
+                transition={{ delay: TOP_LINKS.length * 0.04, duration: 0.25 }}
                 className="mt-2"
               >
                 <a

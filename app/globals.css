@@ -66,6 +66,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  scroll-padding-top: 88px;
 }
 
 body {

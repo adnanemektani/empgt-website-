@@ -8,7 +8,12 @@ import { SITE, PLATFORMS } from "@/lib/site";
 const NAV_KEYS = [
   { key: "home", href: "/" },
   { key: "about", href: "/a-propos" },
+  { key: "expertises", href: "/expertises" },
+  { key: "technologies", href: "/technologies" },
+  { key: "profils", href: "/profils" },
+  { key: "irve", href: "/irve" },
   { key: "ecosystem", href: "/#ecosysteme" },
+  { key: "partners", href: "/#partenaires" },
   { key: "news", href: "/#actualites" },
   { key: "contact", href: "/contact" },
 ];

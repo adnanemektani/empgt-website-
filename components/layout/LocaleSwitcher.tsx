@@ -12,6 +12,7 @@ const LABELS: Record<string, { short: string; full: string }> = {
   en: { short: "EN", full: "English" },
   ar: { short: "AR", full: "العربية" },
   zh: { short: "ZH", full: "中文" },
+  pt: { short: "PT", full: "Português" },
 };
 
 export default function LocaleSwitcher() {

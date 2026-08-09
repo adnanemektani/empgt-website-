@@ -8,6 +8,8 @@ import {
   Target,
   Award,
   MapPin,
+  Globe2,
+  Sparkles,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -20,6 +22,9 @@ export default function AboutContent() {
   const values = t.raw("values") as { title: string; text: string }[];
   const forces = t.raw("forces") as string[];
   const ambitions = t.raw("ambitions") as string[];
+  const experienceItems = t.raw("experienceItems") as string[];
+  const aeiItems = t.raw("aeiItems") as { title: string; text: string }[];
+  const why = t.raw("why") as { title: string; text: string }[];
   const countries = t.raw("countries") as { country: string; city: string; note: string }[];
 
   return (
@@ -220,6 +225,154 @@ export default function AboutContent() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 25 ans d'expérience, Afrique-Europe-International, Pourquoi E-MPGT */}
+      <section className="relative overflow-hidden bg-surface py-24 lg:py-32">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="dot-grid absolute inset-0 opacity-40" />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2">
+            {/* 25 ans */}
+            <div>
+              <motion.span
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5 }}
+                className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary"
+              >
+                {t("experienceBadge")}
+              </motion.span>
+              <motion.h2
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+              >
+                {t("experienceTitle")}
+              </motion.h2>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                {t("experienceText")}
+              </p>
+              <p className="mt-5 text-sm font-semibold text-foreground/85">
+                {t("experienceLead")}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {experienceItems.map((item, i) => (
+                  <motion.span
+                    key={item}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, margin: "-40px" }}
+                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-medium text-foreground/85"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                    {item}
+                  </motion.span>
+                ))}
+              </div>
+              <p className="mt-6 text-sm font-semibold text-accent">{t("experienceOutro")}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{t("experienceOutro2")}</p>
+            </div>
+
+            {/* Afrique · Europe · International */}
+            <div>
+              <motion.span
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5 }}
+                className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-accent"
+              >
+                <Globe2 className="h-3.5 w-3.5" />
+                {t("aeiBadge")}
+              </motion.span>
+              <motion.h2
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+              >
+                {t("aeiTitle")}
+              </motion.h2>
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                {t("aeiText")}
+              </p>
+              <p className="mt-6 text-sm font-semibold text-foreground/85">{t("aeiLead")}</p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {aeiItems.map((item, i) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-40px" }}
+                    transition={{ duration: 0.45, delay: i * 0.06 }}
+                    className="rounded-xl border border-border bg-background p-4 shadow-sm"
+                  >
+                    <p className="text-sm font-bold tracking-tight text-foreground">
+                      {item.title}
+                    </p>
+                    <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                      {item.text}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pourquoi E-MPGT */}
+      <section className="relative overflow-hidden py-24 lg:py-32">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="glow-orb -right-32 top-24 h-80 w-80 bg-primary/10" />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6 }}
+            className="mx-auto max-w-2xl text-center"
+          >
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
+              <Sparkles className="h-3.5 w-3.5" />
+              {t("whyBadge")}
+            </span>
+            <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              {t("whyTitle")}
+            </h2>
+          </motion.div>
+
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {why.map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 32 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                className="group rounded-2xl border border-border bg-surface p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/10"
+              >
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-soft text-xs font-bold text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
+                  {i + 1}
+                </span>
+                <h3 className="mt-4 text-lg font-semibold tracking-tight text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {item.text}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

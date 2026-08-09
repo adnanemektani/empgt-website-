@@ -4,6 +4,14 @@
     "homeDescription": "E-MPGT supports your construction & logistics projects with 25 years of field expertise. Discover our ecosystem of dedicated platforms.",
     "aboutTitle": "About | E-MPGT — The Group",
     "aboutDescription": "Discover E-MPGT: 25 years of construction expertise, a story, values, strengths and international ambition.",
+    "expertisesTitle": "Expertise | E-MPGT — Construction Consulting & Engineering",
+    "expertisesDescription": "Discover E-MPGT's expertise: construction consulting & engineering, equipment & materials sourcing, low-carbon reuse, logistics & international transport.",
+    "technologiesTitle": "Technologies | E-MPGT — Digital solutions for construction",
+    "technologiesDescription": "Discover the technologies and digital solutions developed by E-MPGT around the real needs of the construction sector.",
+    "profilsTitle": "Profiles | E-MPGT — Construction experts & consultants",
+    "profilsDescription": "E-MPGT mobilises leaders, consultants and construction project managers. Access the platform dedicated to sector profiles.",
+    "irveTitle": "EV charging (IRVE) | E-MPGT — Electric vehicle charging infrastructure",
+    "irveDescription": "E-MPGT supports your electric vehicle charging infrastructure (EVCI) projects: studies, installation and supervision.",
     "contactTitle": "Contact | E-MPGT",
     "contactDescription": "Contact E-MPGT for your construction projects, equipment sourcing or international logistics needs.",
     "cguTitle": "General Terms of Service | E-MPGT",
@@ -16,26 +24,32 @@
     "fr": "Français",
     "en": "English",
     "ar": "العربية",
-    "zh": "中文"
+    "zh": "中文",
+    "pt": "Português"
   },
   "Nav": {
     "home": "Home",
     "about": "About",
+    "expertises": "Our expertise",
+    "technologies": "Technologies",
+    "profils": "BTP Profiles",
+    "irve": "EV charging (IRVE)",
     "ecosystem": "Ecosystem",
-    "metiers": "Our services",
     "partners": "Partners",
     "news": "News",
     "contact": "Contact",
     "cta": "Video call",
     "openMenu": "Open menu",
+    "submenu": "Open submenu",
     "logoAlt": "E-MPGT — Home"
   },
   "Hero": {
-    "badge": "25 years of field expertise",
-    "titlePart1": "Construction consulting,",
-    "titleHighlight": "sourcing",
-    "titlePart2": "and international logistics",
-    "description": "A dedicated software ecosystem for your talent, your equipment and your logistics flows.",
+    "badge": "Since 2018 · 25 years of experience in construction",
+    "titlePart1": "Consulting, engineering and solutions",
+    "titleHighlight": "for your",
+    "titlePart2": "construction projects",
+    "description": "E-MPGT supports companies, project owners and construction stakeholders across Africa, Europe and internationally.",
+    "tagline": "Construction consulting · Engineering · Works management · Sourcing · Equipment & materials · International logistics · Reuse · Construction technologies",
     "ctaPrimary": "Submit a request",
     "ctaSecondary": "Book a call",
     "cardSubtitle": "Dedicated platform",
@@ -46,11 +60,25 @@
       "International logistics and freight"
     ]
   },
+  "Intro": {
+    "badge": "E-MPGT",
+    "title": "Construction expertise at the service of ambitious projects",
+    "text1": "Since 2018, E-MPGT has made 25 years of experience in the construction and engineering trades available to its clients.",
+    "text2": "We support construction and infrastructure projects by combining construction consulting, engineering, technical expertise, resources, sourcing, international logistics and technologies dedicated to the construction sector.",
+    "text3": "Our approach is built on a concrete, hands-on knowledge of the field and a network of specialised skills and partners.",
+    "steps": [
+      "Understand the issues",
+      "Identify the resources",
+      "Mobilise the skills",
+      "Organise the operations"
+    ],
+    "stepNote": "Four reflexes for every project."
+  },
   "Eco": {
     "badge": "Our ecosystem",
-    "titlePart1": "A dedicated platform,",
-    "titleHighlight": "for every need",
-    "description": "Beyond consulting, E-MPGT is building an ecosystem of specialised platforms: expert profiles, construction equipment and international logistics. Each vertical has its own platform, accessible in one click.",
+    "titlePart1": "Specialised skills",
+    "titleHighlight": "around every project",
+    "description": "E-MPGT is building a network of partners in artificial intelligence, digital, BIM, architecture, visualisation, electric mobility and construction technologies. Our role: identify needs, mobilise the right expertise, connect players and coordinate resources.",
     "note": "The platforms are under construction — they will gradually go live.",
     "platforms": [
       {
@@ -95,61 +123,152 @@
     ]
   },
   "Services": {
-    "badge": "Construction & Engineering",
-    "title": "Our services",
-    "subtitle": "E-MPGT provides construction consulting across strategy, project management, digitalisation, logistics and international development. We support companies to structure, optimise and innovate at every stage of their projects.",
-    "cta": "Discover our missions",
-    "items": [
+    "badge": "Our construction expertise",
+    "title": "An integrated approach to construction",
+    "subtitle": "E-MPGT works across four complementary fields.",
+    "cta": "Discover our engineering missions",
+    "note": "Expertise driven by field experience and results.",
+    "sections": [
       {
-        "title": "Strategic consulting",
-        "text": "Feasibility analysis, budget projections and decision support for project owners and firms."
+        "num": "01",
+        "title": "Construction Consulting & Engineering",
+        "tagline": "Design, analyse and drive projects.",
+        "text": "E-MPGT supports project owners, companies and construction stakeholders in their construction, renovation and infrastructure projects.",
+        "listLabel": "Our missions can include:",
+        "items": [
+          "Construction consulting & strategy",
+          "Engineering & technical expertise",
+          "Studies & feasibility analysis",
+          "Technical assistance",
+          "Project management",
+          "Site management",
+          "Stakeholder coordination",
+          "MOE / MOEX / OPC",
+          "Cost, schedule, risk & quality monitoring",
+          "Reporting & operational support"
+        ],
+        "cta": "Discover our engineering missions"
       },
       {
-        "title": "Project management",
-        "text": "Planning, monitoring & reporting, stakeholder coordination, control of milestones, costs, risks and quality."
+        "num": "02",
+        "title": "Construction Equipment & Materials Sourcing",
+        "tagline": "Find the right resources for every project.",
+        "text": "E-MPGT supports the research and acquisition of construction equipment, professional tools and materials, especially on second-hand markets and at auctions. Our sourcing activity seeks out opportunities matched to the technical, economic and geographical needs of projects.",
+        "listLabel": "How we work:",
+        "items": [
+          "Used construction equipment — Sourcing machines, equipment and professional tools available on second-hand markets.",
+          "Auctions — Identifying opportunities from professional auctions.",
+          "International sourcing — Finding suppliers, equipment and materials beyond usual supply channels.",
+          "Acquisition — Assistance in identifying, analysing and building relationships around opportunities."
+        ],
+        "note": "From search to delivery. Sourcing can be paired with a logistics setup to move resources to the project site.",
+        "cta": "Source equipment or materials"
       },
       {
-        "title": "Transformation & innovation",
-        "text": "Process optimisation, agile methods, robotisation and automation to gain performance."
+        "num": "03",
+        "title": "Reuse & Low-Carbon Materials",
+        "tagline": "Build with fewer new resources.",
+        "text": "E-MPGT develops solutions around the reuse of construction materials and equipment, the circular economy and low-carbon materials. Reuse requires mastering not only resource availability, but also identification, storage, transport and traceability.",
+        "listLabel": "Our action areas:",
+        "items": [
+          "Construction material reuse — Identifying existing resources that can be reused in new projects.",
+          "Equipment reuse — Sourcing professional equipment and tools that can have a second life.",
+          "Low-carbon materials — Sourcing solutions and materials that support project environmental goals.",
+          "Circular economy in construction — Connecting available resources with new needs."
+        ],
+        "note": "An approach that combines economic performance, resource availability and the transition of the construction sector.",
+        "cta": "Talk about a reuse project"
       },
       {
-        "title": "International development",
-        "text": "Cross-border projects, coordination of European and local engineers, regulatory and logistical adaptation."
-      },
-      {
-        "title": "Integrated logistics",
-        "text": "Supply chain optimisation: sourcing, storage, delivery and import-export management."
-      },
-      {
-        "title": "Reuse chain",
-        "text": "Integration of the reuse of European equipment and materials within an CSR and circular economy approach."
+        "num": "04",
+        "title": "International Logistics & Transport",
+        "tagline": "From the source to the site.",
+        "text": "Buying equipment or finding a material is not enough: it must be delivered in good conditions. E-MPGT organises and coordinates international logistics operations for equipment, machinery and goods linked to construction projects.",
+        "listLabel": "Our services:",
+        "items": [
+          "Road transport — National and international flows.",
+          "Sea freight — Shipping equipment and goods by sea.",
+          "Air freight — Solutions for urgent or specific needs.",
+          "Customs & import-export — Coordinating the formalities required for international operations.",
+          "Storage & transit — Warehousing and intermediate storage solutions.",
+          "Door-to-door — Coordinating transport from source to site."
+        ],
+        "note": "Africa · Europe · International",
+        "cta": "Arrange a logistics operation"
       }
     ]
   },
+  "Tech": {
+    "badge": "Technologies dedicated to construction",
+    "title": "Digital tools for construction trades",
+    "intro": "E-MPGT develops and integrates technology solutions dedicated to construction and engineering. Our approach starts from operational needs before selecting relevant technologies.",
+    "items": [
+      { "title": "Construction digitalisation", "text": "Process optimisation and information flow." },
+      { "title": "Artificial intelligence", "text": "Applying AI to professional uses where it brings concrete value." },
+      { "title": "Automation", "text": "Reducing repetitive tasks and improving productivity." },
+      { "title": "BIM & data", "text": "Leveraging data and digital tools for construction projects." },
+      { "title": "Trade platforms", "text": "Building specialised platforms for construction professionals." },
+      { "title": "Technology development", "text": "Designing solutions for specific challenges." }
+    ],
+    "cta": "Discover construction technologies"
+  },
+  "Profils": {
+    "badge": "Profiles & Construction Experts",
+    "title": "The skills your projects need",
+    "intro": "E-MPGT is also developing an ecosystem of construction profiles and technical experts to ease access to the skills required for operations.",
+    "categories": [
+      { "title": "Sought-after profiles", "items": ["Works engineers", "Project directors", "Site managers", "MOE / MOEX / OPC"] },
+      { "title": "Technical experts", "items": ["Studies & engineering profiles"] }
+    ],
+    "note": "A dedicated platform for construction profiles is being developed.",
+    "cta": "Search for a construction profile"
+  },
+  "Irve": {
+    "badge": "Infrastructure & EV charging",
+    "title": "Supporting new infrastructure",
+    "intro": "E-MPGT also integrates issues related to electric vehicle charging infrastructure (EVCI) and electric mobility. Our ecosystem connects projects with specialised skills and partners.",
+    "items": [
+      { "title": "EV charging infrastructure", "text": "Electric vehicle charging infrastructure." },
+      { "title": "Electric mobility", "text": "Solutions and equipment for new uses." },
+      { "title": "Energy infrastructure", "text": "Identifying the skills and solutions needed for projects." },
+      { "title": "Energy transition", "text": "Integrating new energy issues into construction and infrastructure operations." }
+    ],
+    "cta": "Discuss an EV charging project"
+  },
   "Partners": {
-    "badge": "They trust us",
-    "title": "Our partners",
-    "subtitle": "Tech startups, creative studios, expert engineers… Our partners are at the heart of our ecosystem. Together, we design, plan and deliver ambitious, sustainable projects.",
+    "badge": "Our partners",
+    "title": "Complementary expertise",
+    "subtitle": "E-MPGT relies on a network of partners specialised in AI, digital, BIM, visualisation, electric mobility and construction technologies.",
     "items": [
       {
-        "tag": "Zoran Forest",
+        "tag": "Artificial intelligence · Automation · Digital transformation",
         "name": "INSTITUT IA",
-        "text": "AI is becoming a day-to-day lever for the construction industry. An innovative approach that reconciles the field with artificial intelligence facing complex challenges."
+        "text": "Expertise in artificial intelligence and the transformation of professional practices.",
+        "cta": "Discover INSTITUT IA"
       },
       {
-        "tag": "Élodie Moraud",
-        "name": "L'Agence Web du Mascaret",
-        "text": "A bespoke tool, built by a construction economist, to serve the real needs of the field."
+        "tag": "Site · Documentation · Operational monitoring · AI",
+        "name": "THERE.DO",
+        "text": "Digital solutions to structure and leverage information from the field.",
+        "cta": "Discover THERE.DO"
       },
       {
-        "tag": "Amandine Leblanc",
-        "name": "13 Mai Studio",
-        "text": "Turning a technical or architectural idea into a concrete, usable visual in the blink of an eye."
+        "tag": "BIM · Digital engineering · Construction data",
+        "name": "BAZALT.ONE",
+        "text": "Digital solutions dedicated to the construction trades.",
+        "cta": "Discover BAZALT.ONE"
       },
       {
-        "tag": "Secondment",
-        "name": "Freelance Engineers",
-        "text": "Employed and freelance engineers for your worksites: reinforced expertise, powerful tools, operational as soon as they arrive."
+        "tag": "Architecture · Visualisation · Design · Creative technologies",
+        "name": "13 MAI STUDIO",
+        "text": "Creation and visualisation of architectural and technical projects.",
+        "cta": "Contact us"
+      },
+      {
+        "tag": "EV charging · Electric mobility · Charging infrastructure",
+        "name": "ELTO",
+        "text": "Expertise dedicated to electric vehicle charging infrastructure.",
+        "cta": "Discover ELTO"
       }
     ]
   },
@@ -171,11 +290,25 @@
     ]
   },
   "Cta": {
-    "badge": "Act now",
+    "badge": "A construction project?",
     "title": "Let's talk about your project",
-    "subtitle": "Whether you are a project owner, general contractor or industry player, our team supports you from the field to delivery. Book a video call or become an affiliate partner.",
-    "ctaCalendly": "Book a video call",
+    "subtitle": "Looking for expertise, a resource or a solution? E-MPGT analyses your need and helps you identify the skills, resources and partners required.",
+    "ctaCalendly": "Book a call",
     "ctaAffiliate": "Affiliate Partner Programme",
+    "keywordsTitle": "Expertise, resources and solutions",
+    "keywords": [
+      "Construction consulting",
+      "Engineering",
+      "Works management",
+      "Construction profile",
+      "Used construction equipment",
+      "Construction materials",
+      "Reuse",
+      "Low-carbon materials",
+      "International logistics",
+      "EV charging",
+      "Construction technologies"
+    ],
     "features": [
       "Clear quotes & contracts, no commitment",
       "France, French-speaking Africa & international",
@@ -190,11 +323,16 @@
   },
   "Footer": {
     "group": "MPGT Group · Portugal · France · Morocco · Senegal · Côte d'Ivoire",
-    "tagline": "Construction consulting & engineering, sourcing and international logistics.",
-    "subtitle": "25 years of field expertise at the service of your projects, from the field to delivery.",
+    "tagline": "Construction consulting · Engineering · Sourcing · Logistics · Reuse · Technologies",
+    "subtitle": "Since 2018 · 25 years of field experience · Africa · Europe · International.",
     "home": "Home",
     "about": "About",
+    "expertises": "Our expertise",
+    "technologies": "Technologies",
+    "profils": "BTP Profiles",
+    "irve": "IRVE",
     "ecosystem": "Ecosystem",
+    "partners": "Partners",
     "news": "News",
     "contact": "Contact",
     "navTitle": "Navigation",
@@ -283,6 +421,76 @@
       "Build concrete bridges between African and European expertise, in a balanced partnership spirit.",
       "Strengthen local capabilities through skills transfer and increased empowerment.",
       "Become a reference partner for African construction players."
+    ],
+    "experienceBadge": "25 years of experience",
+    "experienceTitle": "Construction experience built on the field",
+    "experienceText": "Since 2018, E-MPGT has made 25 years of experience in the construction and engineering trades available to its clients.",
+    "experienceLead": "This experience gives us a clear understanding of the realities of operations:",
+    "experienceItems": [
+      "technical constraints",
+      "human considerations",
+      "deadlines",
+      "costs",
+      "supplies",
+      "equipment",
+      "logistics flows",
+      "technology transformations"
+    ],
+    "experienceOutro": "Field experience at the service of today's projects.",
+    "experienceOutro2": "A vision focused on tomorrow's buildings.",
+    "aeiBadge": "Africa · Europe · International",
+    "aeiTitle": "Construction expertise open to international markets",
+    "aeiText": "E-MPGT supports projects and develops connections between professional ecosystems in Africa, Europe and internationally.",
+    "aeiLead": "Our network makes it easier for resources to flow:",
+    "aeiItems": [
+      {
+        "title": "Skills",
+        "text": "Engineers, experts and operational profiles."
+      },
+      {
+        "title": "Equipment",
+        "text": "Machinery, plant and professional resources."
+      },
+      {
+        "title": "Materials",
+        "text": "Construction materials, low-carbon solutions and resources from reuse."
+      },
+      {
+        "title": "Flows",
+        "text": "Transport, storage, customs and import-export."
+      },
+      {
+        "title": "Technologies",
+        "text": "Digital solutions and technologies dedicated to construction."
+      }
+    ],
+    "whyBadge": "Why E-MPGT?",
+    "whyTitle": "A different approach to construction consulting",
+    "why": [
+      {
+        "title": "Field experience",
+        "text": "25 years of experience in the construction and engineering trades."
+      },
+      {
+        "title": "Integrated approach",
+        "text": "Consulting, engineering, sourcing, resources, logistics and technologies."
+      },
+      {
+        "title": "Skills network",
+        "text": "Specialised experts and partners that can be mobilised for each project."
+      },
+      {
+        "title": "International sourcing",
+        "text": "Sourcing equipment, materials and opportunities beyond the usual markets."
+      },
+      {
+        "title": "Reuse & low carbon",
+        "text": "Solutions that integrate circular economy and transition challenges."
+      },
+      {
+        "title": "Technologies",
+        "text": "Digital tools developed around the real needs of the sector."
+      }
     ],
     "countriesBadge": "Our international presence",
     "countriesTitle": "Present at the heart of projects",

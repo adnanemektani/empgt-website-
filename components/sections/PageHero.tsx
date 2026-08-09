@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { useTranslations } from "next-intl";
 
-const SLIDES = [
+type Slide = { src: string };
+
+const DEFAULT_SLIDES: Slide[] = [
   {
     src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=3840&auto=format&fit=crop",
   },
@@ -20,22 +21,35 @@ const SLIDES = [
 
 const SLIDE_DURATION = 5000;
 
-export default function AboutHero() {
-  const t = useTranslations("AboutHero");
+type PageHeroProps = {
+  badge: string;
+  title: string;
+  subtitle: string;
+  crumb?: string;
+  slides?: Slide[];
+};
+
+export default function PageHero({
+  badge,
+  title,
+  subtitle,
+  crumb,
+  slides = DEFAULT_SLIDES,
+}: PageHeroProps) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % SLIDES.length);
+      setIndex((prev) => (prev + 1) % slides.length);
     }, SLIDE_DURATION);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   return (
     <section className="relative flex min-h-[72vh] w-full items-center overflow-hidden bg-primary">
       {/* Carrousel d'images — même style que l'accueil */}
       <div className="absolute inset-0">
-        {SLIDES.map((slide, i) => (
+        {slides.map((slide, i) => (
           <motion.div
             key={slide.src}
             className="absolute inset-0"
@@ -68,14 +82,24 @@ export default function AboutHero() {
         <div className="dot-grid absolute inset-0 z-[2] opacity-20" />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 pt-32 lg:px-8">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 pt-32 lg:px-8">
+        {crumb && (
+          <motion.p
+            initial={{ y: 12, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+            className="mb-4 text-xs font-semibold uppercase tracking-widest text-white/50"
+          >
+            {crumb}
+          </motion.p>
+        )}
         <motion.span
           initial={{ y: 16, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white backdrop-blur-sm"
         >
-          {t("badge")}
+          {badge}
         </motion.span>
         <motion.h1
           initial={{ y: 24, opacity: 0 }}
@@ -83,7 +107,7 @@ export default function AboutHero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl"
         >
-          {t("title")}
+          {title}
         </motion.h1>
         <motion.p
           initial={{ y: 24, opacity: 0 }}
@@ -91,18 +115,17 @@ export default function AboutHero() {
           transition={{ duration: 0.7, delay: 0.35 }}
           className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg"
         >
-          {t("text")}
+          {subtitle}
         </motion.p>
-        <motion.a
+        <motion.span
           initial={{ y: 24, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          href="#histoire"
-          className="group mt-10 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-black/30 transition-all duration-300 hover:scale-[1.04]"
+          className="pointer-events-none mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white/30"
         >
-          {t("cta")}
-          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5 group-hover:rotate-90" />
-        </motion.a>
+          E-MPGT
+          <ArrowRight className="h-4 w-4" />
+        </motion.span>
       </div>
     </section>
   );

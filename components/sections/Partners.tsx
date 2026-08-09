@@ -1,16 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Brain, Code2, Palette, HardHat } from "lucide-react";
+import { ArrowUpRight, Brain, Files, Boxes, Palette, Plug } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { SITE } from "@/lib/site";
 
-const PARTNER_ICONS = [Brain, Code2, Palette, HardHat];
+const PARTNER_ICONS = [Brain, Files, Boxes, Palette, Plug];
+
 const PARTNER_HREFS = [
-  { href: "https://institutia.ai/", external: true },
-  { href: SITE.affiliate, external: true },
-  { href: SITE.affiliate, external: true },
-  { href: "/contact", external: false },
+  "https://institutia.ai/",
+  "https://www.there.do/",
+  "https://bazalt.one/",
+  null,
+  "https://elto-electric-together.com/",
 ];
 
 export default function Partners() {
@@ -19,6 +20,7 @@ export default function Partners() {
     tag: string;
     name: string;
     text: string;
+    cta: string;
   }[];
 
   return (
@@ -47,21 +49,28 @@ export default function Partners() {
           </p>
         </motion.div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((p, i) => {
             const Icon = PARTNER_ICONS[i];
-            const link = PARTNER_HREFS[i];
+            const href = PARTNER_HREFS[i];
+            const Wrapper = href
+              ? (props: React.ComponentProps<typeof motion.a>) => <motion.a {...props} />
+              : (props: React.ComponentProps<typeof motion.div>) => <motion.div {...props} />;
             return (
-              <motion.a
+              <Wrapper
                 key={p.name}
-                href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
+                {...(href
+                  ? { href, target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
                 initial={{ opacity: 0, y: 32 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.55, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative overflow-hidden rounded-3xl border border-border bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-2xl hover:shadow-primary/10"
+                className={`group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-surface p-8 transition-all duration-300 ${
+                  href
+                    ? "cursor-pointer hover:-translate-y-1 hover:border-primary/25 hover:shadow-2xl hover:shadow-primary/10"
+                    : ""
+                }`}
               >
                 <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-accent/10 blur-2xl transition-opacity duration-300 opacity-0 group-hover:opacity-100" />
 
@@ -69,9 +78,11 @@ export default function Partners() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg shadow-primary/20">
                     <Icon className="h-7 w-7" />
                   </div>
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-foreground/40 transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground">
-                    <ArrowUpRight className="h-4.5 w-4.5" />
-                  </span>
+                  {href && (
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background text-foreground/40 transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground">
+                      <ArrowUpRight className="h-4.5 w-4.5" />
+                    </span>
+                  )}
                 </div>
 
                 <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-accent">
@@ -83,7 +94,10 @@ export default function Partners() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {p.text}
                 </p>
-              </motion.a>
+                <p className="mt-auto pt-6 text-sm font-semibold text-accent">
+                  {href ? p.cta : "—"}
+                </p>
+              </Wrapper>
             );
           })}
         </div>

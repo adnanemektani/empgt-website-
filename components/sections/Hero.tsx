@@ -146,6 +146,22 @@ export default function Hero() {
             </motion.p>
 
             <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.45 }}
+              className="mt-6 flex flex-wrap gap-2"
+            >
+              {t("tagline").split("·").map((tag, i) => (
+                <span
+                  key={i}
+                  className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-sm"
+                >
+                  {tag.trim()}
+                </span>
+              ))}
+            </motion.div>
+
+            <motion.div
               initial={{ y: 24, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.5 }}

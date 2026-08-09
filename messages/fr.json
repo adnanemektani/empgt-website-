@@ -4,6 +4,14 @@
     "homeDescription": "E-MPGT accompagne vos projets BTP & logistique avec 25 ans d'expertise terrain. Découvrez notre écosystème de plateformes dédiées.",
     "aboutTitle": "À propos | E-MPGT — Le Groupe",
     "aboutDescription": "Découvrez E-MPGT : 25 ans d'expertise BTP, une histoire, des valeurs, des forces et une ambition internationale.",
+    "expertisesTitle": "Expertises | E-MPGT — Conseil BTP & Ingénierie",
+    "expertisesDescription": "Découvrez les expertises E-MPGT : conseil BTP & ingénierie, sourcing matériels & matériaux, réemploi bas carbone, logistique & transport international.",
+    "technologiesTitle": "Technologies | E-MPGT — Solutions numériques pour le BTP",
+    "technologiesDescription": "Découvrez les technologies et solutions numériques développées par E-MPGT autour des besoins réels du secteur du BTP.",
+    "profilsTitle": "Profils | E-MPGT — Experts et consultants BTP",
+    "profilsDescription": "E-MPGT mobilise dirigeants, consultants et chefs de projets BTP. Accédez à la plateforme dédiée aux profils du secteur.",
+    "irveTitle": "IRVE | E-MPGT — Infrastructure de recharge pour véhicules électriques",
+    "irveDescription": "E-MPGT accompagne vos projets d'infrastructure de recharge pour véhicules électriques (IRVE) : études, installation et supervision.",
     "contactTitle": "Contact | E-MPGT",
     "contactDescription": "Contactez E-MPGT pour vos projets BTP, votre sourcing matériel ou vos besoins en logistique internationale.",
     "cguTitle": "Conditions générales de service | E-MPGT",
@@ -16,26 +24,32 @@
     "fr": "Français",
     "en": "English",
     "ar": "العربية",
-    "zh": "中文"
+    "zh": "中文",
+    "pt": "Português"
   },
   "Nav": {
     "home": "Accueil",
     "about": "À propos",
+    "expertises": "Nos expertises",
+    "technologies": "Technologies",
+    "profils": "Profils BTP",
+    "irve": "IRVE",
     "ecosystem": "Écosystème",
-    "metiers": "Nos métiers",
     "partners": "Partenaires",
     "news": "Actualités",
     "contact": "Contact",
     "cta": "Rendez-vous visio",
     "openMenu": "Ouvrir le menu",
+    "submenu": "Ouvrir le sous-menu",
     "logoAlt": "E-MPGT — Accueil"
   },
   "Hero": {
-    "badge": "25 ans d'expertise terrain",
-    "titlePart1": "Conseil BTP,",
-    "titleHighlight": "sourcing",
-    "titlePart2": "et logistique internationale",
-    "description": "Un écosystème de plateformes dédiées pour vos profils, votre matériel et vos flux logistiques.",
+    "badge": "Depuis 2018 · 25 années d'expérience dans le BTP",
+    "titlePart1": "Conseil, ingénierie et solutions",
+    "titleHighlight": "pour les projets",
+    "titlePart2": "de construction",
+    "description": "E-MPGT accompagne les entreprises, maîtres d'ouvrage et acteurs de la construction en Afrique, en Europe et à l'international.",
+    "tagline": "Conseil BTP · Ingénierie · Pilotage de travaux · Sourcing · Matériels & matériaux · Logistique internationale · Réemploi · Technologies BTP",
     "ctaPrimary": "Déposer une demande",
     "ctaSecondary": "Prendre rendez-vous",
     "cardSubtitle": "Plateforme dédiée",
@@ -46,11 +60,25 @@
       "Logistique et fret international"
     ]
   },
+  "Intro": {
+    "badge": "E-MPGT",
+    "title": "Une expertise BTP au service de projets ambitieux",
+    "text1": "Depuis 2018, E-MPGT met au service de ses clients 25 années d'expérience dans les métiers du BTP et de l'ingénierie.",
+    "text2": "Nous accompagnons les projets de construction et d'infrastructure en combinant conseil BTP, ingénierie, expertise technique, ressources, sourcing, logistique internationale et technologies dédiées au secteur de la construction.",
+    "text3": "Notre approche repose sur une connaissance concrète du terrain et sur un réseau de compétences et de partenaires spécialisés.",
+    "steps": [
+      "Comprendre les enjeux",
+      "Identifier les ressources",
+      "Mobiliser les compétences",
+      "Organiser les opérations"
+    ],
+    "stepNote": "Quatre réflexes pour chaque projet."
+  },
   "Eco": {
     "badge": "Notre écosystème",
-    "titlePart1": "Une plateforme dédiée,",
-    "titleHighlight": "pour chaque besoin",
-    "description": "Au-delà du conseil, E-MPGT développe un écosystème de plateformes spécialisées : profils experts, matériel BTP et logistique internationale. Chaque pôle dispose de sa propre plateforme, accessible d'un clic.",
+    "titlePart1": "Des compétences spécialisées",
+    "titleHighlight": "autour de chaque projet",
+    "description": "E-MPGT construit un réseau de partenaires dans les domaines de l'intelligence artificielle, du numérique, du BIM, de l'architecture, de la visualisation, de la mobilité électrique et des technologies dédiées au BTP. Notre rôle : identifier les besoins, mobiliser les bonnes expertises, connecter les acteurs et coordonner les ressources.",
     "note": "Les plateformes sont en cours de construction — elles seront mises en ligne progressivement.",
     "platforms": [
       {
@@ -95,61 +123,152 @@
     ]
   },
   "Services": {
-    "badge": "BTP & Ingénierie",
-    "title": "Nos métiers",
-    "subtitle": "E-MPGT intervient en conseil BTP sur la stratégie, le pilotage de projets, la digitalisation, la logistique et le développement international. Nous accompagnons les entreprises pour structurer, optimiser et innover à chaque étape de leurs projets.",
-    "cta": "Découvrir nos missions",
-    "items": [
+    "badge": "Nos expertises BTP",
+    "title": "Une approche intégrée de la construction",
+    "subtitle": "E-MPGT intervient autour de quatre domaines complémentaires.",
+    "cta": "Découvrir nos missions d'ingénierie",
+    "note": "Une expertise orientée terrain et résultats.",
+    "sections": [
       {
-        "title": "Conseil stratégique",
-        "text": "Analyse de faisabilité, projections budgétaires et appui à la prise de décision des maîtres d'ouvrage et des entreprises."
+        "num": "01",
+        "title": "Conseil BTP & Ingénierie",
+        "tagline": "Concevoir, analyser et piloter les projets.",
+        "text": "E-MPGT accompagne les maîtres d'ouvrage, entreprises et acteurs du BTP dans leurs projets de construction, de rénovation et d'infrastructure.",
+        "listLabel": "Nos missions peuvent intégrer :",
+        "items": [
+          "Conseil et stratégie BTP",
+          "Ingénierie et expertise technique",
+          "Études et analyse de faisabilité",
+          "Assistance technique",
+          "Pilotage de projets",
+          "Conduite de travaux",
+          "Coordination des intervenants",
+          "MOE / MOEX / OPC",
+          "Suivi des coûts, délais, risques et qualité",
+          "Reporting et accompagnement opérationnel"
+        ],
+        "cta": "Découvrir nos missions d'ingénierie"
       },
       {
-        "title": "Pilotage de projets",
-        "text": "Planification, suivi & reporting, coordination des intervenants, contrôle des jalons, coûts, risques et qualité."
+        "num": "02",
+        "title": "Sourcing Matériels & Matériaux BTP",
+        "tagline": "Trouver les bonnes ressources pour chaque projet.",
+        "text": "E-MPGT accompagne la recherche et l'acquisition de matériels BTP, équipements professionnels et matériaux de construction, notamment sur les marchés de l'occasion et des ventes aux enchères. Notre activité de sourcing permet de rechercher des opportunités adaptées aux besoins techniques, économiques et géographiques des projets.",
+        "listLabel": "Nos modes d'intervention :",
+        "items": [
+          "Matériel BTP d'occasion — Recherche d'engins, équipements et matériels professionnels disponibles sur les marchés de seconde main.",
+          "Ventes aux enchères — Identification d'opportunités issues de ventes aux enchères professionnelles.",
+          "Sourcing international — Recherche de fournisseurs, équipements et matériaux au-delà des circuits d'approvisionnement habituels.",
+          "Acquisition — Accompagnement dans l'identification, l'analyse et la mise en relation autour des opportunités."
+        ],
+        "note": "De la recherche à l'acheminement. Le sourcing peut être associé à une organisation logistique permettant de faire circuler les ressources jusqu'au lieu du projet.",
+        "cta": "Sourcer un matériel ou un matériau"
       },
       {
-        "title": "Transformation & innovation",
-        "text": "Optimisation des processus, méthodes agiles, robotisation et automatisation des process pour gagner en performance."
+        "num": "03",
+        "title": "Réemploi & Matériaux Bas Carbone",
+        "tagline": "Construire avec moins de ressources neuves.",
+        "text": "E-MPGT développe des solutions autour du réemploi des matériaux et équipements du BTP, de l'économie circulaire et de la recherche de matériaux bas carbone. Le réemploi nécessite de maîtriser non seulement la disponibilité des ressources, mais également leur identification, leur stockage, leur transport et leur traçabilité.",
+        "listLabel": "Nos axes d'action :",
+        "items": [
+          "Réemploi des matériaux de construction — Identification de ressources existantes pouvant être réutilisées dans de nouveaux projets.",
+          "Réemploi des équipements — Recherche de matériels et équipements professionnels pouvant connaître une seconde vie.",
+          "Matériaux bas carbone — Recherche de solutions et matériaux contribuant aux objectifs environnementaux des projets.",
+          "Économie circulaire dans le BTP — Créer des connexions entre les ressources disponibles et les nouveaux besoins."
+        ],
+        "note": "Une approche qui associe performance économique, disponibilité des ressources et transition du secteur de la construction.",
+        "cta": "Parler d'un projet de réemploi"
       },
       {
-        "title": "Développement international",
-        "text": "Projets transfrontaliers, coordination d'ingénieurs européens et locaux, adaptation réglementaire et logistique."
-      },
-      {
-        "title": "Logistique intégrée",
-        "text": "Optimisation de la chaîne d'approvisionnement : sourcing, stockage, livraison et gestion import-export."
-      },
-      {
-        "title": "Filière de réemploi",
-        "text": "Intégration du réemploi de matériel et matériaux européens, dans une démarche RSE et d'économie circulaire."
+        "num": "04",
+        "title": "Logistique & Transport International",
+        "tagline": "De la source au chantier.",
+        "text": "Acheter un équipement ou identifier un matériau ne suffit pas : il faut pouvoir l'acheminer dans de bonnes conditions. E-MPGT organise et coordonne les opérations de logistique internationale pour les matériels, équipements et marchandises liés aux projets de construction.",
+        "listLabel": "Nos prestations :",
+        "items": [
+          "Transport terrestre — Flux nationaux et internationaux.",
+          "Fret maritime — Transport d'équipements et marchandises par voie maritime.",
+          "Fret aérien — Solutions adaptées aux besoins urgents ou spécifiques.",
+          "Douane & import-export — Coordination des formalités nécessaires aux opérations internationales.",
+          "Stockage & transit — Solutions d'entreposage et de stockage intermédiaire.",
+          "Porte-à-porte — Coordination du transport de la source jusqu'au chantier."
+        ],
+        "note": "Afrique · Europe · International",
+        "cta": "Organiser une opération logistique"
       }
     ]
   },
+  "Tech": {
+    "badge": "Technologies dédiées au BTP",
+    "title": "Le numérique au service des métiers de la construction",
+    "intro": "E-MPGT développe et intègre des solutions technologiques dédiées au BTP et à l'ingénierie. Notre approche part des besoins opérationnels avant de sélectionner les technologies pertinentes.",
+    "items": [
+      { "title": "Digitalisation du BTP", "text": "Optimisation des processus et circulation de l'information." },
+      { "title": "Intelligence artificielle", "text": "Applications de l'IA aux usages professionnels lorsque celle-ci apporte une valeur concrète." },
+      { "title": "Automatisation", "text": "Réduction des tâches répétitives et amélioration de la productivité." },
+      { "title": "BIM & données", "text": "Exploitation des données et outils numériques pour les projets de construction." },
+      { "title": "Plateformes métier", "text": "Développement de plateformes spécialisées pour les professionnels du BTP." },
+      { "title": "Développement technologique", "text": "Conception de solutions adaptées à des problématiques spécifiques." }
+    ],
+    "cta": "Découvrir les technologies BTP"
+  },
+  "Profils": {
+    "badge": "Profils & Experts BTP",
+    "title": "Les compétences dont vos projets ont besoin",
+    "intro": "E-MPGT développe également un écosystème de profils BTP et d'experts techniques afin de faciliter l'accès aux compétences nécessaires aux opérations.",
+    "categories": [
+      { "title": "Profils recherchés", "items": ["Ingénieurs travaux", "Directeurs de projets", "Conducteurs de travaux", "MOE / MOEX / OPC"] },
+      { "title": "Experts techniques", "items": ["Profils études & ingénierie"] }
+    ],
+    "note": "Une plateforme dédiée aux profils BTP est en développement.",
+    "cta": "Rechercher un profil BTP"
+  },
+  "Irve": {
+    "badge": "Infrastructures & IRVE",
+    "title": "Accompagner les nouvelles infrastructures",
+    "intro": "E-MPGT intègre également les enjeux liés aux infrastructures de recharge pour véhicules électriques (IRVE) et à la mobilité électrique. Notre écosystème permet de connecter les projets à des compétences et partenaires spécialisés.",
+    "items": [
+      { "title": "IRVE", "text": "Infrastructures de recharge pour véhicules électriques." },
+      { "title": "Mobilité électrique", "text": "Solutions et équipements associés aux nouveaux usages." },
+      { "title": "Infrastructures énergétiques", "text": "Identification des compétences et solutions nécessaires aux projets." },
+      { "title": "Transition énergétique", "text": "Intégration des nouveaux enjeux énergétiques dans les opérations de construction et d'infrastructure." }
+    ],
+    "cta": "Discuter d'un projet IRVE"
+  },
   "Partners": {
-    "badge": "Ils nous font confiance",
-    "title": "Nos partenaires",
-    "subtitle": "Startups technologiques, studios créatifs, ingénieurs experts… Nos partenaires sont au cœur de notre écosystème. Ensemble, nous concevons, planifions et livrons des projets ambitieux et durables.",
+    "badge": "Nos partenaires",
+    "title": "Des expertises complémentaires",
+    "subtitle": "E-MPGT s'appuie sur un réseau de partenaires spécialisés dans l'IA, le numérique, le BIM, la visualisation, la mobilité électrique et les technologies dédiées au BTP.",
     "items": [
       {
-        "tag": "Zoran Forest",
+        "tag": "Intelligence artificielle · Automatisation · Transformation numérique",
         "name": "INSTITUT IA",
-        "text": "L'IA devient un levier de métier au service des chantiers. Une approche innovante qui réconcilie terrain et intelligence artificielle face à des défis complexes."
+        "text": "Expertise en intelligence artificielle et transformation des usages professionnels.",
+        "cta": "Découvrir INSTITUT IA"
       },
       {
-        "tag": "Élodie Moraud",
-        "name": "L'Agence Web du Mascaret",
-        "text": "Un outil sur-mesure, bâti par une spécialiste de la construction, pour servir les vrais besoins du terrain."
+        "tag": "Chantier · Documentation · Suivi opérationnel · IA",
+        "name": "THERE.DO",
+        "text": "Solutions numériques pour structurer et exploiter les informations issues du terrain.",
+        "cta": "Découvrir THERE.DO"
       },
       {
-        "tag": "Amandine Leblanc",
-        "name": "13 Mai Studio",
-        "text": "Transformer une idée technique ou architecturale en image concrète, exploitable en un claquement de doigts."
+        "tag": "BIM · Ingénierie numérique · Données construction",
+        "name": "BAZALT.ONE",
+        "text": "Solutions numériques dédiées aux métiers de la construction.",
+        "cta": "Découvrir BAZALT.ONE"
       },
       {
-        "tag": "Mise à disposition",
-        "name": "Ingénieurs Freelance",
-        "text": "Ingénieurs salariés et freelances pour vos chantiers : expertise renforcée, outils performants, opérationnels dès leur arrivée."
+        "tag": "Architecture · Visualisation · Design · Technologies créatives",
+        "name": "13 MAI STUDIO",
+        "text": "Création et visualisation de projets architecturaux et techniques.",
+        "cta": "Contactez-nous"
+      },
+      {
+        "tag": "IRVE · Mobilité électrique · Infrastructures de recharge",
+        "name": "ELTO",
+        "text": "Expertise dédiée aux infrastructures de recharge pour véhicules électriques.",
+        "cta": "Découvrir ELTO"
       }
     ]
   },
@@ -171,11 +290,25 @@
     ]
   },
   "Cta": {
-    "badge": "Passe à l'action",
+    "badge": "Un projet BTP ?",
     "title": "Parlons de votre projet",
-    "subtitle": "Que vous soyez maître d'ouvrage, entreprise générale ou acteur industriel, notre équipe vous accompagne du terrain à la livraison. Prenez rendez-vous en visio ou devenez partenaire affilié.",
-    "ctaCalendly": "Prendre rendez-vous en visio",
+    "subtitle": "Vous recherchez une expertise, une ressource ou une solution ? E-MPGT analyse votre besoin et vous aide à identifier les compétences, ressources et partenaires nécessaires.",
+    "ctaCalendly": "Prendre rendez-vous",
     "ctaAffiliate": "Programme Partenaires affiliés",
+    "keywordsTitle": "Expertise, ressources et solutions",
+    "keywords": [
+      "Conseil BTP",
+      "Ingénierie",
+      "Pilotage de travaux",
+      "Profil BTP",
+      "Matériel BTP d'occasion",
+      "Matériaux de construction",
+      "Réemploi",
+      "Matériaux bas carbone",
+      "Logistique internationale",
+      "IRVE",
+      "Technologies BTP"
+    ],
     "features": [
       "Devis & contrats clairs, sans engagement",
       "France, Afrique francophone & international",
@@ -190,11 +323,16 @@
   },
   "Footer": {
     "group": "Groupe MPGT · Portugal · France · Maroc · Sénégal · Côte d'Ivoire",
-    "tagline": "Conseil et ingénierie BTP, sourcing et logistique internationale.",
-    "subtitle": "25 ans d'expertise terrain au service de vos projets, du terrain à la livraison.",
+    "tagline": "Conseil BTP · Ingénierie · Sourcing · Logistique · Réemploi · Technologies",
+    "subtitle": "Depuis 2018 · 25 années d'expérience terrain · Afrique · Europe · International.",
     "home": "Accueil",
     "about": "À propos",
+    "expertises": "Nos expertises",
+    "technologies": "Technologies",
+    "profils": "Profils BTP",
+    "irve": "IRVE",
     "ecosystem": "Écosystème",
+    "partners": "Partenaires",
     "news": "Actualités",
     "contact": "Contact",
     "navTitle": "Navigation",
@@ -283,6 +421,76 @@
       "Créer des passerelles concrètes entre expertises africaines et européennes, dans un esprit de partenariat équilibré.",
       "Renforcer les capacités locales par le transfert de compétences et la prise de responsabilité.",
       "Devenir un partenaire de référence pour les acteurs du BTP africain."
+    ],
+    "experienceBadge": "25 années d'expérience",
+    "experienceTitle": "Une expérience BTP construite sur le terrain",
+    "experienceText": "Depuis 2018, E-MPGT met au service de ses clients 25 années d'expérience dans les métiers du BTP et de l'ingénierie.",
+    "experienceLead": "Cette expérience permet de comprendre les réalités des opérations :",
+    "experienceItems": [
+      "les contraintes techniques",
+      "les enjeux humains",
+      "les délais",
+      "les coûts",
+      "les approvisionnements",
+      "les équipements",
+      "les flux logistiques",
+      "les transformations technologiques"
+    ],
+    "experienceOutro": "Une expérience terrain au service des projets d'aujourd'hui.",
+    "experienceOutro2": "Une vision tournée vers les constructions de demain.",
+    "aeiBadge": "Afrique · Europe · International",
+    "aeiTitle": "Une expertise BTP ouverte sur les marchés internationaux",
+    "aeiText": "E-MPGT accompagne des projets et développe des connexions entre les écosystèmes professionnels en Afrique, en Europe et à l'international.",
+    "aeiLead": "Notre réseau permet de faciliter la circulation :",
+    "aeiItems": [
+      {
+        "title": "Des compétences",
+        "text": "Ingénieurs, experts et profils opérationnels."
+      },
+      {
+        "title": "Des matériels",
+        "text": "Équipements, engins et ressources professionnelles."
+      },
+      {
+        "title": "Des matériaux",
+        "text": "Matériaux de construction, solutions bas carbone et ressources issues du réemploi."
+      },
+      {
+        "title": "Des flux",
+        "text": "Transport, stockage, douane et import-export."
+      },
+      {
+        "title": "Des technologies",
+        "text": "Solutions numériques et technologies dédiées au BTP."
+      }
+    ],
+    "whyBadge": "Pourquoi E-MPGT ?",
+    "whyTitle": "Une approche différente du conseil BTP",
+    "why": [
+      {
+        "title": "Expérience terrain",
+        "text": "25 années d'expérience dans les métiers du BTP et de l'ingénierie."
+      },
+      {
+        "title": "Approche intégrée",
+        "text": "Conseil, ingénierie, sourcing, ressources, logistique et technologies."
+      },
+      {
+        "title": "Réseau de compétences",
+        "text": "Des experts et partenaires spécialisés mobilisables selon les projets."
+      },
+      {
+        "title": "Sourcing international",
+        "text": "Recherche de matériels, matériaux et opportunités au-delà des marchés habituels."
+      },
+      {
+        "title": "Réemploi & bas carbone",
+        "text": "Des solutions intégrant les enjeux d'économie circulaire et de transition."
+      },
+      {
+        "title": "Technologies",
+        "text": "Des outils numériques développés autour des besoins réels du secteur."
+      }
     ],
     "countriesBadge": "Nos présences internationales",
     "countriesTitle": "Présents au cœur des projets",

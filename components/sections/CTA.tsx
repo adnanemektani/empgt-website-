@@ -11,6 +11,7 @@ export default function CTA() {
   const t = useTranslations("Cta");
   const stats = t.raw("stats") as { value: string; label: string }[];
   const features = t.raw("features") as string[];
+  const keywords = t.raw("keywords") as string[];
 
   return (
     <section className="relative overflow-hidden py-24 lg:py-32">
@@ -20,6 +21,29 @@ export default function CTA() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Mots-clés — professions couvertes */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+            {t("keywordsTitle")}
+          </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-2.5">
+            {keywords.map((kw) => (
+              <span
+                key={kw}
+                className="rounded-full border border-primary/20 bg-primary-soft px-4 py-1.5 text-sm font-medium text-primary"
+              >
+                {kw}
+              </span>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Statistiques */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
