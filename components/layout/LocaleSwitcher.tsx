@@ -76,7 +76,7 @@ export default function LocaleSwitcher() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -6, scale: 0.98 }}
             transition={{ duration: 0.18 }}
-            className="absolute right-0 top-full mt-2 w-44 overflow-hidden rounded-2xl border border-border bg-white p-1.5 shadow-xl shadow-black/5"
+            className="absolute right-0 top-full mt-2 w-44 overflow-hidden rounded-2xl border border-border bg-white p-1.5 shadow-xl shadow-black/5 rtl:left-0 rtl:right-auto"
           >
             {routing.locales.map((l) => (
               <li key={l}>

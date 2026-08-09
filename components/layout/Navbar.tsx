@@ -130,21 +130,35 @@ export default function Navbar() {
           {NAV_ITEMS.map((item) =>
             item.children ? (
               <li key={item.href} ref={homeRef} className="relative">
-                <button
-                  type="button"
-                  onClick={() => setHomeMenuOpen((o) => !o)}
-                  aria-label={t("submenu")}
-                  aria-haspopup="menu"
-                  aria-expanded={homeMenuOpen}
-                  className={`inline-flex items-center gap-1 ${topLinkClasses(homeActive)}`}
+                <div
+                  className={`flex items-center rounded-full transition-colors duration-200 ${
+                    homeActive
+                      ? "bg-primary/8 text-primary"
+                      : "text-foreground/75 hover:bg-surface"
+                  }`}
                 >
-                  {t(item.labelKey)}
-                  <ChevronDown
-                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${
-                      homeMenuOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+                  <Link
+                    href={item.href}
+                    onClick={() => setHomeMenuOpen(false)}
+                    className="rounded-full px-3.5 py-2 text-sm font-medium transition-colors duration-200 xl:px-4 hover:text-foreground"
+                  >
+                    {t(item.labelKey)}
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => setHomeMenuOpen((o) => !o)}
+                    aria-label={t("submenu")}
+                    aria-haspopup="menu"
+                    aria-expanded={homeMenuOpen}
+                    className="rounded-full p-2 text-current transition-colors duration-200 hover:bg-primary/10"
+                  >
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        homeMenuOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </div>
                 <AnimatePresence>
                   {homeMenuOpen && (
                     <motion.ul
@@ -227,24 +241,34 @@ export default function Navbar() {
           >
             <ul className="flex flex-col gap-1 p-4">
               <li>
-                <button
-                  type="button"
-                  onClick={() => setMobileHomeOpen((o) => !o)}
-                  aria-label={t("submenu")}
-                  aria-expanded={mobileHomeOpen}
-                  className={`flex w-full items-center justify-between rounded-xl px-4 py-3 text-base font-medium ${
+                <div
+                  className={`flex items-center rounded-xl transition-colors duration-200 ${
                     homeActive
                       ? "bg-primary/8 text-primary"
-                      : "text-foreground/85 hover:bg-surface hover:text-foreground"
+                      : "text-foreground/85"
                   }`}
                 >
-                  {t("home")}
-                  <ChevronDown
-                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${
-                      mobileHomeOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+                  <Link
+                    href="/"
+                    onClick={() => setMobileOpen(false)}
+                    className="flex-1 rounded-xl px-4 py-3 text-base font-medium transition-colors duration-200 hover:bg-surface hover:text-foreground"
+                  >
+                    {t("home")}
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => setMobileHomeOpen((o) => !o)}
+                    aria-label={t("submenu")}
+                    aria-expanded={mobileHomeOpen}
+                    className="rounded-xl p-3 text-current transition-colors duration-200 hover:bg-surface hover:text-foreground"
+                  >
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform duration-200 ${
+                        mobileHomeOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </div>
                 <AnimatePresence>
                   {mobileHomeOpen && (
                     <motion.ul
