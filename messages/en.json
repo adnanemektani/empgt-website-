@@ -319,7 +319,7 @@
       { "value": "25", "label": "years of field experience" },
       { "value": "40", "label": "collaborators managed" },
       { "value": "5", "label": "international locations" },
-      { "value": "€150M", "label": "project value led" }
+      { "value": "€150M", "label": "maximum project value" }
     ]
   },
   "Footer": {
