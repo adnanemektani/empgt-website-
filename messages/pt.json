@@ -1,19 +1,19 @@
 {
   "Metadata": {
-    "homeTitle": "E-MPGT | Consultoria BTP, sourcing e logística internacional",
-    "homeDescription": "A E-MPGT apoia os seus projetos de BTP & logística com 25 anos de experiência no terreno. Conheça o nosso ecossistema de plataformas dedicadas.",
+    "homeTitle": "E-MPGT | Consultoria em Construção Civil, sourcing e logística internacional",
+    "homeDescription": "A E-MPGT apoia os seus projetos de construção civil & logística com 25 anos de experiência no terreno. Conheça o nosso ecossistema de plataformas dedicadas.",
     "aboutTitle": "Sobre | E-MPGT — O Grupo",
-    "aboutDescription": "Conheça a E-MPGT: 25 anos de experiência em BTP, uma história, valores, forças e uma ambição internacional.",
-    "expertisesTitle": "Especialidades | E-MPGT — Consultoria BTP & Engenharia",
-    "expertisesDescription": "Conheça as especialidades da E-MPGT: consultoria BTP & engenharia, sourcing de equipamentos & materiais, reutilização de baixo carbono, logística & transporte internacional.",
-    "technologiesTitle": "Tecnologias | E-MPGT — Soluções digitais para o BTP",
-    "technologiesDescription": "Conheça as tecnologias e soluções digitais desenvolvidas pela E-MPGT à volta das necessidades reais do setor do BTP.",
-    "profilsTitle": "Perfis | E-MPGT — Especialistas e consultores BTP",
-    "profilsDescription": "A E-MPGT mobiliza dirigentes, consultores e chefes de projeto BTP. Aceda à plataforma dedicada aos perfis do setor.",
+    "aboutDescription": "Conheça a E-MPGT: 25 anos de experiência no setor da construção civil, uma história, valores, forças e uma ambição internacional.",
+    "expertisesTitle": "Especialidades | E-MPGT — Consultoria em Construção Civil & Engenharia",
+    "expertisesDescription": "Conheça as especialidades da E-MPGT: consultoria em construção civil & engenharia, sourcing de equipamentos & materiais, reutilização de baixo carbono, logística & transporte internacional.",
+    "technologiesTitle": "Tecnologias | E-MPGT — Soluções digitais para a construção civil",
+    "technologiesDescription": "Conheça as tecnologias e soluções digitais desenvolvidas pela E-MPGT à volta das necessidades reais do setor da construção civil.",
+    "profilsTitle": "Perfis | E-MPGT — Especialistas e consultores de construção civil",
+    "profilsDescription": "A E-MPGT mobiliza dirigentes, consultores e chefes de projeto de construção civil. Aceda à plataforma dedicada aos perfis do setor.",
     "irveTitle": "IRVE | E-MPGT — Infraestruturas de carregamento para veículos elétricos",
     "irveDescription": "A E-MPGT apoia os seus projetos de infraestruturas de carregamento para veículos elétricos (IRVE): estudos, instalação e supervisão.",
     "contactTitle": "Contacto | E-MPGT",
-    "contactDescription": "Contacte a E-MPGT para os seus projetos BTP, o seu sourcing de equipamentos ou as suas necessidades de logística internacional.",
+    "contactDescription": "Contacte a E-MPGT para os seus projetos de construção civil, o seu sourcing de equipamentos ou as suas necessidades de logística internacional.",
     "cguTitle": "Condições gerais de serviço | E-MPGT",
     "cguDescription": "Condições gerais de serviço da E-MPGT.",
     "cguPartnersTitle": "Condições gerais do Programa de Parceiros | E-MPGT",
@@ -32,7 +32,7 @@
     "about": "Sobre",
     "expertises": "As nossas especialidades",
     "technologies": "Tecnologias",
-    "profils": "Perfis BTP",
+    "profils": "Perfis de Construção Civil",
     "irve": "IRVE",
     "ecosystem": "Ecossistema",
     "partners": "Parceiros",
@@ -44,27 +44,27 @@
     "logoAlt": "E-MPGT — Início"
   },
   "Hero": {
-    "badge": "Desde 2018 · 25 anos de experiência no BTP",
+    "badge": "Desde 2018 · 25 anos de experiência na construção civil",
     "titlePart1": "Consultoria, engenharia e soluções",
     "titleHighlight": "para os projetos",
     "titlePart2": "de construção",
     "description": "A E-MPGT acompanha empresas, donos de obra e intervenientes da construção em África, na Europa e a nível internacional.",
-    "tagline": "Consultoria BTP · Engenharia · Gestão de obras · Sourcing · Equipamentos & materiais · Logística internacional · Reutilização · Tecnologias BTP",
+    "tagline": "Consultoria em Construção Civil · Engenharia · Gestão de obras · Sourcing · Equipamentos & materiais · Logística internacional · Reutilização · Tecnologias de construção civil",
     "ctaPrimary": "Apresentar um pedido",
     "ctaSecondary": "Marcar reunião",
     "cardSubtitle": "Plataforma dedicada",
-    "cards": ["Perfis BTP", "Equipamentos", "Logística"],
+    "cards": ["Perfis de Construção Civil", "Equipamentos", "Logística"],
     "slideAlts": [
-      "Estaleiro de construção BTP",
+      "Estaleiro de construção civil",
       "Planta e engenharia de construção",
       "Logística e frete internacional"
     ]
   },
   "Intro": {
     "badge": "E-MPGT",
-    "title": "Uma experiência BTP ao serviço de projetos ambiciosos",
-    "text1": "Desde 2018, a E-MPGT coloca ao serviço dos seus clientes 25 anos de experiência nas áreas do BTP e da engenharia.",
-    "text2": "Acompanhamos projetos de construção e de infraestruturas combinando consultoria BTP, engenharia, experiência técnica, recursos, sourcing, logística internacional e tecnologias dedicadas ao setor da construção.",
+    "title": "Uma experiência no setor da construção civil ao serviço de projetos ambiciosos",
+    "text1": "Desde 2018, a E-MPGT coloca ao serviço dos seus clientes 25 anos de experiência nas áreas da construção civil e da engenharia.",
+    "text2": "Acompanhamos projetos de construção e de infraestruturas combinando consultoria em construção civil, engenharia, experiência técnica, recursos, sourcing, logística internacional e tecnologias dedicadas ao setor da construção.",
     "text3": "A nossa abordagem assenta num conhecimento concreto do terreno e numa rede de competências e parceiros especializados.",
     "steps": [
       "Compreender os desafios",
@@ -78,14 +78,14 @@
     "badge": "O nosso ecossistema",
     "titlePart1": "Competências especializadas",
     "titleHighlight": "em torno de cada projeto",
-    "description": "A E-MPGT constrói uma rede de parceiros nas áreas da inteligência artificial, do digital, do BIM, da arquitetura, da visualização, da mobilidade elétrica e das tecnologias dedicadas ao BTP. O nosso papel: identificar as necessidades, mobilizar as melhores especialidades, ligar os intervenientes e coordenar os recursos.",
+    "description": "A E-MPGT constrói uma rede de parceiros nas áreas da inteligência artificial, do digital, do BIM, da arquitetura, da visualização, da mobilidade elétrica e das tecnologias dedicadas à construção civil. O nosso papel: identificar as necessidades, mobilizar as melhores especialidades, ligar os intervenientes e coordenar os recursos.",
     "note": "As plataformas estão ainda em construção — serão colocadas online progressivamente.",
     "platforms": [
       {
         "label": "Plataforma Freelance",
-        "title": "Perfis & Especialistas BTP",
+        "title": "Perfis & Especialistas de Construção Civil",
         "badge": "Em breve",
-        "description": "Aceda a uma rede de engenheiros, chefes de obra e especialistas BTP selecionados e validados por nós.",
+        "description": "Aceda a uma rede de engenheiros, chefes de obra e especialistas de construção civil selecionados e validados por nós.",
         "bullets": [
           "Engenheiros de obra & diretores de projeto",
           "Chefes de obra, MOE / MOEX / OPC",
@@ -96,7 +96,7 @@
       },
       {
         "label": "Plataforma Equipamentos",
-        "title": "Marketplace de Equipamentos BTP",
+        "title": "Marketplace de Equipamentos de Construção Civil",
         "badge": "Em breve",
         "description": "Sourcing de equipamentos usados, leilões europeus e acesso às melhores oportunidades do mercado.",
         "bullets": [
@@ -123,7 +123,7 @@
     ]
   },
   "Services": {
-    "badge": "As nossas especialidades BTP",
+    "badge": "As nossas especialidades de construção civil",
     "title": "Uma abordagem integrada da construção",
     "subtitle": "A E-MPGT intervém em quatro áreas complementares.",
     "cta": "Descobrir as nossas missões de engenharia",
@@ -131,12 +131,12 @@
     "sections": [
       {
         "num": "01",
-        "title": "Consultoria BTP & Engenharia",
+        "title": "Consultoria em Construção Civil & Engenharia",
         "tagline": "Conceber, analisar e gerir os projetos.",
-        "text": "A E-MPGT acompanha os donos de obra, as empresas e os intervenientes do BTP nos seus projetos de construção, renovação e infraestruturas.",
+        "text": "A E-MPGT acompanha os donos de obra, as empresas e os intervenientes da construção civil nos seus projetos de construção, renovação e infraestruturas.",
         "listLabel": "As nossas missões podem incluir:",
         "items": [
-          "Consultoria e estratégia BTP",
+          "Consultoria e estratégia de construção civil",
           "Engenharia e especialização técnica",
           "Estudos e análise de viabilidade",
           "Assistência técnica",
@@ -151,12 +151,12 @@
       },
       {
         "num": "02",
-        "title": "Sourcing de Equipamentos & Materiais BTP",
+        "title": "Sourcing de Equipamentos & Materiais de Construção Civil",
         "tagline": "Encontrar os recursos certos para cada projeto.",
-        "text": "A E-MPGT apoia a pesquisa e a aquisição de equipamentos BTP, equipamento profissional e materiais de construção, nomeadamente nos mercados de segunda mão e de leilões. A nossa atividade de sourcing permite procurar oportunidades adaptadas às necessidades técnicas, económicas e geográficas dos projetos.",
+        "text": "A E-MPGT apoia a pesquisa e a aquisição de equipamentos de construção civil, equipamento profissional e materiais de construção, nomeadamente nos mercados de segunda mão e de leilões. A nossa atividade de sourcing permite procurar oportunidades adaptadas às necessidades técnicas, económicas e geográficas dos projetos.",
         "listLabel": "As nossas formas de intervenção:",
         "items": [
-          "Equipamento BTP usado — Procura de máquinas, equipamentos e material profissional disponível nos mercados de segunda mão.",
+          "Equipamento de construção civil usado — Procura de máquinas, equipamentos e material profissional disponível nos mercados de segunda mão.",
           "Leilões — Identificação de oportunidades provenientes de leilões profissionais.",
           "Sourcing internacional — Procura de fornecedores, equipamentos e materiais para além dos circuitos de abastecimento habituais.",
           "Aquisição — Acompanhamento na identificação, análise e ligação em torno das oportunidades."
@@ -168,13 +168,13 @@
         "num": "03",
         "title": "Reutilização & Materiais de Baixo Carbono",
         "tagline": "Construir com menos recursos novos.",
-        "text": "A E-MPGT desenvolve soluções em torno da reutilização de materiais e equipamentos do BTP, da economia circular e da pesquisa de materiais de baixo carbono. A reutilização exige o domínio não só da disponibilidade dos recursos, mas também da sua identificação, armazenamento, transporte e rastreabilidade.",
+        "text": "A E-MPGT desenvolve soluções em torno da reutilização de materiais e equipamentos da construção civil, da economia circular e da pesquisa de materiais de baixo carbono. A reutilização exige o domínio não só da disponibilidade dos recursos, mas também da sua identificação, armazenamento, transporte e rastreabilidade.",
         "listLabel": "Os nossos eixos de ação:",
         "items": [
           "Reutilização de materiais de construção — Identificação de recursos existentes que podem ser reutilizados em novos projetos.",
           "Reutilização de equipamentos — Procura de equipamento e material profissional que possa ter uma segunda vida.",
           "Materiais de baixo carbono — Procura de soluções e materiais que contribuam para os objetivos ambientais dos projetos.",
-          "Economia circular no BTP — Criar ligações entre os recursos disponíveis e as novas necessidades."
+          "Economia circular na construção civil — Criar ligações entre os recursos disponíveis e as novas necessidades."
         ],
         "note": "Uma abordagem que associa desempenho económico, disponibilidade de recursos e transição do setor da construção.",
         "cta": "Falar de um projeto de reutilização"
@@ -199,29 +199,29 @@
     ]
   },
   "Tech": {
-    "badge": "Tecnologias dedicadas ao BTP",
+    "badge": "Tecnologias dedicadas à construção civil",
     "title": "O digital ao serviço das áreas da construção",
-    "intro": "A E-MPGT desenvolve e integra soluções tecnológicas dedicadas ao BTP e à engenharia. A nossa abordagem parte das necessidades operacionais antes de selecionar as tecnologias pertinentes.",
+    "intro": "A E-MPGT desenvolve e integra soluções tecnológicas dedicadas à construção civil e à engenharia. A nossa abordagem parte das necessidades operacionais antes de selecionar as tecnologias pertinentes.",
     "items": [
-      { "title": "Digitalização do BTP", "text": "Otimização de processos e circulação da informação." },
+      { "title": "Digitalização da construção civil", "text": "Otimização de processos e circulação da informação." },
       { "title": "Inteligência artificial", "text": "Aplicações da IA a usos profissionais quando esta acrescenta valor concreto." },
       { "title": "Automatização", "text": "Redução de tarefas repetitivas e melhoria da produtividade." },
       { "title": "BIM & dados", "text": "Exploração de dados e ferramentas digitais para os projetos de construção." },
-      { "title": "Plataformas profissionais", "text": "Desenvolvimento de plataformas especializadas para os profissionais do BTP." },
+      { "title": "Plataformas profissionais", "text": "Desenvolvimento de plataformas especializadas para os profissionais da construção civil." },
       { "title": "Desenvolvimento tecnológico", "text": "Conceção de soluções adaptadas a problemáticas específicas." }
     ],
-    "cta": "Descobrir as tecnologias BTP"
+    "cta": "Descobrir as tecnologias de construção civil"
   },
   "Profils": {
-    "badge": "Perfis & Especialistas BTP",
+    "badge": "Perfis & Especialistas de Construção Civil",
     "title": "As competências que os seus projetos precisam",
-    "intro": "A E-MPGT desenvolve também um ecossistema de perfis BTP e de especialistas técnicos para facilitar o acesso às competências necessárias às operações.",
+    "intro": "A E-MPGT desenvolve também um ecossistema de perfis de construção civil e de especialistas técnicos para facilitar o acesso às competências necessárias às operações.",
     "categories": [
       { "title": "Perfis procurados", "items": ["Engenheiros de obra", "Diretores de projeto", "Chefes de obra", "MOE / MOEX / OPC"] },
       { "title": "Especialistas técnicos", "items": ["Perfis de estudos & engenharia"] }
     ],
-    "note": "Uma plataforma dedicada aos perfis BTP está em desenvolvimento.",
-    "cta": "Procurar um perfil BTP"
+    "note": "Uma plataforma dedicada aos perfis de construção civil está em desenvolvimento.",
+    "cta": "Procurar um perfil de construção civil"
   },
   "Irve": {
     "badge": "Infraestruturas & IRVE",
@@ -238,7 +238,7 @@
   "Partners": {
     "badge": "Os nossos parceiros",
     "title": "Especialidades complementares",
-    "subtitle": "A E-MPGT apoia-se numa rede de parceiros especializados em IA, digital, BIM, visualização, mobilidade elétrica e tecnologias dedicadas ao BTP.",
+    "subtitle": "A E-MPGT apoia-se numa rede de parceiros especializados em IA, digital, BIM, visualização, mobilidade elétrica e tecnologias dedicadas à construção civil.",
     "items": [
       {
         "tag": "Inteligência artificial · Automatização · Transformação digital",
@@ -275,9 +275,10 @@
   "News": {
     "badge": "As nossas notícias",
     "title": "A E-MPGT em movimento",
-    "subtitle": "Siga os nossos últimos anúncios, parcerias e inovações no setor do BTP e da engenharia.",
+    "subtitle": "Siga os nossos últimos anúncios, parcerias e inovações no setor da construção civil e da engenharia.",
     "recent": "Recente",
     "readMore": "Ler a publicação",
+    "viewMore": "Ver mais notícias",
     "items": [
       {
         "title": "25 anos de terreno para uma IA responsável ao serviço de Marrocos",
@@ -290,24 +291,24 @@
     ]
   },
   "Cta": {
-    "badge": "Um projeto BTP?",
+    "badge": "Um projeto de construção civil?",
     "title": "Vamos falar do seu projeto",
     "subtitle": "Procura uma especialidade, um recurso ou uma solução? A E-MPGT analisa a sua necessidade e ajuda-o a identificar as competências, os recursos e os parceiros necessários.",
     "ctaCalendly": "Marcar reunião",
     "ctaAffiliate": "Programa de Parceiros associados",
     "keywordsTitle": "Especialidade, recursos e soluções",
     "keywords": [
-      "Consultoria BTP",
+      "Consultoria em Construção Civil",
       "Engenharia",
       "Gestão de obras",
-      "Perfil BTP",
-      "Equipamento BTP usado",
+      "Perfil de Construção Civil",
+      "Equipamento de construção civil usado",
       "Materiais de construção",
       "Reutilização",
       "Materiais de baixo carbono",
       "Logística internacional",
       "IRVE",
-      "Tecnologias BTP"
+      "Tecnologias de construção civil"
     ],
     "features": [
       "Orçamentos & contratos claros, sem compromisso",
@@ -323,13 +324,13 @@
   },
   "Footer": {
     "group": "Grupo MPGT · Portugal · França · Marrocos · Senegal · Costa do Marfim",
-    "tagline": "Consultoria BTP · Engenharia · Sourcing · Logística · Reutilização · Tecnologias",
+    "tagline": "Consultoria em Construção Civil · Engenharia · Sourcing · Logística · Reutilização · Tecnologias",
     "subtitle": "Desde 2018 · 25 anos de experiência no terreno · África · Europa · Internacional.",
     "home": "Início",
     "about": "Sobre",
     "expertises": "As nossas especialidades",
     "technologies": "Tecnologias",
-    "profils": "Perfis BTP",
+    "profils": "Perfis de Construção Civil",
     "irve": "IRVE",
     "ecosystem": "Ecossistema",
     "partners": "Parceiros",
@@ -346,7 +347,7 @@
   "AboutHero": {
     "badge": "O Grupo MPGT",
     "title": "Na confluência da especialidade técnica, da visão estratégica e da inteligência humana",
-    "text": "O nosso grupo assenta em valores humanos sólidos e na exigência dos grandes projetos do BTP para construir respostas à medida. Graças ao rigor, à escuta e à co-construção, transformamos cada missão numa alavanca de desempenho coletivo.",
+    "text": "O nosso grupo assenta em valores humanos sólidos e na exigência dos grandes projetos da construção civil para construir respostas à medida. Graças ao rigor, à escuta e à co-construção, transformamos cada missão numa alavanca de desempenho coletivo.",
     "cta": "A nossa história"
   },
   "About": {
@@ -356,7 +357,7 @@
       {
         "year": "Antes de 2018",
         "title": "Fundações de uma especialidade",
-        "text": "17 anos de experiência no terreno dentro das grandes empresas do BTP francês, com uma compreensão fina das realidades do estaleiro e dos intervenientes da construção."
+        "text": "17 anos de experiência no terreno dentro das grandes empresas da construção civil francesa, com uma compreensão fina das realidades do estaleiro e dos intervenientes da construção."
       },
       {
         "year": "2018",
@@ -415,16 +416,16 @@
     ],
     "ambitionsBadge": "As nossas ambições",
     "ambitionsTitle": "Uma visão para além das fronteiras",
-    "ambitionsSub": "O futuro do BTP constrói-se localmente, valorizando as energias, os saberes-fazer e os talentos dos territórios. Acreditamos no poder da parceria duradoira e na capacidade dos intervenientes africanos de conduzirem projetos de grande dimensão.",
+    "ambitionsSub": "O futuro da construção civil constrói-se localmente, valorizando as energias, os saberes-fazer e os talentos dos territórios. Acreditamos no poder da parceria duradoira e na capacidade dos intervenientes africanos de conduzirem projetos de grande dimensão.",
     "ambitions": [
       "Fazer emergir e valorizar os talentos locais em projetos visíveis a nível internacional.",
       "Criar pontes concretas entre as especialidades africanas e europeias, num espírito de parceria equilibrada.",
       "Reforçar as capacidades locais através da transferência de competências e da assunção de responsabilidades.",
-      "Tornar-se num parceiro de referência para os intervenientes do BTP africano."
+      "Tornar-se num parceiro de referência para os intervenientes da construção civil africana."
     ],
     "experienceBadge": "25 anos de experiência",
-    "experienceTitle": "Uma experiência BTP construída no terreno",
-    "experienceText": "Desde 2018, a E-MPGT coloca ao serviço dos seus clientes 25 anos de experiência nas áreas do BTP e da engenharia.",
+    "experienceTitle": "Uma experiência no setor da construção civil construída no terreno",
+    "experienceText": "Desde 2018, a E-MPGT coloca ao serviço dos seus clientes 25 anos de experiência nas áreas da construção civil e da engenharia.",
     "experienceLead": "Esta experiência permite compreender as realidades das operações:",
     "experienceItems": [
       "as condicionantes técnicas",
@@ -439,7 +440,7 @@
     "experienceOutro": "Uma experiência de terreno ao serviço dos projetos de hoje.",
     "experienceOutro2": "Uma visão orientada para as construções de amanhã.",
     "aeiBadge": "África · Europa · Internacional",
-    "aeiTitle": "Uma especialidade BTP aberta aos mercados internacionais",
+    "aeiTitle": "Uma especialidade de construção civil aberta aos mercados internacionais",
     "aeiText": "A E-MPGT acompanha projetos e desenvolve ligações entre os ecossistemas profissionais em África, na Europa e a nível internacional.",
     "aeiLead": "A nossa rede permite facilitar a circulação:",
     "aeiItems": [
@@ -461,15 +462,15 @@
       },
       {
         "title": "De tecnologias",
-        "text": "Soluções digitais e tecnologias dedicadas ao BTP."
+        "text": "Soluções digitais e tecnologias dedicadas à construção civil."
       }
     ],
     "whyBadge": "Porquê a E-MPGT?",
-    "whyTitle": "Uma abordagem diferente da consultoria BTP",
+    "whyTitle": "Uma abordagem diferente da consultoria em construção civil",
     "why": [
       {
         "title": "Experiência de terreno",
-        "text": "25 anos de experiência nas áreas do BTP e da engenharia."
+        "text": "25 anos de experiência nas áreas da construção civil e da engenharia."
       },
       {
         "title": "Abordagem integrada",
@@ -518,7 +519,7 @@
     "platformsText": "As plataformas de Perfis, Equipamentos e Logística estarão brevemente disponíveis através do nosso ecossistema.",
     "platformsCta": "Ver o ecossistema",
     "subjects": {
-      "btp": "Consultoria BTP & Engenharia",
+      "btp": "Consultoria em Construção Civil & Engenharia",
       "materiel": "Sourcing de equipamentos",
       "logistique": "Logística & frete",
       "partenariat": "Parceria / Afiliação",
@@ -555,7 +556,7 @@
       },
       {
         "title": "2. Objeto dos serviços",
-        "body": "A E-MPGT presta serviços profissionais nas seguintes áreas: consultoria em BTP e engenharia, disponibilização de especialistas e consultores, sourcing de equipamentos e fornecedores, logística internacional e coordenação operacional. As prestações são definidas contratualmente, caso a caso, através de orçamento, contrato ou nota de encomenda."
+        "body": "A E-MPGT presta serviços profissionais nas seguintes áreas: consultoria em construção civil e engenharia, disponibilização de especialistas e consultores, sourcing de equipamentos e fornecedores, logística internacional e coordenação operacional. As prestações são definidas contratualmente, caso a caso, através de orçamento, contrato ou nota de encomenda."
       },
       {
         "title": "3. Acesso ao site",
@@ -603,7 +604,7 @@
     "sections": [
       {
         "title": "1. Objeto do programa",
-        "body": "O Programa de Parceiros permite a apresentadores de negócios independentes recomendar potenciais clientes à Sociedade nas seguintes áreas: consultoria BTP e engenharia civil, disponibilização de especialistas, sourcing de equipamentos, logística internacional. O Parceiro recebe uma comissão nas condições definidas abaixo."
+        "body": "O Programa de Parceiros permite a apresentadores de negócios independentes recomendar potenciais clientes à Sociedade nas seguintes áreas: consultoria em construção civil e engenharia civil, disponibilização de especialistas, sourcing de equipamentos, logística internacional. O Parceiro recebe uma comissão nas condições definidas abaixo."
       },
       {
         "title": "2. Estatuto profissional obrigatório",
