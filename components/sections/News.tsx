@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Play, ExternalLink, Clock, Globe, ChevronDown } from "lucide-react";
+import { Play, ExternalLink, Clock, Newspaper, ChevronDown } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { SITE } from "@/lib/site";
 import { GOOGLE_SHEET_CSV_URL, parseNewsCsv, getNewsTitle, youtubeThumb, isYoutubeHref, type NewsRow } from "@/lib/news";
@@ -134,7 +134,7 @@ export default function News() {
                 transition={{ duration: 0.45, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
                 className="group flex w-full items-center gap-4 rounded-2xl border border-border bg-background py-3 pl-3 pr-3 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 sm:gap-5 sm:py-3.5"
               >
-                <div className="relative h-16 w-24 shrink-0 overflow-hidden rounded-xl bg-gradient-to-br from-primary via-primary to-accent sm:h-[72px] sm:w-32 lg:w-36">
+                <div className="relative h-16 w-24 shrink-0 overflow-hidden rounded-xl bg-background sm:h-[72px] sm:w-32 lg:w-36">
                   {item.image ? (
                     <>
                       <Image
@@ -155,12 +155,12 @@ export default function News() {
                       <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
                     </>
                   ) : (
-                    <>
-                      <div className="pointer-events-none absolute inset-0 opacity-30">
-                        <div className="perspective-grid absolute inset-x-[-30%] top-[-20%] bottom-0 opacity-40" />
+                    <div className="flex h-full w-full items-center justify-center">
+                        <Newspaper
+                          className="h-7 w-7 text-black sm:h-8 sm:w-8"
+                          strokeWidth={1.6}
+                        />
                       </div>
-                      <Globe className="relative m-auto block h-8 w-8 text-white/80" />
-                    </>
                   )}
 
                   {item.isVideo && (
