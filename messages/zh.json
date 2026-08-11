@@ -17,7 +17,9 @@
     "cguTitle": "服务条款 | E-MPGT",
     "cguDescription": "E-MPGT 服务条款。",
     "cguPartnersTitle": "合作伙伴计划条款 | E-MPGT",
-    "cguPartnersDescription": "E-MPGT 业务推荐计划条款及条件。"
+    "cguPartnersDescription": "E-MPGT 业务推荐计划条款及条件。",
+    "missionsTitle": "我们的项目 | E-MPGT — 精选项目",
+    "missionsDescription": "了解E-MPGT的项目：新办公楼、实验室、火车站、办公室翻新、大学校园、工业及其他项目。"
   },
   "Locale": {
     "switchAria": "切换语言",
@@ -39,6 +41,7 @@
     "news": "新闻动态",
     "contact": "联系我们",
     "cta": "视频会议",
+    "missions": "我们的项目",
     "openMenu": "打开菜单",
     "submenu": "打开子菜单",
     "logoAlt": "E-MPGT — 首页"
@@ -336,6 +339,7 @@
     "partners": "合作伙伴",
     "news": "新闻动态",
     "contact": "联系我们",
+    "missions": "我们的项目",
     "navTitle": "导航",
     "platformsTitle": "平台",
     "legalTitle": "服务条款",
@@ -654,6 +658,20 @@
         "title": "13. 适用法律",
         "body": "本计划受葡萄牙法律管辖。因本条款产生的任何纠纷，由司法机关管辖。"
       }
+    ]
+  },
+  "Missions": {
+    "badge": "项目展示",
+    "title": "我们的项目",
+    "subtitle": "精选任务与项目，展现我们的专业能力。",
+    "sections": [
+      { "title": "新办公楼", "description": "" },
+      { "title": "实验室", "description": "" },
+      { "title": "火车站", "description": "" },
+      { "title": "办公室翻新", "description": "" },
+      { "title": "大学校园", "description": "" },
+      { "title": "工业设施", "description": "" },
+      { "title": "其他", "description": "" }
     ]
   }
 }

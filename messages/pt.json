@@ -17,7 +17,9 @@
     "cguTitle": "Condições gerais de serviço | E-MPGT",
     "cguDescription": "Condições gerais de serviço da E-MPGT.",
     "cguPartnersTitle": "Condições gerais do Programa de Parceiros | E-MPGT",
-    "cguPartnersDescription": "Condições gerais do Programa de Apresentadores de Negócios da E-MPGT."
+    "cguPartnersDescription": "Condições gerais do Programa de Apresentadores de Negócios da E-MPGT.",
+    "missionsTitle": "As nossas missões | E-MPGT — As nossas realizações",
+    "missionsDescription": "Descubra as realizações da E-MPGT: escritórios novos, laboratórios, estações ferroviárias, renovação de escritórios, campus universitários, indústrias e outros projetos."
   },
   "Locale": {
     "switchAria": "Mudar de idioma",
@@ -39,6 +41,7 @@
     "news": "Notícias",
     "contact": "Contacto",
     "cta": "Reunião por videoconferência",
+    "missions": "As nossas missões",
     "openMenu": "Abrir o menu",
     "submenu": "Abrir submenu",
     "logoAlt": "E-MPGT — Início"
@@ -336,6 +339,7 @@
     "partners": "Parceiros",
     "news": "Notícias",
     "contact": "Contacto",
+    "missions": "As nossas missões",
     "navTitle": "Navegação",
     "platformsTitle": "Plataformas",
     "legalTitle": "Condições gerais de serviço",
@@ -654,6 +658,20 @@
         "title": "13. Direito aplicável",
         "body": "O presente programa é regido pelo direito português. Qualquer litígio será submetido aos tribunais competentes de Portugal."
       }
+    ]
+  },
+  "Missions": {
+    "badge": "As nossas realizações",
+    "title": "As nossas missões",
+    "subtitle": "Uma seleção de missões e realizações que demonstram o nosso saber-fazer.",
+    "sections": [
+      { "title": "Escritórios novos", "description": "" },
+      { "title": "Laboratórios", "description": "" },
+      { "title": "Estações ferroviárias", "description": "" },
+      { "title": "Renovação de escritórios", "description": "" },
+      { "title": "Campus universitários", "description": "" },
+      { "title": "Indústrias", "description": "" },
+      { "title": "Outros", "description": "" }
     ]
   }
 }

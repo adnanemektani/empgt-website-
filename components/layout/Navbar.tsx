@@ -23,6 +23,7 @@ const NAV_ITEMS: NavItem[] = [
     href: "/",
     children: [
       { labelKey: "expertises", href: "/expertises" },
+      { labelKey: "missions", href: "/nos-missions" },
       { labelKey: "technologies", href: "/technologies" },
       { labelKey: "profils", href: "/profils" },
       { labelKey: "irve", href: "/irve" },

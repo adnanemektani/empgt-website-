@@ -120,6 +120,12 @@ body {
   background-size: 22px 22px;
 }
 
+/* Points clairs pour panneaux sombres (bleu marine) */
+.dot-grid-light {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
 /* Carte 3D flottante */
 .float-3d {
   animation: float-3d 7s ease-in-out infinite;

@@ -17,7 +17,9 @@
     "cguTitle": "الشروط العامة للخدمة | E-MPGT",
     "cguDescription": "الشروط العامة للخدمة الخاصة بـ E-MPGT.",
     "cguPartnersTitle": "الشروط العامة لبرنامج الشركاء | E-MPGT",
-    "cguPartnersDescription": "الشروط العامة لبرنامج محققي الأعمال لدى E-MPGT."
+    "cguPartnersDescription": "الشروط العامة لبرنامج محققي الأعمال لدى E-MPGT.",
+    "missionsTitle": "مهامنا | E-MPGT — إنجازاتنا",
+    "missionsDescription": "اكتشفوا إنجازات E-MPGT: مكاتب جديدة، مختبرات، محطات السكك الحديدية، تجديد المكاتب، حرم جامعي، صناعات ومشاريع أخرى."
   },
   "Locale": {
     "switchAria": "تغيير اللغة",
@@ -39,6 +41,7 @@
     "news": "الأخبار",
     "contact": "اتصل بنا",
     "cta": "موعد بالفيديو",
+    "missions": "مهامنا",
     "openMenu": "فتح القائمة",
     "submenu": "فتح القائمة الفرعية",
     "logoAlt": "E-MPGT — الرئيسية"
@@ -336,6 +339,7 @@
     "partners": "الشركاء",
     "news": "الأخبار",
     "contact": "اتصل بنا",
+    "missions": "مهامنا",
     "navTitle": "التنقل",
     "platformsTitle": "المنصات",
     "legalTitle": "الشروط العامة للخدمة",
@@ -654,6 +658,20 @@
         "title": "13. القانون الواجب التطبيق",
         "body": "يخضع البرنامج الحالي للقانون البرتغالي. يخضع أي نزاع للمحاكم المختصة في البرتغال."
       }
+    ]
+  },
+  "Missions": {
+    "badge": "إنجازاتنا",
+    "title": "مهامنا",
+    "subtitle": "مجموعة من المهام والإنجازات التي تعكس خبرتنا في مختلف المجالات.",
+    "sections": [
+      { "title": "مكاتب جديدة", "description": "" },
+      { "title": "مختبرات", "description": "" },
+      { "title": "محطات السكك الحديدية", "description": "" },
+      { "title": "تجديد المكاتب", "description": "" },
+      { "title": "الحرم الجامعي", "description": "" },
+      { "title": "الصناعات", "description": "" },
+      { "title": "أخرى", "description": "" }
     ]
   }
 }

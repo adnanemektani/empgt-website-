@@ -9,6 +9,7 @@ const NAV_KEYS = [
   { key: "home", href: "/" },
   { key: "about", href: "/a-propos" },
   { key: "expertises", href: "/expertises" },
+  { key: "missions", href: "/nos-missions" },
   { key: "technologies", href: "/technologies" },
   { key: "profils", href: "/profils" },
   { key: "irve", href: "/irve" },

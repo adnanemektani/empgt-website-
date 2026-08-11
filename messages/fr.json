@@ -17,7 +17,9 @@
     "cguTitle": "Conditions générales de service | E-MPGT",
     "cguDescription": "Conditions générales de service d'E-MPGT.",
     "cguPartnersTitle": "Conditions générales du Programme Partenaires | E-MPGT",
-    "cguPartnersDescription": "Conditions générales du Programme d'Apporteurs d'Affaires E-MPGT."
+    "cguPartnersDescription": "Conditions générales du Programme d'Apporteurs d'Affaires E-MPGT.",
+    "missionsTitle": "Nos missions | E-MPGT — Nos réalisations",
+    "missionsDescription": "Découvrez les réalisations E-MPGT : bureaux neufs, laboratoires, gares ferroviaires, rénovation de bureaux, campus universitaires, industries et autres projets."
   },
   "Locale": {
     "switchAria": "Changer de langue",
@@ -39,6 +41,7 @@
     "news": "Actualités",
     "contact": "Contact",
     "cta": "Rendez-vous visio",
+    "missions": "Nos missions",
     "openMenu": "Ouvrir le menu",
     "submenu": "Ouvrir le sous-menu",
     "logoAlt": "E-MPGT — Accueil"
@@ -336,6 +339,7 @@
     "partners": "Partenaires",
     "news": "Actualités",
     "contact": "Contact",
+    "missions": "Nos missions",
     "navTitle": "Navigation",
     "platformsTitle": "Plateformes",
     "legalTitle": "Conditions générales de service",
@@ -654,6 +658,20 @@
         "title": "13. Droit applicable",
         "body": "Le présent programme est régi par le droit portugais. Tout litige sera soumis aux juridictions compétentes du Portugal."
       }
+    ]
+  },
+  "Missions": {
+    "badge": "Nos réalisations",
+    "title": "Nos missions",
+    "subtitle": "Une sélection de missions et de réalisations qui témoignent de notre savoir-faire.",
+    "sections": [
+      { "title": "Bureaux neufs", "description": "" },
+      { "title": "Laboratoires", "description": "" },
+      { "title": "Gares ferroviaires", "description": "" },
+      { "title": "Rénovation de bureaux", "description": "" },
+      { "title": "Campus universitaires", "description": "" },
+      { "title": "Industries", "description": "" },
+      { "title": "Autres", "description": "" }
     ]
   }
 }

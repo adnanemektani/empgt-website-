@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Calendar, Handshake, ArrowRight, BadgeCheck, Globe, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SITE } from "@/lib/site";
+import CTA_SLIDES from "@/lib/cta-slides";
 
 const FEATURE_ICONS = [BadgeCheck, Globe, Users];
 
@@ -12,6 +15,12 @@ export default function CTA() {
   const stats = t.raw("stats") as { value: string; label: string }[];
   const features = t.raw("features") as string[];
   const keywords = t.raw("keywords") as string[];
+
+  const [slide, setSlide] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setSlide((s) => (s + 1) % CTA_SLIDES.length), 4500);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <section className="relative overflow-hidden py-24 lg:py-32">
@@ -32,11 +41,11 @@ export default function CTA() {
           <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             {t("keywordsTitle")}
           </p>
-          <div className="mt-5 flex flex-wrap justify-center gap-2.5">
+          <div className="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-3">
             {keywords.map((kw) => (
               <span
                 key={kw}
-                className="rounded-full border border-primary/20 bg-primary-soft px-4 py-1.5 text-sm font-medium text-primary"
+                className="whitespace-nowrap rounded-full border border-primary/20 bg-primary-soft px-5 py-2 text-sm font-medium text-primary"
               >
                 {kw}
               </span>
@@ -50,7 +59,7 @@ export default function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="grid grid-cols-2 gap-6 lg:grid-cols-4"
+          className="grid grid-cols-2 gap-6 pt-14 lg:grid-cols-4"
         >
           {stats.map((s) => (
             <div
@@ -73,12 +82,43 @@ export default function CTA() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="scene-3d relative mt-16"
         >
-          <div className="preserve-3d relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-accent p-10 shadow-2xl shadow-primary/25 lg:p-16">
-            <div className="pointer-events-none absolute inset-0 opacity-30">
-              <div className="perspective-grid absolute inset-x-[-30%] top-[-40%] bottom-0 opacity-50" />
-            </div>
-            <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/40 blur-[80px]" />
-            <div className="pointer-events-none absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-primary-foreground/10 blur-[90px]" />
+          <div className="preserve-3d relative overflow-hidden rounded-3xl shadow-2xl shadow-primary/25">
+            {/* Rayon de lumière vert qui tourne autour du cadre (halo + trait) */}
+            <motion.div
+              aria-hidden
+              className="pointer-events-none absolute inset-[-200%] bg-[conic-gradient(from_0deg,transparent_0deg,#68b245_100deg,transparent_210deg)] opacity-70 blur-[14px]"
+              animate={{ rotate: 360 }}
+              transition={{ duration: 9, repeat: Infinity, ease: "linear" }}
+            />
+            <motion.div
+              aria-hidden
+              className="pointer-events-none absolute inset-[-200%] bg-[conic-gradient(from_0deg,transparent_0deg,#68b245_75deg,transparent_170deg)]"
+              animate={{ rotate: 360 }}
+              transition={{ duration: 9, repeat: Infinity, ease: "linear" }}
+            />
+            <div className="relative m-[4px] overflow-hidden rounded-[calc(1.5rem-4px)] bg-primary p-10 lg:p-16">
+            {/* Carrousel de photos de chantiers en fond (fondu croisé) */}
+            {CTA_SLIDES.map((src, i) => (
+              <motion.div
+                key={src}
+                className="absolute inset-0"
+                initial={false}
+                animate={{ opacity: i === slide ? 1 : 0 }}
+                transition={{ duration: 1.3, ease: "easeInOut" }}
+              >
+                <Image
+                  src={src}
+                  alt=""
+                  fill
+                  priority={i === 0}
+                  sizes="100vw"
+                  className="object-cover"
+                />
+              </motion.div>
+            ))}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-primary/95 via-primary/80 to-primary/60" />
+            <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10" />
+            <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/30 blur-[90px]" />
 
             <div className="relative grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
               <div>
@@ -133,7 +173,8 @@ export default function CTA() {
                 })}
               </div>
             </div>
-          </div>
+              </div>
+            </div>
         </motion.div>
       </div>
     </section>

@@ -17,7 +17,9 @@
     "cguTitle": "General Terms of Service | E-MPGT",
     "cguDescription": "E-MPGT General Terms of Service.",
     "cguPartnersTitle": "Partner Programme Terms & Conditions | E-MPGT",
-    "cguPartnersDescription": "E-MPGT Business Referral Programme General Terms & Conditions."
+    "cguPartnersDescription": "E-MPGT Business Referral Programme General Terms & Conditions.",
+    "missionsTitle": "Our work | E-MPGT — Our projects",
+    "missionsDescription": "Discover E-MPGT's projects: new offices, laboratories, railway stations, office renovation, university campuses, industries and more."
   },
   "Locale": {
     "switchAria": "Change language",
@@ -39,6 +41,7 @@
     "news": "News",
     "contact": "Contact",
     "cta": "Video call",
+    "missions": "Our work",
     "openMenu": "Open menu",
     "submenu": "Open submenu",
     "logoAlt": "E-MPGT — Home"
@@ -336,6 +339,7 @@
     "partners": "Partners",
     "news": "News",
     "contact": "Contact",
+    "missions": "Our work",
     "navTitle": "Navigation",
     "platformsTitle": "Platforms",
     "legalTitle": "General Terms of Service",
@@ -654,6 +658,20 @@
         "title": "13. Applicable law",
         "body": "This programme is governed by Portuguese law. Any dispute will be subject to the competent courts of Portugal."
       }
+    ]
+  },
+  "Missions": {
+    "badge": "Our work",
+    "title": "Our work",
+    "subtitle": "A selection of missions and projects showcasing our expertise.",
+    "sections": [
+      { "title": "New offices", "description": "" },
+      { "title": "Laboratories", "description": "" },
+      { "title": "Railway stations", "description": "" },
+      { "title": "Office renovation", "description": "" },
+      { "title": "University campuses", "description": "" },
+      { "title": "Industries", "description": "" },
+      { "title": "Others", "description": "" }
     ]
   }
 }
