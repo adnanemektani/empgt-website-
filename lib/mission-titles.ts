@@ -1,4 +1,4 @@
-import type { MissionSlug } from "./missions";
+import type { MissionSlug } from "./mission-slugs";
 
 type LocalizedTitle = {
   fr: string;

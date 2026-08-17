@@ -1,18 +1,9 @@
 import { readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { getProfessionalTitle } from "@/lib/mission-titles";
-
-export const MISSION_SLUGS = [
-  "bureaux-neufs",
-  "laboratoires",
-  "gares-ferroviaires",
-  "renovation-bureaux",
-  "campus-universitaires",
-  "industries",
-  "autres",
-] as const;
-
-export type MissionSlug = (typeof MISSION_SLUGS)[number];
+export { MISSION_SLUGS } from "@/lib/mission-slugs";
+export type { MissionSlug, MissionImage } from "@/lib/mission-slugs";
+import type { MissionSlug, MissionImage } from "@/lib/mission-slugs";
 
 const IMAGE_EXT = /\.(jpe?g|png|webp|gif)$/i;
 
@@ -23,8 +14,6 @@ function toTitle(filename: string): string {
     .replace(/\s+/g, " ")
     .trim();
 }
-
-export type MissionImage = { src: string; title: string };
 
 export function getMissionImages(slug: MissionSlug, locale: string = "fr"): MissionImage[] {
   const dir = path.join(process.cwd(), "public", "images", "missions", slug);

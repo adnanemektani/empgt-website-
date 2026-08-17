@@ -66,3 +66,39 @@ export async function fetchSanityNews(locale: string): Promise<SanityNews[]> {
     };
   });
 }
+
+export type SanityMissionPhoto = { src: string; title: string };
+
+export type SanityMission = {
+  slug: string;
+  photos: SanityMissionPhoto[];
+};
+
+const MISSION_QUERY = `*[_type == "missionSection"] | order(order asc) {
+  "slug": slug.current,
+  "photos": photos[] {
+    title,
+    "src": image.asset->url,
+    "alt": image.alt
+  }
+}`;
+
+export async function fetchSanityMissions(locale: string): Promise<SanityMission[]> {
+  const docs: {
+    slug?: string;
+    photos?: {
+      title?: { fr?: string; en?: string; ar?: string; zh?: string; pt?: string };
+      src?: string | null;
+    }[];
+  }[] = await sanityClient.fetch(MISSION_QUERY);
+
+  return docs.map((doc) => ({
+    slug: doc.slug ?? "",
+    photos: (doc.photos ?? [])
+      .filter((p) => p.src)
+      .map((p) => ({
+        src: p.src as string,
+        title: p.title?.[locale as "en"] ?? p.title?.fr ?? "E-MPGT",
+      })),
+  }));
+}
