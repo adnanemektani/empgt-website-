@@ -8,4 +8,8 @@ export default defineCliConfig({
     projectId,
     dataset,
   },
+  studioHost: process.env.SANITY_STUDIO_HOST || "empgt",
+  deployment: {
+    appId: "v25n8ho5tiphdrthclgcqhqa",
+  },
 });

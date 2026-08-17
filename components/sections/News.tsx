@@ -7,6 +7,7 @@ import { Play, ExternalLink, Clock, Newspaper, ChevronDown } from "lucide-react"
 import { useTranslations, useLocale } from "next-intl";
 import { SITE } from "@/lib/site";
 import { GOOGLE_SHEET_CSV_URL, parseNewsCsv, getNewsTitle, youtubeThumb, isYoutubeHref, type NewsRow } from "@/lib/news";
+import { fetchSanityNews, type SanityNews } from "@/lib/sanity";
 
 type Card = {
   title: string;
@@ -32,8 +33,23 @@ export default function News() {
   const t = useTranslations("News");
   const locale = useLocale();
   const [remote, setRemote] = useState<NewsRow[] | null>(null);
+  const [sanity, setSanity] = useState<SanityNews[] | null>(null);
   const [viewed, setViewed] = useState<string[]>([]);
   const [visible, setVisible] = useState(MAX_VISIBLE);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchSanityNews(locale)
+      .then((items) => {
+        if (!cancelled) setSanity(items);
+      })
+      .catch(() => {
+        if (!cancelled) setSanity(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [locale]);
 
   useEffect(() => {
     let cancelled = false;
@@ -63,7 +79,7 @@ export default function News() {
 
   const fallbackItems = t.raw("items") as { title: string; source: string }[];
 
-  const cards: Card[] =
+  const csvCards: Card[] =
     remote && remote.length > 0
       ? remote.map((row) => ({
           title: getNewsTitle(row, locale),
@@ -81,6 +97,18 @@ export default function News() {
           isVideo: i === 0,
           date: "",
         }));
+
+  const cards: Card[] =
+    sanity && sanity.length > 0
+      ? sanity.map((item) => ({
+          title: item.title,
+          source: item.source,
+          href: item.href,
+          image: item.image,
+          isVideo: item.isVideo,
+          date: item.date,
+        }))
+      : csvCards;
 
   const markViewed = (href: string) => {
     if (viewed.includes(href)) return;
