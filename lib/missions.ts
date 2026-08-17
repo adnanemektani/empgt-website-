@@ -1,5 +1,6 @@
 import { readdirSync, existsSync } from "node:fs";
 import path from "node:path";
+import { getProfessionalTitle } from "@/lib/mission-titles";
 
 export const MISSION_SLUGS = [
   "bureaux-neufs",
@@ -25,11 +26,14 @@ function toTitle(filename: string): string {
 
 export type MissionImage = { src: string; title: string };
 
-export function getMissionImages(slug: MissionSlug): MissionImage[] {
+export function getMissionImages(slug: MissionSlug, locale: string = "fr"): MissionImage[] {
   const dir = path.join(process.cwd(), "public", "images", "missions", slug);
   if (!existsSync(dir)) return [];
 
   return readdirSync(dir)
     .filter((f) => IMAGE_EXT.test(f))
-    .map((f) => ({ src: `/images/missions/${slug}/${encodeURI(f)}`, title: toTitle(f) }));
+    .map((f) => ({
+      src: `/images/missions/${slug}/${encodeURI(f)}`,
+      title: getProfessionalTitle(slug, f, locale) ?? toTitle(f),
+    }));
 }

@@ -1,16 +1,17 @@
-import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { getMissionImages, MISSION_SLUGS } from "@/lib/missions";
+import MissionGallery from "@/components/sections/MissionGallery";
 
 export default async function Missions() {
   const t = await getTranslations("Missions");
+  const locale = await getLocale();
   const sections = t.raw("sections") as { title: string; description: string }[];
 
   return (
     <>
       {sections.map((section, i) => {
         const slug = MISSION_SLUGS[i];
-        const images = getMissionImages(slug);
+        const images = getMissionImages(slug, locale);
         const even = i % 2 === 0;
 
         return (
@@ -38,27 +39,7 @@ export default async function Missions() {
               </div>
 
               {images.length > 0 ? (
-                <div className="mt-9 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
-                  {images.map((img) => (
-                    <figure
-                      key={img.src}
-                      className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-shadow duration-300 hover:shadow-xl hover:shadow-primary/10"
-                    >
-                      <Image
-                        src={img.src}
-                        alt={img.title}
-                        fill
-                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-3 bg-gradient-to-t from-black/75 via-black/35 to-transparent px-3 pb-2.5 pt-10 opacity-0 backdrop-blur-[1px] transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                        <p className="truncate text-sm font-semibold text-white">
-                          {img.title}
-                        </p>
-                      </figcaption>
-                    </figure>
-                  ))}
-                </div>
+                <MissionGallery images={images} />
               ) : null}
             </div>
           </section>
