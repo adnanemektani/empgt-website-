@@ -30,7 +30,7 @@ export default async function MissionsPage({ params }: Props) {
     <>
       <Navbar />
       <main className="flex-1">
-        <PageHero badge={t("badge")} title={t("title")} subtitle={t("subtitle")} crumb="E-MPGT" />
+        <PageHero badge={t("badge")} title={t("title")} subtitle={t("subtitle")} />
         <Missions />
         <CTA />
       </main>

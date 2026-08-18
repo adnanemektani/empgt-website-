@@ -30,7 +30,7 @@ export default async function TechnologiesPage({ params }: Props) {
     <>
       <Navbar />
       <main className="flex-1">
-        <PageHero badge={t("badge")} title={t("title")} subtitle={t("intro")} crumb="E-MPGT" />
+        <PageHero badge={t("badge")} title={t("title")} subtitle={t("intro")} />
         <Tech showHeader={false} />
         <CTA />
       </main>

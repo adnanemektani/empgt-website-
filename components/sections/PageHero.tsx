@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import HeroScene3D from "@/components/sections/HeroScene3D";
 
 type Slide = { src: string };
 
@@ -25,7 +25,6 @@ type PageHeroProps = {
   badge: string;
   title: string;
   subtitle: string;
-  crumb?: string;
   slides?: Slide[];
 };
 
@@ -33,7 +32,6 @@ export default function PageHero({
   badge,
   title,
   subtitle,
-  crumb,
   slides = DEFAULT_SLIDES,
 }: PageHeroProps) {
   const [index, setIndex] = useState(0);
@@ -83,49 +81,35 @@ export default function PageHero({
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 pt-32 lg:px-8">
-        {crumb && (
-          <motion.p
-            initial={{ y: 12, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.05 }}
-            className="mb-4 text-xs font-semibold uppercase tracking-widest text-white/50"
-          >
-            {crumb}
-          </motion.p>
-        )}
-        <motion.span
-          initial={{ y: 16, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white backdrop-blur-sm"
-        >
-          {badge}
-        </motion.span>
-        <motion.h1
-          initial={{ y: 24, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl"
-        >
-          {title}
-        </motion.h1>
-        <motion.p
-          initial={{ y: 24, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.35 }}
-          className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg"
-        >
-          {subtitle}
-        </motion.p>
-        <motion.span
-          initial={{ y: 24, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="pointer-events-none mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white/30"
-        >
-          E-MPGT
-          <ArrowRight className="h-4 w-4" />
-        </motion.span>
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <motion.span
+              initial={{ y: 16, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-accent bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-accent backdrop-blur-sm"
+            >
+              {badge}
+            </motion.span>
+            <motion.h1
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+              {title}
+            </motion.h1>
+            <motion.p
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.35 }}
+              className="mt-6 max-w-2xl text-base text-accent sm:text-lg"
+            >
+              {subtitle}
+            </motion.p>
+          </div>
+          <HeroScene3D />
+        </div>
       </div>
     </section>
   );

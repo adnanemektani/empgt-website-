@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import HeroScene3D from "@/components/sections/HeroScene3D";
 
 const SLIDES = [
   {
@@ -69,40 +70,45 @@ export default function AboutHero() {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 pt-32 lg:px-8">
-        <motion.span
-          initial={{ y: 16, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white backdrop-blur-sm"
-        >
-          {t("badge")}
-        </motion.span>
-        <motion.h1
-          initial={{ y: 24, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl"
-        >
-          {t("title")}
-        </motion.h1>
-        <motion.p
-          initial={{ y: 24, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.35 }}
-          className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg"
-        >
-          {t("text")}
-        </motion.p>
-        <motion.a
-          initial={{ y: 24, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          href="#histoire"
-          className="group mt-10 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-black/30 transition-all duration-300 hover:scale-[1.04]"
-        >
-          {t("cta")}
-          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5 group-hover:rotate-90" />
-        </motion.a>
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <motion.span
+              initial={{ y: 16, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-accent bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-accent backdrop-blur-sm"
+            >
+              {t("badge")}
+            </motion.span>
+            <motion.h1
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+              {t("title")}
+            </motion.h1>
+            <motion.p
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.35 }}
+              className="mt-6 max-w-2xl text-base text-accent sm:text-lg"
+            >
+              {t("text")}
+            </motion.p>
+            <motion.a
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              href="#histoire"
+              className="group mt-10 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground shadow-lg shadow-black/30 transition-all duration-300 hover:scale-[1.04]"
+            >
+              {t("cta")}
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5 group-hover:rotate-90" />
+            </motion.a>
+          </div>
+          <HeroScene3D />
+        </div>
       </div>
     </section>
   );
