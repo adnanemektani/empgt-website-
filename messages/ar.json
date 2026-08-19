@@ -673,6 +673,12 @@
       { "title": "الحرم الجامعي", "description": "" },
       { "title": "الصناعات", "description": "" },
       { "title": "أخرى", "description": "" }
-    ]
+    ],
+    "searchPlaceholder": "ابحث عن مشروع، مكان، نوع أشغال...",
+    "search": "بحث",
+    "filterAll": "جميع الإنجازات",
+    "noResults": "لا توجد إنجازات مطابقة لبحثك.",
+    "result": "إنجاز واحد",
+    "results": "إنجازات"
   }
 }

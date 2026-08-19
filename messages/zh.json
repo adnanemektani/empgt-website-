@@ -673,6 +673,12 @@
       { "title": "大学校园", "description": "" },
       { "title": "工业设施", "description": "" },
       { "title": "其他", "description": "" }
-    ]
+    ],
+    "searchPlaceholder": "搜索项目、地点或工程类型...",
+    "search": "搜索",
+    "filterAll": "全部成果",
+    "noResults": "没有与您的搜索匹配的成果。",
+    "result": "成果",
+    "results": "个成果"
   }
 }

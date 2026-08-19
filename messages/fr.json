@@ -673,6 +673,12 @@
       { "title": "Campus universitaires", "description": "" },
       { "title": "Industries", "description": "" },
       { "title": "Autres", "description": "" }
-    ]
+    ],
+    "searchPlaceholder": "Rechercher une mission, un lieu, un type de chantier...",
+    "search": "Rechercher",
+    "filterAll": "Toutes les réalisations",
+    "noResults": "Aucune réalisation ne correspond à votre recherche.",
+    "result": "réalisation trouvée",
+    "results": "réalisations trouvées"
   }
 }

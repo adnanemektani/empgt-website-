@@ -673,6 +673,12 @@
       { "title": "Campus universitários", "description": "" },
       { "title": "Indústrias", "description": "" },
       { "title": "Outros", "description": "" }
-    ]
+    ],
+    "searchPlaceholder": "Pesquisar um projeto, um local, um tipo de obra...",
+    "search": "Pesquisar",
+    "filterAll": "Todos os projetos",
+    "noResults": "Nenhum projeto corresponde à sua pesquisa.",
+    "result": "projeto encontrado",
+    "results": "projetos encontrados"
   }
 }

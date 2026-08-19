@@ -673,6 +673,12 @@
       { "title": "University campuses", "description": "" },
       { "title": "Industries", "description": "" },
       { "title": "Others", "description": "" }
-    ]
+    ],
+    "searchPlaceholder": "Search a project, a place, a type of work...",
+    "search": "Search",
+    "filterAll": "All projects",
+    "noResults": "No project matches your search.",
+    "result": "project found",
+    "results": "projects found"
   }
 }
