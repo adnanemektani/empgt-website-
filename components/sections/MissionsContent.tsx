@@ -89,9 +89,20 @@ export default function MissionsContent({ sections, fallback }: Props) {
                 onKeyDown={(e) => {
                   if (e.key === "Enter") applySearch();
                 }}
-                placeholder={t("searchPlaceholder")}
-                className="w-full rounded-2xl border border-border bg-background py-3.5 pl-12 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                aria-label={t("searchPlaceholder")}
+                className="w-full rounded-2xl border border-border bg-background py-3.5 pl-12 pr-4 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
               />
+              {draft === "" && (
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute left-12 right-4 top-1/2 flex -translate-y-1/2 items-center overflow-hidden text-sm text-muted-foreground"
+                >
+                  <span className="placeholder-marquee-track">
+                    <span className="shrink-0 pr-10">{t("searchPlaceholder")}</span>
+                    <span className="shrink-0 pr-10 placeholder-marquee-duplicate">{t("searchPlaceholder")}</span>
+                  </span>
+                </span>
+              )}
             </label>
             <button
               type="button"

@@ -179,6 +179,31 @@ body {
   animation: marquee 30s linear infinite;
 }
 
+/* Placeholder défilant (champ recherche missions, mobile) */
+@keyframes placeholder-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.placeholder-marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: placeholder-marquee 10s linear infinite;
+}
+
+@media (min-width: 1024px) {
+  .placeholder-marquee-track {
+    animation: none;
+  }
+  .placeholder-marquee-duplicate {
+    display: none;
+  }
+}
+
 /* Réduire le mouvement si l'utilisateur le demande */
 @media (prefers-reduced-motion: reduce) {
   *,
