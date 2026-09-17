@@ -666,19 +666,24 @@
     "title": "Our work",
     "subtitle": "A selection of missions and projects showcasing our expertise.",
     "sections": [
-      { "title": "New offices", "description": "" },
-      { "title": "Laboratories", "description": "" },
-      { "title": "Railway stations", "description": "" },
-      { "title": "Office renovation", "description": "" },
-      { "title": "University campuses", "description": "" },
-      { "title": "Industries", "description": "" },
-      { "title": "Others", "description": "" }
+      { "title": "New offices", "description": "Design and construction of new head offices and workspaces for major groups — BMW Group France, JOYA, Campus Cyber, social ministries." },
+      { "title": "Office renovation", "description": "Refurbishment and modernisation of office buildings across Paris and Île-de-France, from design to delivery." },
+      { "title": "University campuses", "description": "Higher-education facilities and university campuses, from Campus Condorcet to MGP Valrose." },
+      { "title": "Laboratories", "description": "State-of-the-art scientific research facilities — biology, photovoltaics, oncology." },
+      { "title": "Railway stations", "description": "Major railway infrastructure and metro maintenance projects, including the Grand Paris Express." },
+      { "title": "Industries", "description": "Industrial sites and technical buildings run under demanding operational constraints." },
+      { "title": "Others", "description": "A range of cultural, sports and public projects — the Paris 2024 Athletes' Village, auditoriums, community centres." }
     ],
     "searchPlaceholder": "Search a project, a place, a type of work...",
     "search": "Search",
-    "filterAll": "All projects",
+    "filterAll": "Some projects",
     "noResults": "No project matches your search.",
     "result": "project found",
-    "results": "projects found"
+    "results": "projects found",
+    "previewBadge": "Our work",
+    "previewTitle": "Our missions in pictures",
+    "previewSubtitle": "A glimpse of our projects, sorted by type.",
+    "previewHint": "Scrolling pauses on hover. Drag to browse.",
+    "previewCta": "View the mission"
   }
 }

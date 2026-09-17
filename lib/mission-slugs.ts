@@ -1,9 +1,9 @@
 export const MISSION_SLUGS = [
   "bureaux-neufs",
-  "laboratoires",
-  "gares-ferroviaires",
   "renovation-bureaux",
   "campus-universitaires",
+  "laboratoires",
+  "gares-ferroviaires",
   "industries",
   "autres",
 ] as const;

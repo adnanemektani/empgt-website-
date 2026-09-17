@@ -666,19 +666,24 @@
     "title": "我们的项目",
     "subtitle": "精选任务与项目，展现我们的专业能力。",
     "sections": [
-      { "title": "新办公楼", "description": "" },
-      { "title": "实验室", "description": "" },
-      { "title": "火车站", "description": "" },
-      { "title": "办公室翻新", "description": "" },
-      { "title": "大学校园", "description": "" },
-      { "title": "工业设施", "description": "" },
-      { "title": "其他", "description": "" }
+      { "title": "新办公楼", "description": "为宝马集团法国、JOYA、网络安全园区、社会事务部等大型集团设计建造新总部及办公空间。" },
+      { "title": "办公室翻新", "description": "对巴黎及法兰西岛地区的办公楼进行改造与现代化升级，从设计到交付全程负责。" },
+      { "title": "大学校园", "description": "高等教育设施与大学校园项目，从孔多塞校区到 MGP Valrose。" },
+      { "title": "实验室", "description": "前沿科学研究设施——生物学、光伏、肿瘤学领域。" },
+      { "title": "火车站", "description": "大型铁路基础设施与地铁维护项目，包括大巴黎快线。" },
+      { "title": "工业设施", "description": "在严格运营约束下运行的工业场地与技术建筑。" },
+      { "title": "其他", "description": "多样化的文化、体育与公共项目——2024年巴黎奥运会运动员村、音乐厅、社区活动中心。" }
     ],
     "searchPlaceholder": "搜索项目、地点或工程类型...",
     "search": "搜索",
-    "filterAll": "全部成果",
+    "filterAll": "部分成果",
     "noResults": "没有与您的搜索匹配的成果。",
     "result": "成果",
-    "results": "个成果"
+    "results": "个成果",
+    "previewBadge": "项目展示",
+    "previewTitle": "图说我们的项目",
+    "previewSubtitle": "按项目类型分类的项目一览。",
+    "previewHint": "鼠标悬停时停止滚动，拖动即可浏览。",
+    "previewCta": "查看项目"
   }
 }

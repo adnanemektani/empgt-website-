@@ -204,6 +204,16 @@ body {
   }
 }
 
+/* Masque la scrollbar (rail de cartes défilant horizontalement, ex. missions accueil) */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Réduire le mouvement si l'utilisateur le demande */
 @media (prefers-reduced-motion: reduce) {
   *,

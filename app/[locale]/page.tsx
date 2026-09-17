@@ -5,6 +5,7 @@ import Intro from "@/components/sections/Intro";
 import ExpertisesPreview from "@/components/sections/ExpertisesPreview";
 import Ecosystem from "@/components/sections/Ecosystem";
 import Partners from "@/components/sections/Partners";
+import MissionsPreview from "@/components/sections/MissionsPreview";
 import News from "@/components/sections/News";
 import CTA from "@/components/sections/CTA";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <ExpertisesPreview />
         <Ecosystem />
         <Partners />
+        <MissionsPreview />
         <News />
         <CTA />
       </main>

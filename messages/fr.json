@@ -666,19 +666,24 @@
     "title": "Nos missions",
     "subtitle": "Une sélection de missions et de réalisations qui témoignent de notre savoir-faire.",
     "sections": [
-      { "title": "Bureaux neufs", "description": "" },
-      { "title": "Laboratoires", "description": "" },
-      { "title": "Gares ferroviaires", "description": "" },
-      { "title": "Rénovation de bureaux", "description": "" },
-      { "title": "Campus universitaires", "description": "" },
-      { "title": "Industries", "description": "" },
-      { "title": "Autres", "description": "" }
+      { "title": "Bureaux neufs", "description": "Conception et construction de sièges sociaux et bureaux neufs pour de grands groupes — BMW Group France, JOYA, Campus Cyber, ministères sociaux." },
+      { "title": "Rénovation de bureaux", "description": "Réhabilitation et modernisation d'immeubles de bureaux à Paris et en Île-de-France, de la conception à la livraison." },
+      { "title": "Campus universitaires", "description": "Équipements d'enseignement supérieur et campus universitaires, du Campus Condorcet à MGP Valrose." },
+      { "title": "Laboratoires", "description": "Infrastructures de recherche scientifique de pointe — biologie, photovoltaïque, cancérologie." },
+      { "title": "Gares ferroviaires", "description": "Grands projets d'infrastructures ferroviaires et de maintenance métro, dont le Grand Paris Express." },
+      { "title": "Industries", "description": "Sites industriels et bâtiments techniques exploités sous fortes contraintes d'exploitation." },
+      { "title": "Autres", "description": "Projets culturels, sportifs et publics variés — Village des Athlètes Paris 2024, auditoriums, centres d'animation." }
     ],
     "searchPlaceholder": "Rechercher une mission, un lieu, un type de chantier...",
     "search": "Rechercher",
-    "filterAll": "Toutes les réalisations",
+    "filterAll": "Quelques réalisations",
     "noResults": "Aucune réalisation ne correspond à votre recherche.",
     "result": "réalisation trouvée",
-    "results": "réalisations trouvées"
+    "results": "réalisations trouvées",
+    "previewBadge": "Nos réalisations",
+    "previewTitle": "Nos missions en images",
+    "previewSubtitle": "Un aperçu de nos chantiers, classés par type de projet.",
+    "previewHint": "Le défilement s'arrête au survol. Glissez pour parcourir.",
+    "previewCta": "Voir la mission"
   }
 }

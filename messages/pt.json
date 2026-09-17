@@ -666,19 +666,24 @@
     "title": "As nossas missões",
     "subtitle": "Uma seleção de missões e realizações que demonstram o nosso saber-fazer.",
     "sections": [
-      { "title": "Escritórios novos", "description": "" },
-      { "title": "Laboratórios", "description": "" },
-      { "title": "Estações ferroviárias", "description": "" },
-      { "title": "Renovação de escritórios", "description": "" },
-      { "title": "Campus universitários", "description": "" },
-      { "title": "Indústrias", "description": "" },
-      { "title": "Outros", "description": "" }
+      { "title": "Escritórios novos", "description": "Conceção e construção de sedes e escritórios novos para grandes grupos — BMW Group France, JOYA, Campus Cyber, ministérios sociais." },
+      { "title": "Renovação de escritórios", "description": "Reabilitação e modernização de edifícios de escritórios em Paris e na Île-de-France, da conceção à entrega." },
+      { "title": "Campus universitários", "description": "Equipamentos de ensino superior e campus universitários, do Campus Condorcet ao MGP Valrose." },
+      { "title": "Laboratórios", "description": "Infraestruturas de investigação científica de ponta — biologia, fotovoltaico, oncologia." },
+      { "title": "Estações ferroviárias", "description": "Grandes projetos de infraestrutura ferroviária e manutenção do metro, incluindo o Grand Paris Express." },
+      { "title": "Indústrias", "description": "Instalações industriais e edifícios técnicos operados sob fortes restrições de exploração." },
+      { "title": "Outros", "description": "Uma variedade de projetos culturais, desportivos e públicos — a Vila dos Atletas Paris 2024, auditórios, centros de animação." }
     ],
     "searchPlaceholder": "Pesquisar um projeto, um local, um tipo de obra...",
     "search": "Pesquisar",
-    "filterAll": "Todos os projetos",
+    "filterAll": "Algumas realizações",
     "noResults": "Nenhum projeto corresponde à sua pesquisa.",
     "result": "projeto encontrado",
-    "results": "projetos encontrados"
+    "results": "projetos encontrados",
+    "previewBadge": "As nossas realizações",
+    "previewTitle": "As nossas missões em imagens",
+    "previewSubtitle": "Um vislumbre dos nossos projetos, organizados por tipo.",
+    "previewHint": "O deslocamento pausa ao passar o rato. Arraste para navegar.",
+    "previewCta": "Ver a missão"
   }
 }

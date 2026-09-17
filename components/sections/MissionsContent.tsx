@@ -186,6 +186,7 @@ export default function MissionsContent({ sections, fallback }: Props) {
           return (
             <section
               key={slug}
+              id={slug}
               className={`relative overflow-hidden py-20 lg:py-24 ${
                 even ? "bg-background" : "bg-surface"
               }`}
