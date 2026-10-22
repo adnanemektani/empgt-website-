@@ -4,17 +4,27 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Mail, MapPin, Calendar } from "lucide-react";
+import { Mail, MapPin, Calendar, Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
-
-const TALLY_EMBED_URL = "https://tally.so/embed/mBoA4Y?transparentBackground=1";
+import type { SanityContact } from "@/lib/sanity";
+import ContactForm from "./contact-form";
 
 const INFO_ICONS = [Mail, Calendar, MapPin];
 
-export default function ContactSection() {
+type Props = {
+  contact?: SanityContact | null;
+};
+
+export default function ContactSection({ contact }: Props) {
   const t = useTranslations("Contact");
 
   const info = t.raw("info") as { title: string; text: string }[];
+
+  const email = contact?.email || SITE.email;
+  const calendly = contact?.calendly || SITE.calendly;
+  const office = contact?.office || t("valueFunchal");
+  const phone = contact?.phone || "";
+  const whatsapp = contact?.whatsapp || "";
 
   const text = t("platformsText");
   const textRef = useRef(text);
@@ -70,13 +80,12 @@ export default function ContactSection() {
           <div className="space-y-4">
             {info.map((item, i) => {
               const Icon = INFO_ICONS[i];
-              const value =
-                i === 1 ? t("valueBookNow") : i === 2 ? t("valueFunchal") : SITE.email;
+              const value = i === 1 ? t("valueBookNow") : i === 2 ? office : email;
               const href =
                 i === 0
-                  ? `mailto:${SITE.email}`
+                  ? `mailto:${email}`
                   : i === 1
-                  ? SITE.calendly
+                  ? calendly
                   : "/a-propos";
               return (
                 <motion.a
@@ -100,6 +109,36 @@ export default function ContactSection() {
                 </motion.a>
               );
             })}
+
+            {/* Téléphone / WhatsApp — renseignés depuis Sanity (document `contact`) */}
+            {(phone || whatsapp) && (
+              <motion.div
+                initial={{ opacity: 0, x: -24 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.35 }}
+                className="flex flex-wrap items-center gap-3 rounded-2xl border border-border bg-background px-5 py-4 shadow-sm"
+              >
+                {phone && (
+                  <a
+                    href={`tel:${phone.replace(/\s+/g, "")}`}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-accent"
+                  >
+                    <Phone className="h-4 w-4" />
+                    {phone}
+                  </a>
+                )}
+                {whatsapp && (
+                  <a
+                    href={`https://wa.me/${whatsapp.replace(/[^\d]/g, "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-accent"
+                  >
+                    WhatsApp
+                  </a>
+                )}
+              </motion.div>
+            )}
 
             <motion.div
               initial={{ opacity: 0, x: -24 }}
@@ -140,7 +179,7 @@ className="relative overflow-hidden rounded-2xl shadow-lg ring-1 ring-border"
 </motion.div>
           </div>
 
-          {/* Formulaire Tally — intégré dans un cadre */}
+          {/* Formulaire de contact — envoyé vers Sanity */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -152,19 +191,12 @@ className="relative overflow-hidden rounded-2xl shadow-lg ring-1 ring-border"
                 {t("title")}
               </span>
               <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
-                Tally
+                Sanity
               </span>
             </div>
-            <iframe
-              src={TALLY_EMBED_URL}
-              title="Contact E-MPGT"
-              width="100%"
-              height="720"
-              frameBorder={0}
-              marginHeight={0}
-              marginWidth={0}
-              className="block w-full"
-            />
+            <div className="p-6 lg:p-8">
+              <ContactForm />
+            </div>
           </motion.div>
         </div>
       </div>

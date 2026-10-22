@@ -543,6 +543,7 @@
     "errorName": "Votre nom est requis",
     "errorEmail": "Adresse e-mail invalide",
     "errorMessage": "Votre message doit contenir au moins 10 caractères",
+"errorSend": "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou écrivez-nous directement par e-mail.",
     "sending": "Envoi en cours…",
     "send": "Envoyer la demande",
     "successTitle": "Demande envoyée !",

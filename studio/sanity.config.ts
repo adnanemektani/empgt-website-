@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
+import { EnvelopeIcon } from "@sanity/icons/Envelope";
 import { schemaTypes } from "./schemaTypes";
 
 const projectId = process.env.SANITY_STUDIO_PROJECT_ID || "wwzbgktd";
@@ -27,8 +28,18 @@ export default defineConfig({
                   .title("Contact")
               ),
             S.divider(),
+            S.listItem()
+              .title("Demandes de contact")
+              .icon(EnvelopeIcon)
+              .child(
+                S.documentTypeList("contactSubmission")
+                  .title("Demandes de contact")
+                  .defaultOrdering([{ field: "createdAt", direction: "desc" }])
+              ),
+            S.divider(),
             ...S.documentTypeListItems().filter(
-              (item) => !["contact"].includes(item.getId() ?? "")
+              (item) =>
+                !["contact", "contactSubmission"].includes(item.getId() ?? "")
             ),
           ]),
     }),

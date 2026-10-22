@@ -102,3 +102,60 @@ export async function fetchSanityMissions(locale: string): Promise<SanityMission
       })),
   }));
 }
+
+export type SanityContact = {
+  email: string | null;
+  phone: string | null;
+  whatsapp: string | null;
+  calendly: string | null;
+  office: string | null;
+  socials: { label: string; url: string }[];
+  description: string | null;
+};
+
+/**
+ * Document unique `contact` (id : « contact ») —'il remplace les coordonnées
+ * codées en dur dans `lib/site.ts`. Retourne `null` si le document n'existe pas
+ * encore : le site retombe alors sur les valeurs par défaut.
+ */
+const CONTACT_QUERY = `*[_type == "contact" && _id == "contact"][0]{
+  email,
+  phone,
+  whatsapp,
+  calendly,
+  office,
+  socials[]{label, url},
+  description
+}`;
+
+export async function fetchSanityContact(): Promise<SanityContact | null> {
+  let doc: {
+    email?: string;
+    phone?: string;
+    whatsapp?: string;
+    calendly?: string;
+    office?: string;
+    socials?: { label?: string; url?: string }[];
+    description?: string;
+  } | null = null;
+
+  try {
+    doc = await sanityClient.fetch(CONTACT_QUERY);
+  } catch {
+    return null;
+  }
+
+  if (!doc) return null;
+
+  return {
+    email: doc.email || null,
+    phone: doc.phone || null,
+    whatsapp: doc.whatsapp || null,
+    calendly: doc.calendly || null,
+    office: doc.office || null,
+    socials: (doc.socials ?? [])
+      .filter((s) => s.url)
+      .map((s) => ({ label: s.label || "", url: s.url as string })),
+    description: doc.description || null,
+  };
+}

@@ -543,6 +543,7 @@
     "errorName": "Your name is required",
     "errorEmail": "Invalid email address",
     "errorMessage": "Your message must contain at least 10 characters",
+"errorSend": "An error occurred while sending. Please try again or email us directly.",
     "sending": "Sending…",
     "send": "Send request",
     "successTitle": "Request sent!",

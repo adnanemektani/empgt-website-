@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactSection from "./contact-section";
 import { routing } from "@/i18n/routing";
+import { fetchSanityContact } from "@/lib/sanity";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -28,12 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const contact = await fetchSanityContact();
+
   return (
     <>
       <Navbar />
       <main className="flex-1">
-        <ContactSection />
+        <ContactSection contact={contact} />
       </main>
       <Footer />
     </>

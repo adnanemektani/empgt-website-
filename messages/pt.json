@@ -543,6 +543,7 @@
     "errorName": "O seu nome é obrigatório",
     "errorEmail": "Endereço de e-mail inválido",
     "errorMessage": "A sua mensagem deve conter pelo menos 10 caracteres",
+"errorSend": "Ocorreu um erro no envio. Tente novamente ou escreva-nos diretamente por e-mail.",
     "sending": "A enviar…",
     "send": "Enviar o pedido",
     "successTitle": "Pedido enviado!",
