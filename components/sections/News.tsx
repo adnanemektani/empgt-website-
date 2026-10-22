@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Play, ExternalLink, Clock, Newspaper, ChevronDown } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { SITE } from "@/lib/site";
-import { GOOGLE_SHEET_CSV_URL, parseNewsCsv, getNewsTitle, youtubeThumb, isYoutubeHref, type NewsRow } from "@/lib/news";
+import { GOOGLE_SHEET_CSV_URL, parseNewsCsv, getNewsTitle, youtubeThumb, isYoutubeHref, isOptimizableImage, type NewsRow } from "@/lib/news";
 import { fetchSanityNews, type SanityNews } from "@/lib/sanity";
 
 type Card = {
@@ -164,24 +164,49 @@ export default function News() {
               >
                 <div className="relative h-16 w-24 shrink-0 overflow-hidden rounded-xl bg-background sm:h-[72px] sm:w-32 lg:w-36">
                   {item.image ? (
-                    <>
-                      <Image
-                        src={item.image}
-                        alt=""
-                        fill
-                        sizes="200px"
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        onError={(e) => {
-                          const el = e.currentTarget;
-                          if (el.src.includes("maxresdefault")) {
-                            el.src = el.src.replace("maxresdefault", "hqdefault");
-                          } else {
-                            el.style.display = "none";
-                          }
-                        }}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
-                    </>
+                    isOptimizableImage(item.image) ? (
+                      <>
+                        <Image
+                          src={item.image}
+                          alt=""
+                          fill
+                          sizes="200px"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          onError={(e) => {
+                            const el = e.currentTarget;
+                            if (el.src.includes("maxresdefault")) {
+                              el.src = el.src.replace("maxresdefault", "hqdefault");
+                            } else {
+                              el.style.display = "none";
+                            }
+                          }}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
+                      </>
+                    ) : (
+                      // Hôte non whitelisté dans next.config.ts (images.remotePatterns)
+                      // : on sert l'image en `<img>` brut — un `<Image>` serait rejeté
+                      // par l'optimiseur Next.js (getImgProps) et provoquerait une
+                      // erreur runtime au rendu.
+                      <>
+                        {/* eslint-disable-next-line @next/next/no-img-element -- fallback délibéré pour les hôtes hors remotePatterns */}
+                        <img
+                          src={item.image}
+                          alt=""
+                          loading="lazy"
+                          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          onError={(e) => {
+                            const el = e.currentTarget;
+                            if (el.src.includes("maxresdefault")) {
+                              el.src = el.src.replace("maxresdefault", "hqdefault");
+                            } else {
+                              el.style.display = "none";
+                            }
+                          }}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent" />
+                      </>
+                    )
                   ) : (
                     <div className="flex h-full w-full items-center justify-center">
                         <Newspaper

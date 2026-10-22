@@ -113,3 +113,33 @@ export function youtubeThumb(href: string): string | null {
 export function isYoutubeHref(href: string): boolean {
   return /youtu\.be\/|youtube\.com\//.test(href);
 }
+
+/**
+ * Hôtes d'images que l'optimiseur Next.js est autorisé à traiter
+ * (cf. `next.config.ts` → `images.remotePatterns`).
+ */
+const OPTIMIZABLE_HOSTS = [
+  "cdn.sanity.io",
+  "img.youtube.com",
+  "images.unsplash.com",
+];
+
+/**
+ * Indique si une URL peut être passée à `next/image`.
+ *
+ * L'URL d'une actualité peut venir du Google Sheet (colonne IMAGE) ou du
+ * champ Sanity `externalImage` : elle peut donc pointer vers un hôte
+ * quelconque, ce qui ferait échouer l'optimiseur Next.js.
+ * → dans ce cas, le composant affiche un `<img>` classique.
+ */
+export function isOptimizableImage(src: string | null | undefined): boolean {
+  if (!src) return false;
+  try {
+    const url = new URL(src);
+    return (
+      url.protocol === "https:" && OPTIMIZABLE_HOSTS.includes(url.hostname)
+    );
+  } catch {
+    return false;
+  }
+}
