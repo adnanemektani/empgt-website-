@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { GOOGLE_SHEET_CSV_URL, parseNewsCsv, youtubeThumb } from "../../lib/news.ts";
 import { getProfessionalTitles } from "../../lib/mission-titles.ts";
+import { MISSION_SLUGS } from "../../lib/mission-slugs.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..", "..");
@@ -25,16 +26,11 @@ const client = createClient({
   useCdn: false,
 });
 
-const MISSION_SLUGS = [
-  "bureaux-neufs",
-  "laboratoires",
-  "gares-ferroviaires",
-  "renovation-bureaux",
-  "campus-universitaires",
-  "industries",
-  "autres",
-];
-
+/**
+ * L'ordre des slugs est importé depuis `lib/mission-slugs.ts` (source unique
+ * de vérité partagée avec le site). Ne jamais dupliquer cette liste ici :
+ * un ordre divergent associerait les noms de sections aux mauvais slugs.
+ */
 const IMAGE_EXT = /\.(jpe?g|png|webp|gif)$/i;
 
 const LOCALES = ["fr", "en", "ar", "zh", "pt"];
